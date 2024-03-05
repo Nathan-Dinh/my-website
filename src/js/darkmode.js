@@ -1,10 +1,12 @@
-const icon = document.getElementById("icon");
+const ICON = document.getElementById("icon");
+const HTML = document.getElementsByTagName("html")[0];
 
-icon.onclick = () => {
-  const cool = document.getElementsByTagName("html")[0];
-  if( "dark" === cool.dataset.theme){
-    cool.dataset.theme = "light"
+ICON.onclick = () => {
+  if( "dark" === HTML.dataset.theme){
+    HTML.dataset.theme = "light"
+    ICON.src = "./public/dark theme icon/moon.png"
   }else{
-    cool.dataset.theme = "dark"
+    HTML.dataset.theme = "dark"
+    ICON.src = "./public/dark theme icon/sun.png"
   }
 };
