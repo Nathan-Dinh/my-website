@@ -17,6 +17,21 @@ const urlRoutes = {
     page: "/src/pages/index.html",
     title: "/",
     description: "",
+  },
+  "/projects": {
+    page: "/src/pages/projects.html",
+    title: "/projects",
+    description: "",
+  },
+  "/skills": {
+    page: "/src/pages/skills.html",
+    title: "/skills",
+    description: "",
+  },
+  "/socials": {
+    page: "/src/pages/socials.html",
+    title: "/socials",
+    description: "",
   }
 };
 
