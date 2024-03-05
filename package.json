@@ -4,12 +4,13 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./public/css/main.css"
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
   },
   "keywords": [],
   "author": "Nathan Dinh",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "daisyui": "^4.7.2",
     "tailwind": "^4.0.0"
   }
 }
