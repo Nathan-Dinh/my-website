@@ -931,8 +931,16 @@ html {
   fill: currentColor;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-sm {
@@ -966,6 +974,11 @@ html {
 .hover\:text-gray-600:hover {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .dark\:bg-black:where(.dark, .dark *) {
