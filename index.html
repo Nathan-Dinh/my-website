@@ -5,24 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nathan Website</title>
     <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="src/css/output.css" />
-    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/tw.css">
     <!-- Scripts -->
-    <script src="src/js/router.js"></script>
-    <script src="src/js/darkmode.js" defer></script>
+    <script src="src/dist/main.js" defer></script>
   </head>
-  <body class="dark:bg-black">
+  <body >
+    <simple-greeting></simple-greeting>
     <div class="flex">
       <div class="h-screen pl-5 flex items-center ">
-        <nav class="flex flex-col">
-          <a class="mb-2 hover:text-blue-500" href="/">Home</a>
-          <a class="mb-2 hover:text-blue-500" href="/projects">Projects</a>
-          <a class="mb-2 hover:text-blue-500" href="/skills">skills</a>
-          <a class="mb-2 hover:text-blue-500" href="/socials">Social</a>
-          <div>
-            <img src="./public/dark theme icon/moon.png" alt="icon" id="icon">
-          </div>
-        </nav>
+        <side-nav></side-nav>
       </div>
       <div id="root" class="m-[3em]">
       </div>
