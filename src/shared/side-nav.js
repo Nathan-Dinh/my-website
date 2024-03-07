@@ -112,7 +112,7 @@ export class SideNavigation extends LitElement {
             />
           </svg>
           <p
-            class="ml-4 invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+            class="ml-4 invisible group-hover:visible relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
           >
             Home
           </p>
@@ -125,22 +125,21 @@ export class SideNavigation extends LitElement {
           @click=${this.handleNavigationClick}
           href="/projects"
           ><svg
-            class="h-8 w-8 text-gray-500"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
+            class="h-8 w-8 text-neutral-500"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <path stroke="none" d="M0 0h24v24H0z" />
-            <polyline points="5 7 10 12 5 17" />
-            <line x1="13" y1="17" x2="19" y2="17" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+            />
           </svg>
+
           <p
-            class="ml-4 invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+            class=" overflow-hidden ml-4 invisible group-hover:visible relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
           >
             Projects
           </p>
@@ -170,7 +169,7 @@ export class SideNavigation extends LitElement {
             <polyline points="4 16 12 20 20 16" />
           </svg>
           <p
-            class="ml-4 invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+            class="ml-4 invisible group-hover:visible relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
           >
             Skills
           </p></a
@@ -202,7 +201,7 @@ export class SideNavigation extends LitElement {
             <path d="M17.3 17.8l-2.8 -2" />
           </svg>
           <p
-            class="ml-4 invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+            class="ml-4 invisible group-hover:visible relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
           >
             Socials
           </p>
