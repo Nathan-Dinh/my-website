@@ -70,6 +70,7 @@ export class SideNavigation extends LitElement {
       return response.text();
     });
     document.getElementById("root").innerHTML = html;
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   urlRoute(href) {
@@ -81,10 +82,12 @@ export class SideNavigation extends LitElement {
     const html = document.getElementsByTagName("html")[0];
     if (html.dataset.theme === "dark") {
       html.dataset.theme = "light";
+      html.className = "light";
       this.shadowRoot.getElementById("icon").src =
         "./public/dark theme icon/moon.png";
     } else {
       html.dataset.theme = "dark";
+      html.className = "dark";
       this.shadowRoot.getElementById("icon").src =
         "./public/dark theme icon/sun.png";
     }
@@ -92,14 +95,14 @@ export class SideNavigation extends LitElement {
 
   render() {
     return html`<nav class="flex flex-col">
-      <div class="relative group">
+      <div class="group">
         <a
           @click=${this.handleNavigationClick}
-          class=" mb-4  flex items-center"
+          class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
           href="/"
         >
           <svg
-            class="h-8 w-8 text-gray-500"
+            class="h-8 w-8 "
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -112,20 +115,17 @@ export class SideNavigation extends LitElement {
             />
           </svg>
           <p
-            class="ml-4 invisible group-hover:visible relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+            class="ml-4 text-xl font-medium size invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
           >
             Home
           </p>
         </a>
-      </div>
-
-      <div class="relative group">
         <a
-          class=" mb-4 flex items-center"
+          class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35 "
           @click=${this.handleNavigationClick}
           href="/projects"
           ><svg
-            class="h-8 w-8 text-neutral-500"
+            class="h-8 w-8 "
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -139,21 +139,18 @@ export class SideNavigation extends LitElement {
           </svg>
 
           <p
-            class=" overflow-hidden ml-4 invisible group-hover:visible relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+            class=" ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
           >
             Projects
           </p>
         </a>
-      </div>
-
-      <div class="relative group">
         <a
-          class=" mb-4 flex items-center"
+          class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
           @click=${this.handleNavigationClick}
           href="/skills"
         >
           <svg
-            class="h-8 w-8 text-gray-500"
+            class="h-8 w-8 "
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -169,19 +166,17 @@ export class SideNavigation extends LitElement {
             <polyline points="4 16 12 20 20 16" />
           </svg>
           <p
-            class="ml-4 invisible group-hover:visible relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+            class="ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative  transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
           >
             Skills
           </p></a
         >
-      </div>
-      <div class="relative group">
         <a
-          class=" mb-4  flex items-center"
+          class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
           @click=${this.handleNavigationClick}
           href="/socials"
           ><svg
-            class="h-8 w-8 text-gray-500"
+            class="h-8 w-8 "
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -201,13 +196,13 @@ export class SideNavigation extends LitElement {
             <path d="M17.3 17.8l-2.8 -2" />
           </svg>
           <p
-            class="ml-4 invisible group-hover:visible relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+            class="ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
           >
             Socials
           </p>
         </a>
       </div>
-      <div>
+      <div class="px-5 py-2">
         <img src=${this.src} @click=${this.toggleTheme} alt="icon" id="icon" />
       </div>
     </nav>`;
