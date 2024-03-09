@@ -80,13 +80,13 @@ export class SideNavigation extends LitElement {
 
   toggleTheme() {
     const html = document.getElementsByTagName("html")[0];
-    if (html.dataset.theme === "dark") {
-      html.dataset.theme = "light";
+    if (html.dataset.theme === "dracula") {
+      html.dataset.theme = "cupcake";
       html.className = "light";
       this.shadowRoot.getElementById("icon").src =
         "./public/dark theme icon/moon.png";
     } else {
-      html.dataset.theme = "dark";
+      html.dataset.theme = "dracula";
       html.className = "dark";
       this.shadowRoot.getElementById("icon").src =
         "./public/dark theme icon/sun.png";
