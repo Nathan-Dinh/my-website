@@ -1,2 +1,2 @@
 node_modules
-_lit-template
+src/shared/_lit-template.js
