@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .light-gloss {
     background: rgba(53, 53, 53, 0);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
