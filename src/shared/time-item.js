@@ -2,6 +2,11 @@ import { LitElement, css, html } from "lit";
 import { TWStyles } from "../css/tw";
 
 export class TimeItem extends LitElement {
+  static properties = {
+    date: { type: String },
+    header: { type: String },
+    content: { type: String },
+  };
   static styles = [css``, TWStyles];
 
   constructor() {
@@ -15,17 +20,14 @@ export class TimeItem extends LitElement {
       ></div>
       <time
         class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-        >February 2022</time
+        >${this.date}</time
       >
-      <h3 class="text-lg font-semibold">
-        Application UI code in Tailwind CSS
-      </h3>
+      <h3 class="text-lg font-semibold">${this.header}</h3>
       <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-        Get access to over 20+ pages including a dashboard layout, charts,
-        kanban board, calendar, and pre-order E-commerce & Marketing pages.
+        ${this.content}
       </p>
       <a
-        href="#"
+        href=""
         class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
         >Learn more
         <svg
