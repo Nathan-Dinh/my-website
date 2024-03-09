@@ -64,9 +64,9 @@ export class SideNavigation extends LitElement {
     if (location.length === 0 || location === "/index.html") {
       location = "/";
     }
-    const route = this.urlRoutes[location] || this.urlRoutes[404];
-    window.history.pushState({}, "", route.title);
-    const html = await fetch(route.page).then((response) => {
+    const ROUTE = this.urlRoutes[location] || this.urlRoutes[404];
+    window.history.pushState({}, "", ROUTE.title);
+    const html = await fetch(ROUTE.page).then((response) => {
       return response.text();
     });
     document.getElementById("root").innerHTML = html;
@@ -79,15 +79,18 @@ export class SideNavigation extends LitElement {
   }
 
   toggleTheme() {
-    const html = document.getElementsByTagName("html")[0];
-    if (html.dataset.theme === "dracula") {
-      html.dataset.theme = "cupcake";
-      html.className = "light";
+    const HTML = document.getElementsByTagName("html")[0];
+    const MODE = this.shadowRoot.getElementById("mode");
+    if (HTML.dataset.theme === "dracula") {
+      HTML.dataset.theme = "cupcake";
+      HTML.className = "light";
+      MODE.innerHTML = "Dark";
       this.shadowRoot.getElementById("icon").src =
         "./public/dark theme icon/moon.png";
     } else {
-      html.dataset.theme = "dracula";
-      html.className = "dark";
+      HTML.dataset.theme = "dracula";
+      HTML.className = "dark";
+      MODE.innerHTML = "Light";
       this.shadowRoot.getElementById("icon").src =
         "./public/dark theme icon/sun.png";
     }
@@ -171,39 +174,15 @@ export class SideNavigation extends LitElement {
             Skills
           </p></a
         >
-        <a
-          class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
-          @click=${this.handleNavigationClick}
-          href="/socials"
-          ><svg
-            class="h-8 w-8 "
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" />
-            <circle cx="12" cy="5" r="2" />
-            <circle cx="5" cy="19" r="2" />
-            <circle cx="19" cy="19" r="2" />
-            <circle cx="12" cy="14" r="3" />
-            <line x1="12" y1="7" x2="12" y2="11" />
-            <path d="M6.7 17.8l2.8 -2" />
-            <path d="M17.3 17.8l-2.8 -2" />
-          </svg>
+        <div class="px-5 py-2 flex"  @click=${this.toggleTheme}>
+          <img src=${this.src} alt="icon" id="icon" />
           <p
+            id="mode"
             class="ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
           >
-            Socials
+            Light
           </p>
-        </a>
-      </div>
-      <div class="px-5 py-2">
-        <img src=${this.src} @click=${this.toggleTheme} alt="icon" id="icon" />
+        </div>
       </div>
     </nav>`;
   }
