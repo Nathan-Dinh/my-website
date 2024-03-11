@@ -11,6 +11,11 @@ export class SideNavigation extends LitElement {
         width: 30px;
         cursor: pointer;
       }
+      .light-gloss {
+        background: rgba(53, 53, 53, 0);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(53, 53, 53, 0.45);
+      }
     `,
     TWStyles,
   ];
@@ -97,92 +102,92 @@ export class SideNavigation extends LitElement {
   }
 
   render() {
-    return html`<nav class="flex flex-col">
-      <div class="group">
-        <a
-          @click=${this.handleNavigationClick}
-          class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
-          href="/"
+    return html` <nav
+      class="flex flex-col h-full fixed justify-center light-gloss group "
+    >
+      <a
+        @click=${this.handleNavigationClick}
+        class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
+        href="/"
+      >
+        <svg
+          class="h-8 w-8 "
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          <svg
-            class="h-8 w-8 "
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-            />
-          </svg>
-          <p
-            class="ml-4 text-xl font-medium size invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
-          >
-            Home
-          </p>
-        </a>
-        <a
-          class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35 "
-          @click=${this.handleNavigationClick}
-          href="/projects"
-          ><svg
-            class="h-8 w-8 "
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
-            />
-          </svg>
-
-          <p
-            class=" ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
-          >
-            Projects
-          </p>
-        </a>
-        <a
-          class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
-          @click=${this.handleNavigationClick}
-          href="/skills"
-        >
-          <svg
-            class="h-8 w-8 "
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
+          <path
             stroke-linecap="round"
             stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" />
-            <polyline points="12 4 4 8 12 12 20 8 12 4" />
-            <polyline points="4 12 12 16 20 12" />
-            <polyline points="4 16 12 20 20 16" />
-          </svg>
-          <p
-            class="ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative  transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
-          >
-            Skills
-          </p></a
+            stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+          />
+        </svg>
+        <p
+          class="ml-4 text-xl font-medium size invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
         >
-        <div class="px-5 py-2 flex"  @click=${this.toggleTheme}>
-          <img src=${this.src} alt="icon" id="icon" />
-          <p
-            id="mode"
-            class="ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
-          >
-            Light
-          </p>
-        </div>
+          Home
+        </p>
+      </a>
+      <a
+        class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35 "
+        @click=${this.handleNavigationClick}
+        href="/projects"
+        ><svg
+          class="h-8 w-8 "
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+          />
+        </svg>
+
+        <p
+          class=" ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+        >
+          Projects
+        </p>
+      </a>
+      <a
+        class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
+        @click=${this.handleNavigationClick}
+        href="/skills"
+      >
+        <svg
+          class="h-8 w-8 "
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" />
+          <polyline points="12 4 4 8 12 12 20 8 12 4" />
+          <polyline points="4 12 12 16 20 12" />
+          <polyline points="4 16 12 20 20 16" />
+        </svg>
+        <p
+          class="ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative  transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+        >
+          Tech Stack
+        </p></a
+      >
+      <div class="px-5 py-2 flex" @click=${this.toggleTheme}>
+        <img src=${this.src} alt="icon" id="icon" />
+        <p
+          id="mode"
+          class="ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+        >
+          Light
+        </p>
       </div>
     </nav>`;
   }
