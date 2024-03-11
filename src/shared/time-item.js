@@ -6,6 +6,7 @@ export class TimeItem extends LitElement {
     date: { type: String },
     header: { type: String },
     content: { type: String },
+    link: { type: String },
   };
   static styles = [css``, TWStyles];
 
@@ -23,13 +24,15 @@ export class TimeItem extends LitElement {
         >${this.date}</time
       >
       <h3 class="text-lg font-semibold">${this.header}</h3>
-      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+      <p class="mb-4 text-base font-normal ">
         ${this.content}
       </p>
       <a
-        href=""
+        href=${this.link}
+        target="_blank"
+        rel="noopener noreferrer"
         class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-        >Learn more
+        >Source Code
         <svg
           class="w-3 h-3 ms-2 rtl:rotate-180"
           aria-hidden="true"
