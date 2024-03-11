@@ -20,15 +20,13 @@
     <script src="src/js/vanta/vanta.net.min.js" defer></script>
     <script src="src/js/vanta/vanta.js" defer></script>
   </head>
-  <body>
-    <div id="fanta">
-      <div class="flex">
-        <div class="flex h-full fixed items-center light-gloss">
-          <side-nav></side-nav>
-        </div>
-        <div id="root" class="min-h-screen ml-[12em] my-[5em]"></div>
+  <body id="fanta">
+    <div>
+      <side-nav></side-nav>
+      <div >
+        <div id="root" class="min-h-screen flex justify-center mx-[15em] my-[2em]"></div>
+        <page-footer></page-footer>
       </div>
-      <page-footer></page-footer>
     </div>
   </body>
 </html>
