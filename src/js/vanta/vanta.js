@@ -1,14 +1,15 @@
-VANTA.GLOBE({
+VANTA.DOTS({
   el: "#fanta",
   mouseControls: false,
-  touchControls: true ,
+  touchControls: true,
   gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.50,
-  scaleMobile: 1.00,
-  size: 1.00,
-  backgroundAlpha: 0.00,
-  color: "#fb8500",
-  color2: "#ffb703",
-  })
+  minHeight: 200.0,
+  minWidth: 200.0,
+  scale: 1.0,
+  scaleMobile: 1.0,
+  size: 3,
+  spacing: 80.0,
+  showLines: false,
+  backgroundAlpha: 0.0,
+
+});

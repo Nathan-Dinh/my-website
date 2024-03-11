@@ -6,7 +6,12 @@ module.exports = {
     "./src/shared/side-nav.js",
     "./src/shared/footer.js",
     "./src/shared/time-line.js",
-    "./src/shared/socials.js"
+    "./src/shared/socials.js",
+    "./src/shared/skill-sections/languages.js",
+    "./src/shared/skill-sections/frontend.js",
+    "./src/shared/skill-sections/backend.js",
+    "./src/shared/skill-sections/database.js",
+    "./src/shared/skill-sections/other.js"
   ],
   output: {
     path: path.resolve("./src", "dist"),
