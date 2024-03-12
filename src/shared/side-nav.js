@@ -26,17 +26,17 @@ export class SideNavigation extends LitElement {
     this.src = "./public/dark theme icon/sun.png";
     this.urlRoutes = {
       "/my-website/": {
-        page: "/src/pages/index.html",
+        page: "/my-website/src/pages/index.html",
         title: "/",
         description: "",
       },
       "/my-website/projects": {
-        page: "/src/pages/projects.html",
+        page: "/my-website/src/pages/projects.html",
         title: "/",
         description: "",
       },
       "/my-website/skills": {
-        page: "/src/pages/skills.html",
+        page: "/my-website/src/pages/skills.html",
         title: "/",
         description: "",
       }
