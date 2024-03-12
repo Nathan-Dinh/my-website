@@ -41,7 +41,7 @@ export class DatabaseSection extends LitElement {
               </div>
               <div class="tooltip tooltip-close" data-tip="MSSql">
                 <img
-                  src="../../../../public/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+                  src="/../../../../public/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
                   class="w-10 h-10"
                 />
               </div>
