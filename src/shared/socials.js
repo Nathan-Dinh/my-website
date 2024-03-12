@@ -14,11 +14,6 @@ export class Socials extends LitElement {
     super();
   }
 
-  firstUpdated() {
-    console.log(this.svgHeight);
-    console.log(this.svgWidth);
-  }
-
   render() {
     return html`<div class="flex">
       <a

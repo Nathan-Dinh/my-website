@@ -25,31 +25,21 @@ export class SideNavigation extends LitElement {
     this.toggleTheme = this.toggleTheme.bind(this);
     this.src = "./public/dark theme icon/sun.png";
     this.urlRoutes = {
-      404: {
-        page: "my-website/src/pages/404.html",
-        title: "404",
-        description: "",
-      },
       "/": {
-        page: "my-website/src/pages/index.html",
+        page: "/src/pages/index.html",
         title: "/",
         description: "",
       },
       "/projects": {
-        page: "my-website/src/pages/projects.html",
+        page: "/src/pages/projects.html",
         title: "/",
         description: "",
       },
       "/skills": {
-        page: "my-website/src/pages/skills.html",
+        page: "/src/pages/skills.html",
         title: "/",
         description: "",
-      },
-      "/socials": {
-        page: "my-website/src/pages/socials.html",
-        title: "/",
-        description: "",
-      },
+      }
     };
   }
 
@@ -66,11 +56,11 @@ export class SideNavigation extends LitElement {
 
   async urlLocationHandler() {
     let location = window.location.pathname;
+    console.log(location)
     if (location.length === 0 || location === "/index.html") {
       location = "/";
     }
     const ROUTE = this.urlRoutes[location] || this.urlRoutes[404];
-    window.history.pushState({}, "", ROUTE.title);
     const html = await fetch(ROUTE.page).then((response) => {
       return response.text();
     });

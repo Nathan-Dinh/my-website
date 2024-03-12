@@ -805,12 +805,6 @@ html {
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
 }
 
-.divider-success:before,
-  .divider-success:after {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity)));
-}
-
 .link:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1052,14 +1046,6 @@ html {
   inset-inline-start: -0.375rem;
 }
 
-.m-\\[20em\\] {
-  margin: 20em;
-}
-
-.m-\\[25em\\] {
-  margin: 25em;
-}
-
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -1073,16 +1059,6 @@ html {
 .my-\\[2em\\] {
   margin-top: 2em;
   margin-bottom: 2em;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-\\[10em\\] {
-  margin-left: 10em;
-  margin-right: 10em;
 }
 
 .mb-1 {
@@ -1115,30 +1091,6 @@ html {
 
 .mt-1\\.5 {
   margin-top: 0.375rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
-}
-
-.mb-\\[20em\\] {
-  margin-bottom: 20em;
-}
-
-.mb-\\[25em\\] {
-  margin-bottom: 25em;
-}
-
-.mb-\\[10em\\] {
-  margin-bottom: 10em;
-}
-
-.mb-40 {
-  margin-bottom: 10rem;
 }
 
 .flex {
@@ -1189,8 +1141,8 @@ html {
   width: 2rem;
 }
 
-.w-\\[100\\%\\] {
-  width: 100%;
+.w-\\[80\\%\\] {
+  width: 80%;
 }
 
 .w-\\[auto\\] {
@@ -1199,14 +1151,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-\\[60\\%\\] {
-  width: 60%;
-}
-
-.w-\\[80\\%\\] {
-  width: 80%;
 }
 
 .max-w-\\[60\\%\\] {
@@ -1299,18 +1243,6 @@ html {
 
 .fill-current {
   fill: currentColor;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.p-\\[250\\] {
-  padding: 250;
-}
-
-.p-\\[25em\\] {
-  padding: 25em;
 }
 
 .px-4 {
