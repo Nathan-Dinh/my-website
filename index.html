@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="dark" data-theme="dracula">
   <head>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'nonce-sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE'; style-src 'self';">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-eval' 'nonce-sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE'; style-src 'self'  'unsafe-eval' 'nonce-sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE';"
+    />
     <meta charset="UTF-8" />
     <meta name="author" content="Nathan Ma Trung Dinh" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,19 +16,42 @@
     <meta name="robots" content="index, follow" />
     <title>Nathan Website</title>
     <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
-    <link rel="stylesheet" href="src/css/tw.css" />
+    <link nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE" rel="stylesheet" type="text/css" href="src/css/main.css" />
+    <link nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE" rel="stylesheet" href="src/css/tw.css" />
     <!-- Scripts -->
-    <script nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE" src="src/dist/main.js" nonce="YourNonceHere" defer></script>
-    <script nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE" src="src/js/vanta/three.r123.min.js" nonce="YourNonceHere" defer></script>
-    <script nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE" src="src/js/vanta/vanta.net.min.js" nonce="YourNonceHere" defer></script>
-    <script nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE" src="src/js/vanta/vanta.js"  nonce="YourNonceHere" defer></script>
+    <script
+      nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE"
+      src="src/dist/main.js"
+      nonce="YourNonceHere"
+      defer
+    ></script>
+    <script
+      nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE"
+      src="src/js/vanta/three.r123.min.js"
+      nonce="YourNonceHere"
+      defer
+    ></script>
+    <script
+      nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE"
+      src="src/js/vanta/vanta.net.min.js"
+      nonce="YourNonceHere"
+      defer
+    ></script>
+    <script
+      nonce="sha256vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE"
+      src="src/js/vanta/vanta.js"
+      nonce="YourNonceHere"
+      defer
+    ></script>
   </head>
   <body id="fanta">
     <div>
       <side-nav></side-nav>
-      <div >
-        <div id="root" class="min-h-screen flex justify-center mx-[15em] my-[2em]"></div>
+      <div>
+        <div
+          id="root"
+          class="min-h-screen flex justify-center mx-[15em] my-[2em]"
+        ></div>
         <page-footer></page-footer>
       </div>
     </div>
