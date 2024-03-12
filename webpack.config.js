@@ -18,5 +18,5 @@ module.exports = {
     path: path.resolve("./src", "dist"),
     filename: "main.js",
   },
-  mode: "development",
+  mode: "production",
 };

@@ -1,266 +1,2124 @@
+/*! For license information please see main.js.LICENSE.txt */
+(()=>{"use strict";var t={903:(t,e,r)=>{r.d(e,{K:()=>i});const i=r(957).AH` /*
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+*/
+
 /*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
 
-/***/ "./src/css/tw.js":
-/*!***********************!*\
-  !*** ./src/css/tw.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   TWStyles: () => (/* binding */ TWStyles)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n\n    \n    const TWStyles = (0,lit__WEBPACK_IMPORTED_MODULE_0__.css)` /*\n! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com\n*/\n\n/*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box;\n  /* 1 */\n  border-width: 0;\n  /* 2 */\n  border-style: solid;\n  /* 2 */\n  border-color: #e5e7eb;\n  /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured sans font-family by default.\n5. Use the user's configured sans font-feature-settings by default.\n6. Use the user's configured sans font-variation-settings by default.\n7. Disable tap highlights on iOS\n*/\n\nhtml,\n:host {\n  line-height: 1.5;\n  /* 1 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */\n  -moz-tab-size: 4;\n  /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4;\n  /* 3 */\n  font-family: ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  /* 4 */\n  font-feature-settings: normal;\n  /* 5 */\n  font-variation-settings: normal;\n  /* 6 */\n  -webkit-tap-highlight-color: transparent;\n  /* 7 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from html so users can set them as a class directly on the html element.\n*/\n\nbody {\n  margin: 0;\n  /* 1 */\n  line-height: inherit;\n  /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0;\n  /* 1 */\n  color: inherit;\n  /* 2 */\n  border-top-width: 1px;\n  /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured mono font-family by default.\n2. Use the user's configured mono font-feature-settings by default.\n3. Use the user's configured mono font-variation-settings by default.\n4. Correct the odd em font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n  /* 1 */\n  font-feature-settings: normal;\n  /* 2 */\n  font-variation-settings: normal;\n  /* 3 */\n  font-size: 1em;\n  /* 4 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent sub and sup elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0;\n  /* 1 */\n  border-color: inherit;\n  /* 2 */\n  border-collapse: collapse;\n  /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit;\n  /* 1 */\n  font-feature-settings: inherit;\n  /* 1 */\n  font-variation-settings: inherit;\n  /* 1 */\n  font-size: 100%;\n  /* 1 */\n  font-weight: inherit;\n  /* 1 */\n  line-height: inherit;\n  /* 1 */\n  color: inherit;\n  /* 1 */\n  margin: 0;\n  /* 2 */\n  padding: 0;\n  /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button;\n  /* 1 */\n  background-color: transparent;\n  /* 2 */\n  background-image: none;\n  /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional :invalid styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  outline-offset: -2px;\n  /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to inherit in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nReset default styling for dialogs.\n*/\n\ndialog {\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1;\n  /* 1 */\n  color: #9ca3af;\n  /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1;\n  /* 1 */\n  color: #9ca3af;\n  /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements display: block by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add vertical-align: middle to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block;\n  /* 1 */\n  vertical-align: middle;\n  /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/* Make elements with the HTML hidden attribute stay hidden by default */\n\n[hidden] {\n  display: none;\n}\n\n:root,\n[data-theme] {\n  background-color: var(--fallback-b1,oklch(var(--b1)/1));\n  color: var(--fallback-bc,oklch(var(--bc)/1));\n}\n\n@supports not (color: oklch(0 0 0)) {\n  :root {\n    color-scheme: light;\n    --fallback-p: #491eff;\n    --fallback-pc: #d4dbff;\n    --fallback-s: #ff41c7;\n    --fallback-sc: #fff9fc;\n    --fallback-a: #00cfbd;\n    --fallback-ac: #00100d;\n    --fallback-n: #2b3440;\n    --fallback-nc: #d7dde4;\n    --fallback-b1: #ffffff;\n    --fallback-b2: #e5e6e6;\n    --fallback-b3: #e5e6e6;\n    --fallback-bc: #1f2937;\n    --fallback-in: #00b3f0;\n    --fallback-inc: #000000;\n    --fallback-su: #00ca92;\n    --fallback-suc: #000000;\n    --fallback-wa: #ffc22d;\n    --fallback-wac: #000000;\n    --fallback-er: #ff6f70;\n    --fallback-erc: #000000;\n  }\n\n  @media (prefers-color-scheme: dark) {\n    :root {\n      color-scheme: dark;\n      --fallback-p: #7582ff;\n      --fallback-pc: #050617;\n      --fallback-s: #ff71cf;\n      --fallback-sc: #190211;\n      --fallback-a: #00c7b5;\n      --fallback-ac: #000e0c;\n      --fallback-n: #2a323c;\n      --fallback-nc: #a6adbb;\n      --fallback-b1: #1d232a;\n      --fallback-b2: #191e24;\n      --fallback-b3: #15191e;\n      --fallback-bc: #a6adbb;\n      --fallback-in: #00b3f0;\n      --fallback-inc: #000000;\n      --fallback-su: #00ca92;\n      --fallback-suc: #000000;\n      --fallback-wa: #ffc22d;\n      --fallback-wac: #000000;\n      --fallback-er: #ff6f70;\n      --fallback-erc: #000000;\n    }\n  }\n}\n\nhtml {\n  -webkit-tap-highlight-color: transparent;\n}\n\n:root {\n  color-scheme: light;\n  --in: 0.7206 0.191 231.6;\n  --su: 64.8% 0.150 160;\n  --wa: 0.8471 0.199 83.87;\n  --er: 0.7176 0.221 22.18;\n  --pc: 0.152344 0.017892 200.026556;\n  --sc: 0.15787 0.020249 356.29965;\n  --ac: 0.158762 0.029206 78.618794;\n  --nc: 0.847148 0.013247 313.189598;\n  --inc: 0 0 0;\n  --suc: 0 0 0;\n  --wac: 0 0 0;\n  --erc: 0 0 0;\n  --rounded-box: 1rem;\n  --rounded-badge: 1.9rem;\n  --animation-btn: 0.25s;\n  --animation-input: .2s;\n  --btn-focus-scale: 0.95;\n  --border-btn: 1px;\n  --p: 0.76172 0.089459 200.026556;\n  --s: 0.789351 0.101246 356.29965;\n  --a: 0.793811 0.146032 78.618794;\n  --n: 0.235742 0.066235 313.189598;\n  --b1: 0.977882 0.00418 56.375637;\n  --b2: 0.939822 0.007638 61.449292;\n  --b3: 0.915861 0.006811 53.440502;\n  --bc: 0.235742 0.066235 313.189598;\n  --rounded-btn: 1.9rem;\n  --tab-border: 2px;\n  --tab-radius: 0.7rem;\n}\n\n[data-theme=cupcake] {\n  color-scheme: light;\n  --in: 0.7206 0.191 231.6;\n  --su: 64.8% 0.150 160;\n  --wa: 0.8471 0.199 83.87;\n  --er: 0.7176 0.221 22.18;\n  --pc: 0.152344 0.017892 200.026556;\n  --sc: 0.15787 0.020249 356.29965;\n  --ac: 0.158762 0.029206 78.618794;\n  --nc: 0.847148 0.013247 313.189598;\n  --inc: 0 0 0;\n  --suc: 0 0 0;\n  --wac: 0 0 0;\n  --erc: 0 0 0;\n  --rounded-box: 1rem;\n  --rounded-badge: 1.9rem;\n  --animation-btn: 0.25s;\n  --animation-input: .2s;\n  --btn-focus-scale: 0.95;\n  --border-btn: 1px;\n  --p: 0.76172 0.089459 200.026556;\n  --s: 0.789351 0.101246 356.29965;\n  --a: 0.793811 0.146032 78.618794;\n  --n: 0.235742 0.066235 313.189598;\n  --b1: 0.977882 0.00418 56.375637;\n  --b2: 0.939822 0.007638 61.449292;\n  --b3: 0.915861 0.006811 53.440502;\n  --bc: 0.235742 0.066235 313.189598;\n  --rounded-btn: 1.9rem;\n  --tab-border: 2px;\n  --tab-radius: 0.7rem;\n}\n\n[data-theme=dracula] {\n  color-scheme: dark;\n  --b2: 0.268053 0.020556 277.508664;\n  --b3: 0.247877 0.019009 277.508664;\n  --pc: 0.150922 0.036614 346.812432;\n  --sc: 0.148405 0.029709 301.883095;\n  --ac: 0.166785 0.024826 66.558491;\n  --nc: 0.878891 0.006515 275.524078;\n  --inc: 0.176526 0.018676 212.846491;\n  --suc: 0.174199 0.043903 148.024881;\n  --wac: 0.191068 0.026849 112.757109;\n  --erc: 0.136441 0.041266 24.430965;\n  --rounded-box: 1rem;\n  --rounded-btn: 0.5rem;\n  --rounded-badge: 1.9rem;\n  --animation-btn: 0.25s;\n  --animation-input: .2s;\n  --btn-focus-scale: 0.95;\n  --border-btn: 1px;\n  --tab-border: 1px;\n  --tab-radius: 0.5rem;\n  --p: 0.754611 0.18307 346.812432;\n  --s: 0.742023 0.148546 301.883095;\n  --a: 0.833927 0.124132 66.558491;\n  --n: 0.394456 0.032576 275.524078;\n  --b1: 0.288229 0.022103 277.508664;\n  --bc: 0.977477 0.007913 106.545019;\n  --in: 0.88263 0.09338 212.846491;\n  --su: 0.870995 0.219516 148.024881;\n  --wa: 0.955338 0.134246 112.757109;\n  --er: 0.682204 0.206328 24.430965;\n}\n\n*, ::before, ::after {\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-gradient-from-position:  ;\n  --tw-gradient-via-position:  ;\n  --tw-gradient-to-position:  ;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n\n::backdrop {\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-gradient-from-position:  ;\n  --tw-gradient-via-position:  ;\n  --tw-gradient-to-position:  ;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n\n@media (hover:hover) {\n  .menu li > *:not(ul, .menu-title, details, .btn):active,\n.menu li > *:not(ul, .menu-title, details, .btn).active,\n.menu li > details > summary:active {\n    --tw-bg-opacity: 1;\n    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));\n    --tw-text-opacity: 1;\n    color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));\n  }\n}\n\n.divider {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  align-self: stretch;\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  height: 1rem;\n  white-space: nowrap;\n}\n\n.divider:before,\n  .divider:after {\n  height: 0.125rem;\n  width: 100%;\n  flex-grow: 1;\n  --tw-content: '';\n  content: var(--tw-content);\n  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));\n}\n\n@media (hover: hover) {\n  :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(.active, .btn):hover {\n    cursor: pointer;\n    outline: 2px solid transparent;\n    outline-offset: 2px;\n  }\n\n  @supports (color: oklch(0 0 0)) {\n    :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(.active, .btn):hover {\n      background-color: var(--fallback-bc,oklch(var(--bc)/0.1));\n    }\n  }\n}\n\n.footer {\n  display: grid;\n  width: 100%;\n  grid-auto-flow: row;\n  place-items: start;\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n  row-gap: 2.5rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n\n.footer > * {\n  display: grid;\n  place-items: start;\n  gap: 0.5rem;\n}\n\n@media (min-width: 48rem) {\n  .footer {\n    grid-auto-flow: column;\n  }\n\n  .footer-center {\n    grid-auto-flow: row dense;\n  }\n}\n\n.link {\n  cursor: pointer;\n  text-decoration-line: underline;\n}\n\n.menu {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  padding: 0.5rem;\n}\n\n.menu :where(li ul) {\n  position: relative;\n  white-space: nowrap;\n  margin-inline-start: 1rem;\n  padding-inline-start: 0.5rem;\n}\n\n.menu :where(li:not(.menu-title) > *:not(ul, details, .menu-title, .btn)), .menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {\n  display: grid;\n  grid-auto-flow: column;\n  align-content: flex-start;\n  align-items: center;\n  gap: 0.5rem;\n  grid-auto-columns: minmax(auto, max-content) auto max-content;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n}\n\n.menu li.disabled {\n  cursor: not-allowed;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n  color: var(--fallback-bc,oklch(var(--bc)/0.3));\n}\n\n.menu :where(li > .menu-dropdown:not(.menu-dropdown-show)) {\n  display: none;\n}\n\n:where(.menu li) {\n  position: relative;\n  display: flex;\n  flex-shrink: 0;\n  flex-direction: column;\n  flex-wrap: wrap;\n  align-items: stretch;\n}\n\n:where(.menu li) .badge {\n  justify-self: end;\n}\n\n@keyframes button-pop {\n  0% {\n    transform: scale(var(--btn-focus-scale, 0.98));\n  }\n\n  40% {\n    transform: scale(1.02);\n  }\n\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes checkmark {\n  0% {\n    background-position-y: 5px;\n  }\n\n  50% {\n    background-position-y: -2px;\n  }\n\n  100% {\n    background-position-y: 0;\n  }\n}\n\n.divider:not(:empty) {\n  gap: 1rem;\n}\n\n.divider-primary:before,\n  .divider-primary:after {\n  --tw-bg-opacity: 1;\n  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));\n}\n\n.divider-secondary:before,\n  .divider-secondary:after {\n  --tw-bg-opacity: 1;\n  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));\n}\n\n.link:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n\n.link:focus-visible {\n  outline: 2px solid currentColor;\n  outline-offset: 2px;\n}\n\n:where(.menu li:empty) {\n  --tw-bg-opacity: 1;\n  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));\n  opacity: 0.1;\n  margin: 0.5rem 1rem;\n  height: 1px;\n}\n\n.menu :where(li ul):before {\n  position: absolute;\n  bottom: 0.75rem;\n  inset-inline-start: 0px;\n  top: 0.75rem;\n  width: 1px;\n  --tw-bg-opacity: 1;\n  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));\n  opacity: 0.1;\n  content: \"\";\n}\n\n.menu :where(li:not(.menu-title) > *:not(ul, details, .menu-title, .btn)),\n.menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {\n  border-radius: var(--rounded-btn, 0.5rem);\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  text-align: start;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  transition-duration: 200ms;\n  text-wrap: balance;\n}\n\n:where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):is(summary):not(.active, .btn):focus-visible, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):is(summary):not(.active, .btn):focus-visible {\n  cursor: pointer;\n  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));\n  --tw-text-opacity: 1;\n  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n\n.menu li > *:not(ul, .menu-title, details, .btn):active,\n.menu li > *:not(ul, .menu-title, details, .btn).active,\n.menu li > details > summary:active {\n  --tw-bg-opacity: 1;\n  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));\n  --tw-text-opacity: 1;\n  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));\n}\n\n.menu :where(li > details > summary)::-webkit-details-marker {\n  display: none;\n}\n\n.menu :where(li > details > summary):after,\n.menu :where(li > .menu-dropdown-toggle):after {\n  justify-self: end;\n  display: block;\n  margin-top: -0.5rem;\n  height: 0.5rem;\n  width: 0.5rem;\n  transform: rotate(45deg);\n  transition-property: transform, margin-top;\n  transition-duration: 0.3s;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  content: \"\";\n  transform-origin: 75% 75%;\n  box-shadow: 2px 2px;\n  pointer-events: none;\n}\n\n.menu :where(li > details[open] > summary):after,\n.menu :where(li > .menu-dropdown-toggle.menu-dropdown-show):after {\n  transform: rotate(225deg);\n  margin-top: 0;\n}\n\n@keyframes modal-pop {\n  0% {\n    opacity: 0;\n  }\n}\n\n@keyframes progress-loading {\n  50% {\n    background-position-x: -115%;\n  }\n}\n\n@keyframes radiomark {\n  0% {\n    box-shadow: 0 0 0 12px var(--fallback-b1,oklch(var(--b1)/1)) inset,\n      0 0 0 12px var(--fallback-b1,oklch(var(--b1)/1)) inset;\n  }\n\n  50% {\n    box-shadow: 0 0 0 3px var(--fallback-b1,oklch(var(--b1)/1)) inset,\n      0 0 0 3px var(--fallback-b1,oklch(var(--b1)/1)) inset;\n  }\n\n  100% {\n    box-shadow: 0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset,\n      0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset;\n  }\n}\n\n@keyframes rating-pop {\n  0% {\n    transform: translateY(-0.125em);\n  }\n\n  40% {\n    transform: translateY(-0.125em);\n  }\n\n  100% {\n    transform: translateY(0);\n  }\n}\n\n@keyframes skeleton {\n  from {\n    background-position: 150%;\n  }\n\n  to {\n    background-position: -50%;\n  }\n}\n\n@keyframes toast-pop {\n  0% {\n    transform: scale(0.9);\n    opacity: 0;\n  }\n\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n.tooltip {\n  position: relative;\n  display: inline-block;\n  --tooltip-offset: calc(100% + 1px + var(--tooltip-tail, 0px));\n}\n\n.tooltip:before {\n  position: absolute;\n  pointer-events: none;\n  z-index: 1;\n  content: var(--tw-content);\n  --tw-content: attr(data-tip);\n}\n\n.tooltip:before, .tooltip-top:before {\n  transform: translateX(-50%);\n  top: auto;\n  left: 50%;\n  right: auto;\n  bottom: var(--tooltip-offset);\n}\n\n.avatar.online:before {\n  content: \"\";\n  position: absolute;\n  z-index: 10;\n  display: block;\n  border-radius: 9999px;\n  --tw-bg-opacity: 1;\n  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity)));\n  outline-style: solid;\n  outline-width: 2px;\n  outline-color: var(--fallback-b1,oklch(var(--b1)/1));\n  width: 15%;\n  height: 15%;\n  top: 7%;\n  right: 7%;\n}\n\n.tooltip {\n  position: relative;\n  display: inline-block;\n  text-align: center;\n  --tooltip-tail: 0.1875rem;\n  --tooltip-color: var(--fallback-n,oklch(var(--n)/1));\n  --tooltip-text-color: var(--fallback-nc,oklch(var(--nc)/1));\n  --tooltip-tail-offset: calc(100% + 0.0625rem - var(--tooltip-tail));\n}\n\n.tooltip:before,\n.tooltip:after {\n  opacity: 0;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;\n  transition-delay: 100ms;\n  transition-duration: 200ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n\n.tooltip:after {\n  position: absolute;\n  content: \"\";\n  border-style: solid;\n  border-width: var(--tooltip-tail, 0);\n  width: 0;\n  height: 0;\n  display: block;\n}\n\n.tooltip:before {\n  max-width: 20rem;\n  border-radius: 0.25rem;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  background-color: var(--tooltip-color);\n  color: var(--tooltip-text-color);\n  width: -moz-max-content;\n  width: max-content;\n}\n\n.tooltip.tooltip-open:before {\n  opacity: 1;\n  transition-delay: 75ms;\n}\n\n.tooltip.tooltip-open:after {\n  opacity: 1;\n  transition-delay: 75ms;\n}\n\n.tooltip:hover:before {\n  opacity: 1;\n  transition-delay: 75ms;\n}\n\n.tooltip:hover:after {\n  opacity: 1;\n  transition-delay: 75ms;\n}\n\n.tooltip:has(:focus-visible):after,\n.tooltip:has(:focus-visible):before {\n  opacity: 1;\n  transition-delay: 75ms;\n}\n\n.tooltip:not([data-tip]):hover:before,\n.tooltip:not([data-tip]):hover:after {\n  visibility: hidden;\n  opacity: 0;\n}\n\n.tooltip:after, .tooltip-top:after {\n  transform: translateX(-50%);\n  border-color: var(--tooltip-color) transparent transparent transparent;\n  top: auto;\n  left: 50%;\n  right: auto;\n  bottom: var(--tooltip-tail-offset);\n}\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.invisible {\n  visibility: hidden;\n}\n\n.static {\n  position: static;\n}\n\n.fixed {\n  position: fixed;\n}\n\n.absolute {\n  position: absolute;\n}\n\n.relative {\n  position: relative;\n}\n\n.-start-1 {\n  inset-inline-start: -0.25rem;\n}\n\n.-start-1\\\\.5 {\n  inset-inline-start: -0.375rem;\n}\n\n.mx-3 {\n  margin-left: 0.75rem;\n  margin-right: 0.75rem;\n}\n\n.my-\\\\[2em\\\\] {\n  margin-top: 2em;\n  margin-bottom: 2em;\n}\n\n.mb-1 {\n  margin-bottom: 0.25rem;\n}\n\n.mb-10 {\n  margin-bottom: 2.5rem;\n}\n\n.mb-4 {\n  margin-bottom: 1rem;\n}\n\n.ml-4 {\n  margin-left: 1rem;\n}\n\n.ms-2 {\n  margin-inline-start: 0.5rem;\n}\n\n.ms-4 {\n  margin-inline-start: 1rem;\n}\n\n.mt-1 {\n  margin-top: 0.25rem;\n}\n\n.mt-1\\\\.5 {\n  margin-top: 0.375rem;\n}\n\n.mt-4 {\n  margin-top: 1rem;\n}\n\n.block {\n  display: block;\n}\n\n.flex {\n  display: flex;\n}\n\n.inline-flex {\n  display: inline-flex;\n}\n\n.hidden {\n  display: none;\n}\n\n.h-10 {\n  height: 2.5rem;\n}\n\n.h-3 {\n  height: 0.75rem;\n}\n\n.h-5 {\n  height: 1.25rem;\n}\n\n.h-8 {\n  height: 2rem;\n}\n\n.h-full {\n  height: 100%;\n}\n\n.min-h-screen {\n  min-height: 100vh;\n}\n\n.w-10 {\n  width: 2.5rem;\n}\n\n.w-10\\\\/12 {\n  width: 83.333333%;\n}\n\n.w-3 {\n  width: 0.75rem;\n}\n\n.w-4\\\\/6 {\n  width: 66.666667%;\n}\n\n.w-5 {\n  width: 1.25rem;\n}\n\n.w-8 {\n  width: 2rem;\n}\n\n.w-\\\\[80\\\\%\\\\] {\n  width: 80%;\n}\n\n.w-\\\\[auto\\\\] {\n  width: auto;\n}\n\n.w-full {\n  width: 100%;\n}\n\n.max-w-\\\\[60\\\\%\\\\] {\n  max-width: 60%;\n}\n\n.-translate-x-1\\\\/4 {\n  --tw-translate-x: -25%;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n\n.transform {\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n\n.flex-col {\n  flex-direction: column;\n}\n\n.place-items-center {\n  place-items: center;\n}\n\n.items-center {\n  align-items: center;\n}\n\n.justify-end {\n  justify-content: flex-end;\n}\n\n.justify-center {\n  justify-content: center;\n}\n\n.gap-10 {\n  gap: 2.5rem;\n}\n\n.rounded {\n  border-radius: 0.25rem;\n}\n\n.rounded-full {\n  border-radius: 9999px;\n}\n\n.rounded-lg {\n  border-radius: 0.5rem;\n}\n\n.border {\n  border-width: 1px;\n}\n\n.border-s {\n  border-inline-start-width: 1px;\n}\n\n.border-gray-200 {\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n\n.border-white {\n  --tw-border-opacity: 1;\n  border-color: rgb(255 255 255 / var(--tw-border-opacity));\n}\n\n.bg-blue-700 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(29 78 216 / var(--tw-bg-opacity));\n}\n\n.bg-gray-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(229 231 235 / var(--tw-bg-opacity));\n}\n\n.bg-gray-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(249 250 251 / var(--tw-bg-opacity));\n}\n\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n\n.bg-gradient-to-r {\n  background-image: linear-gradient(to right, var(--tw-gradient-stops));\n}\n\n.from-purple-400 {\n  --tw-gradient-from: #c084fc var(--tw-gradient-from-position);\n  --tw-gradient-to: rgb(192 132 252 / 0) var(--tw-gradient-to-position);\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n\n.to-emerald-400 {\n  --tw-gradient-to: #34d399 var(--tw-gradient-to-position);\n}\n\n.bg-clip-text {\n  -webkit-background-clip: text;\n          background-clip: text;\n}\n\n.fill-current {\n  fill: currentColor;\n}\n\n.px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n\n.px-5 {\n  padding-left: 1.25rem;\n  padding-right: 1.25rem;\n}\n\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n\n.py-6 {\n  padding-top: 1.5rem;\n  padding-bottom: 1.5rem;\n}\n\n.pb-20 {\n  padding-bottom: 5rem;\n}\n\n.text-\\\\[2\\\\.5rem\\\\] {\n  font-size: 2.5rem;\n}\n\n.text-\\\\[3\\\\.5rem\\\\] {\n  font-size: 3.5rem;\n}\n\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n\n.text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n\n.text-xl {\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n\n.font-light {\n  font-weight: 300;\n}\n\n.font-medium {\n  font-weight: 500;\n}\n\n.font-normal {\n  font-weight: 400;\n}\n\n.font-semibold {\n  font-weight: 600;\n}\n\n.leading-none {\n  line-height: 1;\n}\n\n.text-gray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n\n.text-gray-500 {\n  --tw-text-opacity: 1;\n  color: rgb(107 114 128 / var(--tw-text-opacity));\n}\n\n.text-gray-900 {\n  --tw-text-opacity: 1;\n  color: rgb(17 24 39 / var(--tw-text-opacity));\n}\n\n.text-transparent {\n  color: transparent;\n}\n\n.text-white {\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n\n.transition-transform {\n  transition-property: transform;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n\n.duration-200 {\n  transition-duration: 200ms;\n}\n\n.ease-in-out {\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n\n.hover\\\\:bg-gray-100:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(243 244 246 / var(--tw-bg-opacity));\n}\n\n.hover\\\\:bg-gray-600:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(75 85 99 / var(--tw-bg-opacity));\n}\n\n.hover\\\\:bg-opacity-35:hover {\n  --tw-bg-opacity: 0.35;\n}\n\n.hover\\\\:text-blue-700:hover {\n  --tw-text-opacity: 1;\n  color: rgb(29 78 216 / var(--tw-text-opacity));\n}\n\n.hover\\\\:text-orange-500:hover {\n  --tw-text-opacity: 1;\n  color: rgb(249 115 22 / var(--tw-text-opacity));\n}\n\n.focus\\\\:z-10:focus {\n  z-index: 10;\n}\n\n.focus\\\\:text-blue-700:focus {\n  --tw-text-opacity: 1;\n  color: rgb(29 78 216 / var(--tw-text-opacity));\n}\n\n.focus\\\\:outline-none:focus {\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n\n.focus\\\\:ring-4:focus {\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n\n.focus\\\\:ring-gray-100:focus {\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(243 244 246 / var(--tw-ring-opacity));\n}\n\n.group:hover .group-hover\\\\:visible {\n  visibility: visible;\n}\n\n.group:hover .group-hover\\\\:relative {\n  position: relative;\n}\n\n.group:hover .group-hover\\\\:translate-x-0 {\n  --tw-translate-x: 0px;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n\n@media (min-width: 640px) {\n  .sm\\\\:mx-\\\\[2em\\\\] {\n    margin-left: 2em;\n    margin-right: 2em;\n  }\n}\n\n@media (min-width: 768px) {\n  .md\\\\:block {\n    display: block;\n  }\n\n  .md\\\\:hidden {\n    display: none;\n  }\n}\n\n.rtl\\\\:rotate-180:where([dir=\"rtl\"], [dir=\"rtl\"] *) {\n  --tw-rotate: 180deg;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n\n.dark\\\\:border-gray-600:where(.dark, .dark *) {\n  --tw-border-opacity: 1;\n  border-color: rgb(75 85 99 / var(--tw-border-opacity));\n}\n\n.dark\\\\:border-gray-700:where(.dark, .dark *) {\n  --tw-border-opacity: 1;\n  border-color: rgb(55 65 81 / var(--tw-border-opacity));\n}\n\n.dark\\\\:border-gray-900:where(.dark, .dark *) {\n  --tw-border-opacity: 1;\n  border-color: rgb(17 24 39 / var(--tw-border-opacity));\n}\n\n.dark\\\\:bg-blue-600:where(.dark, .dark *) {\n  --tw-bg-opacity: 1;\n  background-color: rgb(37 99 235 / var(--tw-bg-opacity));\n}\n\n.dark\\\\:bg-gray-700:where(.dark, .dark *) {\n  --tw-bg-opacity: 1;\n  background-color: rgb(55 65 81 / var(--tw-bg-opacity));\n}\n\n.dark\\\\:bg-gray-800:where(.dark, .dark *) {\n  --tw-bg-opacity: 1;\n  background-color: rgb(31 41 55 / var(--tw-bg-opacity));\n}\n\n.dark\\\\:text-gray-400:where(.dark, .dark *) {\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n\n.dark\\\\:text-gray-500:where(.dark, .dark *) {\n  --tw-text-opacity: 1;\n  color: rgb(107 114 128 / var(--tw-text-opacity));\n}\n\n.dark\\\\:hover\\\\:bg-gray-700:hover:where(.dark, .dark *) {\n  --tw-bg-opacity: 1;\n  background-color: rgb(55 65 81 / var(--tw-bg-opacity));\n}\n\n.dark\\\\:hover\\\\:text-white:hover:where(.dark, .dark *) {\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n\n.dark\\\\:focus\\\\:ring-gray-700:focus:where(.dark, .dark *) {\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity));\n}\n\n@media (min-width: 768px) {\n  .md\\\\:dark\\\\:hover\\\\:text-white:hover:where(.dark, .dark *) {\n    --tw-text-opacity: 1;\n    color: rgb(255 255 255 / var(--tw-text-opacity));\n  }\n}\r\n `\n    \n\n//# sourceURL=webpack://my-website/./src/css/tw.js?");
+::before,
+::after {
+  --tw-content: '';
+}
 
-/***/ }),
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured sans font-family by default.
+5. Use the user's configured sans font-feature-settings by default.
+6. Use the user's configured sans font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
 
-/***/ "./src/shared/footer.js":
-/*!******************************!*\
-  !*** ./src/shared/footer.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Footer: () => (/* binding */ Footer)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/tw */ \"./src/css/tw.js\");\n/* harmony import */ var _socials__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./socials */ \"./src/shared/socials.js\");\n\r\n\r\n\r\n\r\nclass Footer extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n  }\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`<footer class=\"flex flex-col place-items-center py-6\">\r\n      <social-icons svgWidth=\"6\" svgHeight=\"6\"></social-icons>\r\n      <div>© 2024 • Nathan Dinh</div>\r\n    </footer>`;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"page-footer\", Footer);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/footer.js?");
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from html so users can set them as a class directly on the html element.
+*/
 
-/***/ }),
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
 
-/***/ "./src/shared/mobile/mobile-side-nav.js":
-/*!**********************************************!*\
-  !*** ./src/shared/mobile/mobile-side-nav.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   MobileSideNav: () => (/* binding */ MobileSideNav)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/tw */ \"./src/css/tw.js\");\n\r\n\r\n\r\nclass MobileSideNav extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static properties = {\r\n    svgWidth: { type: String },\r\n    svgHeight: { type: String },\r\n  };\r\n\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n  }\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`\r\n      <nav\r\n        class=\"border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700\"\r\n      >\r\n        <div class=\"flex flex-col\">\r\n          <div class=\"flex justify-end\">\r\n            <button\r\n              data-collapse-toggle=\"navbar-hamburger\"\r\n              type=\"button\"\r\n              class=\" w-10 h-10 text-sm text-gray-500 rounded-lg\"\r\n              aria-controls=\"navbar-hamburger\"\r\n              aria-expanded=\"false\"\r\n            >\r\n              <span class=\"sr-only\">Open main menu</span>\r\n              <svg\r\n                class=\"w-5 h-5\"\r\n                aria-hidden=\"true\"\r\n                xmlns=\"http://www.w3.org/2000/svg\"\r\n                fill=\"none\"\r\n                viewBox=\"0 0 17 14\"\r\n              >\r\n                <path\r\n                  stroke=\"currentColor\"\r\n                  stroke-linecap=\"round\"\r\n                  stroke-linejoin=\"round\"\r\n                  stroke-width=\"2\"\r\n                  d=\"M1 1h15M1 7h15M1 13h15\"\r\n                />\r\n              </svg>\r\n            </button>\r\n          </div>\r\n          <div class=\"block w-full\" id=\"navbar-hamburger\">\r\n            <ul\r\n              class=\"flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700\"\r\n            >\r\n              <li>\r\n                <a\r\n                  href=\"#\"\r\n                  class=\"block py-2 px-3 text-white bg-blue-700 rounded dark:bg-blue-600\"\r\n                  aria-current=\"page\"\r\n                  >Home</a\r\n                >\r\n              </li>\r\n              <li>\r\n                <a\r\n                  href=\"#\"\r\n                  class=\"block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white\"\r\n                  >Services</a\r\n                >\r\n              </li>\r\n              <li>\r\n                <a\r\n                  href=\"#\"\r\n                  class=\"block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white\"\r\n                  >Pricing</a\r\n                >\r\n              </li>\r\n              <li>\r\n                <a\r\n                  href=\"#\"\r\n                  class=\"block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white\"\r\n                  >Contact</a\r\n                >\r\n              </li>\r\n            </ul>\r\n          </div>\r\n        </div>\r\n      </nav>\r\n    `;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"mobile-side-nav\", MobileSideNav);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/mobile/mobile-side-nav.js?");
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
 
-/***/ }),
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
 
-/***/ "./src/shared/side-nav.js":
-/*!********************************!*\
-  !*** ./src/shared/side-nav.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   SideNavigation: () => (/* binding */ SideNavigation)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/tw */ \"./src/css/tw.js\");\n\r\n\r\n\r\nclass SideNavigation extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static styles = [\r\n    (0,lit__WEBPACK_IMPORTED_MODULE_0__.css)`\r\n      :host {\r\n        cursor: pointer;\r\n      }\r\n      #icon {\r\n        width: 30px;\r\n        cursor: pointer;\r\n      }\r\n      .light-gloss {\r\n        background: rgba(53, 53, 53, 0);\r\n        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);\r\n        border-right: 1px solid rgba(53, 53, 53, 0.45);\r\n      }\r\n    `,\r\n    _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles,\r\n  ];\r\n\r\n  constructor() {\r\n    super();\r\n    this.toggleTheme = this.toggleTheme.bind(this);\r\n    this.src = \"./public/dark theme icon/sun.png\";\r\n    this.urlRoutes = {\r\n      404: {\r\n        page: \"/src/pages/404.html\",\r\n        title: \"404\",\r\n        description: \"\",\r\n      },\r\n      \"/\": {\r\n        page: \"/src/pages/index.html\",\r\n        title: \"/\",\r\n        description: \"\",\r\n      },\r\n      \"/projects\": {\r\n        page: \"/src/pages/projects.html\",\r\n        title: \"/\",\r\n        description: \"\",\r\n      },\r\n      \"/skills\": {\r\n        page: \"/src/pages/skills.html\",\r\n        title: \"/\",\r\n        description: \"\",\r\n      },\r\n      \"/socials\": {\r\n        page: \"/src/pages/socials.html\",\r\n        title: \"/\",\r\n        description: \"\",\r\n      },\r\n    };\r\n  }\r\n\r\n  firstUpdated() {\r\n    this.urlLocationHandler();\r\n    window.onpopstate = this.urlLocationHandler.bind(this);\r\n  }\r\n\r\n  handleNavigationClick(e) {\r\n    const { target } = e;\r\n    e.preventDefault();\r\n    this.urlRoute(target.closest(\"a\").href);\r\n  }\r\n\r\n  async urlLocationHandler() {\r\n    let location = window.location.pathname;\r\n    if (location.length === 0 || location === \"/index.html\") {\r\n      location = \"/\";\r\n    }\r\n    const ROUTE = this.urlRoutes[location] || this.urlRoutes[404];\r\n    const html = await fetch(ROUTE.page).then((response) => {\r\n      return response.text();\r\n    });\r\n    document.getElementById(\"root\").innerHTML = html;\r\n    window.scrollTo({ top: 0, behavior: \"smooth\" });\r\n  }\r\n\r\n  urlRoute(href) {\r\n    window.history.pushState({}, \"\", href);\r\n    this.urlLocationHandler();\r\n  }\r\n\r\n  toggleTheme() {\r\n    const HTML = document.getElementsByTagName(\"html\")[0];\r\n    const MODE = this.shadowRoot.getElementById(\"mode\");\r\n    if (HTML.dataset.theme === \"dracula\") {\r\n      HTML.dataset.theme = \"cupcake\";\r\n      HTML.className = \"light\";\r\n      MODE.innerHTML = \"Dark\";\r\n      this.shadowRoot.getElementById(\"icon\").src =\r\n        \"./public/dark theme icon/moon.png\";\r\n    } else {\r\n      HTML.dataset.theme = \"dracula\";\r\n      HTML.className = \"dark\";\r\n      MODE.innerHTML = \"Light\";\r\n      this.shadowRoot.getElementById(\"icon\").src =\r\n        \"./public/dark theme icon/sun.png\";\r\n    }\r\n  }\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)` <nav\r\n      class=\"flex flex-col h-full fixed justify-center light-gloss group \"\r\n    >\r\n      <a\r\n        @click=${this.handleNavigationClick}\r\n        class=\"px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35\"\r\n        href=\"/\"\r\n      >\r\n        <svg\r\n          class=\"h-8 w-8 \"\r\n          fill=\"none\"\r\n          viewBox=\"0 0 24 24\"\r\n          stroke=\"currentColor\"\r\n        >\r\n          <path\r\n            stroke-linecap=\"round\"\r\n            stroke-linejoin=\"round\"\r\n            stroke-width=\"2\"\r\n            d=\"M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6\"\r\n          />\r\n        </svg>\r\n        <p\r\n          class=\"ml-4 text-xl font-medium size invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out\"\r\n        >\r\n          Home\r\n        </p>\r\n      </a>\r\n      <a\r\n        class=\"px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35 \"\r\n        @click=${this.handleNavigationClick}\r\n        href=\"/projects\"\r\n        ><svg\r\n          class=\"h-8 w-8 \"\r\n          fill=\"none\"\r\n          viewBox=\"0 0 24 24\"\r\n          stroke=\"currentColor\"\r\n        >\r\n          <path\r\n            stroke-linecap=\"round\"\r\n            stroke-linejoin=\"round\"\r\n            stroke-width=\"2\"\r\n            d=\"M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z\"\r\n          />\r\n        </svg>\r\n\r\n        <p\r\n          class=\" ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out\"\r\n        >\r\n          Projects\r\n        </p>\r\n      </a>\r\n      <a\r\n        class=\"px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35\"\r\n        @click=${this.handleNavigationClick}\r\n        href=\"/skills\"\r\n      >\r\n        <svg\r\n          class=\"h-8 w-8 \"\r\n          width=\"24\"\r\n          height=\"24\"\r\n          viewBox=\"0 0 24 24\"\r\n          stroke-width=\"2\"\r\n          stroke=\"currentColor\"\r\n          fill=\"none\"\r\n          stroke-linecap=\"round\"\r\n          stroke-linejoin=\"round\"\r\n        >\r\n          <path stroke=\"none\" d=\"M0 0h24v24H0z\" />\r\n          <polyline points=\"12 4 4 8 12 12 20 8 12 4\" />\r\n          <polyline points=\"4 12 12 16 20 12\" />\r\n          <polyline points=\"4 16 12 20 20 16\" />\r\n        </svg>\r\n        <p\r\n          class=\"ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative  transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out\"\r\n        >\r\n          Tech Stack\r\n        </p></a\r\n      >\r\n      <div class=\"px-5 py-2 flex\" @click=${this.toggleTheme}>\r\n        <img src=${this.src} alt=\"icon\" id=\"icon\" />\r\n        <p\r\n          id=\"mode\"\r\n          class=\"ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out\"\r\n        >\r\n          Light\r\n        </p>\r\n      </div>\r\n    </nav>`;\r\n  }\r\n}\r\ncustomElements.define(\"side-nav\", SideNavigation);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/side-nav.js?");
+/*
+Remove the default font size and weight for headings.
+*/
 
-/***/ }),
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
 
-/***/ "./src/shared/skill-sections/backend.js":
-/*!**********************************************!*\
-  !*** ./src/shared/skill-sections/backend.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   BackendSection: () => (/* binding */ BackendSection)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/tw */ \"./src/css/tw.js\");\n\r\n\r\n\r\nclass BackendSection extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n  }\r\n\r\n  firstUpdated() {}\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`\r\n      <div class=\"w-full\">\r\n        <header class=\"divider divider-primary\">Backend</header>\r\n        <section class=\"flex flex-col items-center\">\r\n          <div class=\"tooltip tooltip-close\" data-tip=\"Node JS\">\r\n            <img\r\n              src=\"../../../public/icons/nodejs/nodejs-original.svg\"\r\n              class=\"w-10 h-10\"\r\n            />\r\n          </div>\r\n          <div class=\"w-10/12\">\r\n            <header class=\"divider divider-secondary\">Framework</header>\r\n            <section class=\"flex gap-10 justify-center\">\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"Express\">\r\n                <img\r\n                  src=\"../../../public/icons/express/express-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n            </section>\r\n            <div class=\"divider divider-secondary\">Library</div>\r\n            <section class=\"flex gap-10 justify-center\">\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"Mongoose\">\r\n                <img\r\n                  src=\"../../../public/icons/mongoose/mongoose-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n            </section>\r\n          </div>\r\n        </section>\r\n      </div>\r\n    `;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"back-section\", BackendSection);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/skill-sections/backend.js?");
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
 
-/***/ }),
+/*
+Add the correct font weight in Edge and Safari.
+*/
 
-/***/ "./src/shared/skill-sections/database.js":
-/*!***********************************************!*\
-  !*** ./src/shared/skill-sections/database.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+b,
+strong {
+  font-weight: bolder;
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   DatabaseSection: () => (/* binding */ DatabaseSection)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/tw */ \"./src/css/tw.js\");\n\r\n\r\n\r\nclass DatabaseSection extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n  }\r\n\r\n  firstUpdated() {}\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`\r\n      <div>\r\n        <header class=\"divider divider-primary\">Database</header>\r\n        <section class=\"flex gap-10 justify-center\">\r\n          <div class=\"w-10/12\">\r\n            <header class=\"divider divider-secondary\">Non-Relational</header>\r\n            <section class=\"flex gap-10 justify-center\">\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"Mongoose\">\r\n                <img\r\n                  src=\"../../../public/icons/mongodb/mongodb-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n            </section>\r\n            <div class=\"divider divider-secondary\">Relational</div>\r\n            <section class=\"flex gap-10 justify-center\">\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"MySql\">\r\n                <img\r\n                  src=\"../../../public/icons/mysql/mysql-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"Azure SQL\">\r\n                <img\r\n                  src=\"../../../public/icons/azuresqldatabase/azuresqldatabase-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"MSSql\">\r\n                <img\r\n                  src=\"../../../public/icons/microsoftsqlserver/microsoftsqlserver-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n            </section>\r\n          </div>\r\n        </section>\r\n      </div>\r\n    `;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"data-section\", DatabaseSection);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/skill-sections/database.js?");
+/*
+1. Use the user's configured mono font-family by default.
+2. Use the user's configured mono font-feature-settings by default.
+3. Use the user's configured mono font-variation-settings by default.
+4. Correct the odd em font sizing in all browsers.
+*/
 
-/***/ }),
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
 
-/***/ "./src/shared/skill-sections/frontend.js":
-/*!***********************************************!*\
-  !*** ./src/shared/skill-sections/frontend.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/*
+Add the correct font size in all browsers.
+*/
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FrontendSection: () => (/* binding */ FrontendSection)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/tw */ \"./src/css/tw.js\");\n\r\n\r\n\r\nclass FrontendSection extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n  }\r\n\r\n  firstUpdated() {}\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`\r\n      <div class=\"w-full\">\r\n        <header class=\"divider divider-primary\">Frontend</header>\r\n        <section class=\"flex gap-10 justify-center\">\r\n          <div class=\"w-10/12\">\r\n            <header class=\"divider divider-secondary\">Framework</header>\r\n            <section class=\"flex gap-10 justify-center\">\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"React\">\r\n                <img\r\n                  src=\"../../../public/icons/react/react-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"Vue\">\r\n                <img\r\n                  src=\"../../../public/icons/vuejs/vuejs-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"Angular\">\r\n                <img\r\n                  src=\"../../../public/icons/angular/angular-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n            </section>\r\n            <div class=\"divider divider-secondary\">Library</div>\r\n            <section class=\"flex gap-10 justify-center\">\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"Jquery\">\r\n                <img\r\n                  src=\"../../../public/icons/jquery/jquery-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"Redux\">\r\n                <img\r\n                  src=\"../../../public/icons/redux/redux-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n              <div class=\"tooltip tooltip-close\" data-tip=\"React Router\">\r\n                <img\r\n                  src=\"../../../public/icons/reactrouter/reactrouter-original.svg\"\r\n                  class=\"w-10 h-10\"\r\n                />\r\n              </div>\r\n            </section>\r\n          </div>\r\n        </section>\r\n      </div>\r\n    `;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"font-section\", FrontendSection);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/skill-sections/frontend.js?");
+small {
+  font-size: 80%;
+}
 
-/***/ }),
+/*
+Prevent sub and sup elements from affecting the line height in all browsers.
+*/
 
-/***/ "./src/shared/skill-sections/languages.js":
-/*!************************************************!*\
-  !*** ./src/shared/skill-sections/languages.js ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   LanguagesSection: () => (/* binding */ LanguagesSection)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/tw */ \"./src/css/tw.js\");\n\r\n\r\n\r\nclass LanguagesSection extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n  }\r\n\r\n  firstUpdated() {}\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`\r\n      <div class=\"w-full\">\r\n        <header class=\"divider divider-primary\">Languages</header>\r\n        <section class=\"flex gap-10 justify-center \">\r\n          <div class=\"tooltip tooltip-close\" data-tip=\"C Sharp\">\r\n            <img\r\n              src=\"../../../public/icons/csharp/csharp-original.svg\"\r\n              class=\"w-10 h-10\"\r\n            />\r\n          </div>\r\n          <div class=\"tooltip tooltip-close\" data-tip=\"Javascript\">\r\n            <img\r\n              src=\"../../../public/icons/javascript/javascript-original.svg\"\r\n              class=\"w-10 h-10\"\r\n            />\r\n          </div>\r\n          <div class=\"tooltip tooltip-close\" data-tip=\"Html5\">\r\n            <img\r\n              src=\"../../../public/icons/html5/html5-original.svg\"\r\n              class=\"w-10 h-10\"\r\n            />\r\n          </div>\r\n          <div class=\"tooltip tooltip-close\" data-tip=\"css3\">\r\n            <img\r\n              src=\"../../../public/icons/css3/css3-original.svg\"\r\n              class=\"w-10 h-10\"\r\n            />\r\n          </div>\r\n        </section>\r\n      </div>\r\n    `;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"lang-section\", LanguagesSection);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/skill-sections/languages.js?");
+sub {
+  bottom: -0.25em;
+}
 
-/***/ }),
+sup {
+  top: -0.5em;
+}
 
-/***/ "./src/shared/skill-sections/other.js":
-/*!********************************************!*\
-  !*** ./src/shared/skill-sections/other.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   OtherSection: () => (/* binding */ OtherSection)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/tw */ \"./src/css/tw.js\");\n\r\n\r\n\r\nclass OtherSection extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n  }\r\n\r\n  firstUpdated() {}\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`\r\n      <div>\r\n        <header class=\"divider divider-primary\">Other</header>\r\n        <section class=\"flex gap-10 justify-center\">\r\n          <div class=\"tooltip tooltip-close\" data-tip=\"Github\">\r\n            <img\r\n              src=\"../../../public/icons/github/github-original.svg\"\r\n              class=\"fill-current w-10 h-10\"\r\n            />\r\n          </div>\r\n          <div class=\"tooltip tooltip-close\" data-tip=\"Window\">\r\n            <img\r\n              src=\"../../../public/icons/windows11/windows11-original.svg\"\r\n              class=\"fill-current w-10 h-10\"\r\n            />\r\n          </div>\r\n          <div class=\"tooltip tooltip-close\" data-tip=\"Azure Dev Ops\">\r\n            <img\r\n              src=\"../../../public/icons/azuredevops/azuredevops-original.svg\"\r\n              class=\"fill-current w-10 h-10\"\r\n            />\r\n          </div>\r\n          <div class=\"tooltip tooltip-close\" data-tip=\"Ubuntu\">\r\n            <img\r\n              src=\"../../../public/icons/ubuntu/ubuntu-original.svg\"\r\n              class=\"fill-current w-10 h-10\"\r\n            />\r\n          </div>\r\n        </section>\r\n      </div>\r\n    `;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"other-section\", OtherSection);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/skill-sections/other.js?");
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
 
-/***/ }),
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
 
-/***/ "./src/shared/socials.js":
-/*!*******************************!*\
-  !*** ./src/shared/socials.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Socials: () => (/* binding */ Socials)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/tw */ \"./src/css/tw.js\");\n/* harmony import */ var _time_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./time-item */ \"./src/shared/time-item.js\");\n\r\n\r\n\r\n\r\nclass Socials extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static properties = {\r\n    svgWidth: { type: String },\r\n    svgHeight: { type: String },\r\n  };\r\n\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n  }\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`<div class=\"flex\">\r\n      <a\r\n        class=\"text-sm hover:text-orange-500\"\r\n        target=\"_blank\"\r\n        rel=\"noopener noreferrer\"\r\n        href=\"https://github.com/Nathan-Dinh\"\r\n        ><span class=\"sr-only\">github</span\r\n        ><svg\r\n          viewBox=\"0 0 24 24\"\r\n          xmlns=\"http://www.w3.org/2000/svg\"\r\n          class=\"fill-current h-${this.svgHeight} w-${this.svgWidth}\"\r\n        >\r\n          <path\r\n            d=\"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12\"\r\n          ></path></svg\r\n      ></a>\r\n      <a\r\n        class=\"mx-3 text-sm hover:text-orange-500\"\r\n        target=\"_blank\"\r\n        rel=\"noopener noreferrer\"\r\n        href=\"https://www.linkedin.com/in/nathandinh67/\"\r\n        ><span class=\"sr-only\">linkedin</span\r\n        ><svg\r\n          viewBox=\"0 0 24 24\"\r\n          xmlns=\"http://www.w3.org/2000/svg\"\r\n          class=\"fill-current h-${this.svgHeight} w-${this.svgWidth}\"\r\n        >\r\n          <path\r\n            d=\"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z\"\r\n          ></path></svg\r\n      ></a>\r\n    </div> `;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"social-icons\", Socials);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/socials.js?");
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
 
-/***/ }),
+button,
+select {
+  text-transform: none;
+}
 
-/***/ "./src/shared/time-item.js":
-/*!*********************************!*\
-  !*** ./src/shared/time-item.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   TimeItem: () => (/* binding */ TimeItem)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/tw */ \"./src/css/tw.js\");\n\r\n\r\n\r\nclass TimeItem extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static properties = {\r\n    date: { type: String },\r\n    header: { type: String },\r\n    content: { type: String },\r\n    link: { type: String },\r\n  };\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n  }\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`<li class=\"mb-10 ms-4\">\r\n      <div\r\n        class=\"absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700\"\r\n      ></div>\r\n      <time\r\n        class=\"mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500\"\r\n        >${this.date}</time\r\n      >\r\n      <h3 class=\"text-lg font-semibold\">${this.header}</h3>\r\n      <p class=\"mb-4 text-base font-normal \">\r\n        ${this.content}\r\n      </p>\r\n      <a\r\n        href=${this.link}\r\n        target=\"_blank\"\r\n        rel=\"noopener noreferrer\"\r\n        class=\"inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700\"\r\n        >Source Code\r\n        <svg\r\n          class=\"w-3 h-3 ms-2 rtl:rotate-180\"\r\n          aria-hidden=\"true\"\r\n          xmlns=\"http://www.w3.org/2000/svg\"\r\n          fill=\"none\"\r\n          viewBox=\"0 0 14 10\"\r\n        >\r\n          <path\r\n            stroke=\"currentColor\"\r\n            stroke-linecap=\"round\"\r\n            stroke-linejoin=\"round\"\r\n            stroke-width=\"2\"\r\n            d=\"M1 5h12m0 0L9 1m4 4L9 9\"\r\n          /></svg\r\n      ></a>\r\n    </li>`;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"time-item\", TimeItem);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/time-item.js?");
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
 
-/***/ }),
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
 
-/***/ "./src/shared/time-line.js":
-/*!*********************************!*\
-  !*** ./src/shared/time-line.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+:-moz-focusring {
+  outline: auto;
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   TimeLine: () => (/* binding */ TimeLine)\n/* harmony export */ });\n/* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ \"./node_modules/lit/index.js\");\n/* harmony import */ var _css_tw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/tw */ \"./src/css/tw.js\");\n/* harmony import */ var _time_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./time-item */ \"./src/shared/time-item.js\");\n\r\n\r\n\r\n\r\nclass TimeLine extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {\r\n  static styles = [(0,lit__WEBPACK_IMPORTED_MODULE_0__.css)``, _css_tw__WEBPACK_IMPORTED_MODULE_1__.TWStyles];\r\n\r\n  constructor() {\r\n    super();\r\n    this.timeItem = [\r\n      {\r\n        date: \"December 2022\",\r\n        header: \"Chainsaw Man Web Page\",\r\n        content:\r\n          \"A web page that I created for practicing and introducing HTML, CSS, JAVASCRIPT\",\r\n        link: \"https://github.com/Nathan-Dinh/chainsaw-man\",\r\n        img: \"\",\r\n      },\r\n      {\r\n        date: \"October 2023\",\r\n        header: \"Patient Tracker\",\r\n        content:\r\n          \"This form serves as a rapid and dependable tool for capturing and managing patient information efficiently. It enables users to swiftly record essential details such as patient names, birth dates, medical issues, blood pressure, and more. Notably, this form boasts scalability, leveraging full CRUD functionality to ensure comprehensive data management and accessibility.\",\r\n        link: \"https://github.com/Nathan-Dinh/patient-tracker\",\r\n        img: \"\",\r\n      },\r\n      {\r\n        date: \" January 2023\",\r\n        header: \"Tic Tac Toe\",\r\n        content: \"A simple Tic Tac Toe game that I created using React Vite\",\r\n        link: \"https://github.com/Nathan-Dinh/tic-tac-toe\",\r\n        img: \"\",\r\n      },\r\n      {\r\n        date: \"November 2023 - December 2023\",\r\n        header: \"Galactic Defender\",\r\n        content:\r\n          \"This is a small game I created using monogame. It is a take on the classical 2004 game Battlestar Galactica\",\r\n        link: \"https://github.com/Nathan-Dinh/galactic-defender\",\r\n        img: \"\",\r\n      },\r\n      {\r\n        date: \"January 2024\",\r\n        header: \"Arknight's Operator Web Scrapper\",\r\n        content:\r\n          \"This is just a basic learning project to familiarize myself with Python and web scraping.\",\r\n        link: \"https://github.com/Nathan-Dinh/arknights-web-scrapper\",\r\n        img: \"\",\r\n      },\r\n      {\r\n        date: \"January 2024\",\r\n        header: \"Op Finder\",\r\n        content:\r\n          \"This web application represents a small-scale project designed as an introductory showcase of Vue.js framework capabilities. Utilizing an API developed specifically for this purpose, the application revolves around a well-known mobile game, Arknights. Users can efficiently explore and retrieve basic information about various game operators up to a specified threshold through the search functionality provided.\",\r\n        link: \"https://github.com/Nathan-Dinh/op-finder\",\r\n        img: \"\",\r\n      }\r\n    ];\r\n  }\r\n\r\n  render() {\r\n    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`\r\n      <ol class=\"relative border-s border-gray-200 dark:border-gray-700\">\r\n        ${this.timeItem.map((timeItem) => {\r\n          return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`<time-item\r\n            date=${timeItem.date}\r\n            content=${timeItem.content}\r\n            header=${timeItem.header}\r\n            link=${timeItem.link}\r\n          ></time-item>`;\r\n        })}\r\n      </ol>\r\n    `;\r\n  }\r\n}\r\n\r\ncustomElements.define(\"time-line\", TimeLine);\r\n\n\n//# sourceURL=webpack://my-website/./src/shared/time-line.js?");
+/*
+Remove the additional :invalid styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
 
-/***/ }),
+:-moz-ui-invalid {
+  box-shadow: none;
+}
 
-/***/ "./node_modules/@lit/reactive-element/development/css-tag.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@lit/reactive-element/development/css-tag.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   CSSResult: () => (/* binding */ CSSResult),\n/* harmony export */   adoptStyles: () => (/* binding */ adoptStyles),\n/* harmony export */   css: () => (/* binding */ css),\n/* harmony export */   getCompatibleStyle: () => (/* binding */ getCompatibleStyle),\n/* harmony export */   supportsAdoptingStyleSheets: () => (/* binding */ supportsAdoptingStyleSheets),\n/* harmony export */   unsafeCSS: () => (/* binding */ unsafeCSS)\n/* harmony export */ });\n/**\n * @license\n * Copyright 2019 Google LLC\n * SPDX-License-Identifier: BSD-3-Clause\n */\nconst NODE_MODE = false;\n// Allows minifiers to rename references to globalThis\nconst global = globalThis;\n/**\n * Whether the current browser supports `adoptedStyleSheets`.\n */\nconst supportsAdoptingStyleSheets = global.ShadowRoot &&\n    (global.ShadyCSS === undefined || global.ShadyCSS.nativeShadow) &&\n    'adoptedStyleSheets' in Document.prototype &&\n    'replace' in CSSStyleSheet.prototype;\nconst constructionToken = Symbol();\nconst cssTagCache = new WeakMap();\n/**\n * A container for a string of CSS text, that may be used to create a CSSStyleSheet.\n *\n * CSSResult is the return value of `css`-tagged template literals and\n * `unsafeCSS()`. In order to ensure that CSSResults are only created via the\n * `css` tag and `unsafeCSS()`, CSSResult cannot be constructed directly.\n */\nclass CSSResult {\n    constructor(cssText, strings, safeToken) {\n        // This property needs to remain unminified.\n        this['_$cssResult$'] = true;\n        if (safeToken !== constructionToken) {\n            throw new Error('CSSResult is not constructable. Use `unsafeCSS` or `css` instead.');\n        }\n        this.cssText = cssText;\n        this._strings = strings;\n    }\n    // This is a getter so that it's lazy. In practice, this means stylesheets\n    // are not created until the first element instance is made.\n    get styleSheet() {\n        // If `supportsAdoptingStyleSheets` is true then we assume CSSStyleSheet is\n        // constructable.\n        let styleSheet = this._styleSheet;\n        const strings = this._strings;\n        if (supportsAdoptingStyleSheets && styleSheet === undefined) {\n            const cacheable = strings !== undefined && strings.length === 1;\n            if (cacheable) {\n                styleSheet = cssTagCache.get(strings);\n            }\n            if (styleSheet === undefined) {\n                (this._styleSheet = styleSheet = new CSSStyleSheet()).replaceSync(this.cssText);\n                if (cacheable) {\n                    cssTagCache.set(strings, styleSheet);\n                }\n            }\n        }\n        return styleSheet;\n    }\n    toString() {\n        return this.cssText;\n    }\n}\nconst textFromCSSResult = (value) => {\n    // This property needs to remain unminified.\n    if (value['_$cssResult$'] === true) {\n        return value.cssText;\n    }\n    else if (typeof value === 'number') {\n        return value;\n    }\n    else {\n        throw new Error(`Value passed to 'css' function must be a 'css' function result: ` +\n            `${value}. Use 'unsafeCSS' to pass non-literal values, but take care ` +\n            `to ensure page security.`);\n    }\n};\n/**\n * Wrap a value for interpolation in a {@linkcode css} tagged template literal.\n *\n * This is unsafe because untrusted CSS text can be used to phone home\n * or exfiltrate data to an attacker controlled site. Take care to only use\n * this with trusted input.\n */\nconst unsafeCSS = (value) => new CSSResult(typeof value === 'string' ? value : String(value), undefined, constructionToken);\n/**\n * A template literal tag which can be used with LitElement's\n * {@linkcode LitElement.styles} property to set element styles.\n *\n * For security reasons, only literal string values and number may be used in\n * embedded expressions. To incorporate non-literal values {@linkcode unsafeCSS}\n * may be used inside an expression.\n */\nconst css = (strings, ...values) => {\n    const cssText = strings.length === 1\n        ? strings[0]\n        : values.reduce((acc, v, idx) => acc + textFromCSSResult(v) + strings[idx + 1], strings[0]);\n    return new CSSResult(cssText, strings, constructionToken);\n};\n/**\n * Applies the given styles to a `shadowRoot`. When Shadow DOM is\n * available but `adoptedStyleSheets` is not, styles are appended to the\n * `shadowRoot` to [mimic spec behavior](https://wicg.github.io/construct-stylesheets/#using-constructed-stylesheets).\n * Note, when shimming is used, any styles that are subsequently placed into\n * the shadowRoot should be placed *before* any shimmed adopted styles. This\n * will match spec behavior that gives adopted sheets precedence over styles in\n * shadowRoot.\n */\nconst adoptStyles = (renderRoot, styles) => {\n    if (supportsAdoptingStyleSheets) {\n        renderRoot.adoptedStyleSheets = styles.map((s) => s instanceof CSSStyleSheet ? s : s.styleSheet);\n    }\n    else {\n        for (const s of styles) {\n            const style = document.createElement('style');\n            // eslint-disable-next-line @typescript-eslint/no-explicit-any\n            const nonce = global['litNonce'];\n            if (nonce !== undefined) {\n                style.setAttribute('nonce', nonce);\n            }\n            style.textContent = s.cssText;\n            renderRoot.appendChild(style);\n        }\n    }\n};\nconst cssResultFromStyleSheet = (sheet) => {\n    let cssText = '';\n    for (const rule of sheet.cssRules) {\n        cssText += rule.cssText;\n    }\n    return unsafeCSS(cssText);\n};\nconst getCompatibleStyle = supportsAdoptingStyleSheets ||\n    (NODE_MODE && global.CSSStyleSheet === undefined)\n    ? (s) => s\n    : (s) => s instanceof CSSStyleSheet ? cssResultFromStyleSheet(s) : s;\n//# sourceMappingURL=css-tag.js.map\n\n//# sourceURL=webpack://my-website/./node_modules/@lit/reactive-element/development/css-tag.js?");
+progress {
+  vertical-align: baseline;
+}
 
-/***/ }),
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
 
-/***/ "./node_modules/@lit/reactive-element/development/reactive-element.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/@lit/reactive-element/development/reactive-element.js ***!
-  \****************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   CSSResult: () => (/* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.CSSResult),\n/* harmony export */   ReactiveElement: () => (/* binding */ ReactiveElement),\n/* harmony export */   adoptStyles: () => (/* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.adoptStyles),\n/* harmony export */   css: () => (/* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.css),\n/* harmony export */   defaultConverter: () => (/* binding */ defaultConverter),\n/* harmony export */   getCompatibleStyle: () => (/* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.getCompatibleStyle),\n/* harmony export */   notEqual: () => (/* binding */ notEqual),\n/* harmony export */   supportsAdoptingStyleSheets: () => (/* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.supportsAdoptingStyleSheets),\n/* harmony export */   unsafeCSS: () => (/* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.unsafeCSS)\n/* harmony export */ });\n/* harmony import */ var _css_tag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css-tag.js */ \"./node_modules/@lit/reactive-element/development/css-tag.js\");\n/**\n * @license\n * Copyright 2017 Google LLC\n * SPDX-License-Identifier: BSD-3-Clause\n */\n/**\n * Use this module if you want to create your own base class extending\n * {@link ReactiveElement}.\n * @packageDocumentation\n */\n\n// In the Node build, this import will be injected by Rollup:\n// import {HTMLElement, customElements} from '@lit-labs/ssr-dom-shim';\n\n// TODO (justinfagnani): Add `hasOwn` here when we ship ES2022\nconst { is, defineProperty, getOwnPropertyDescriptor, getOwnPropertyNames, getOwnPropertySymbols, getPrototypeOf, } = Object;\nconst NODE_MODE = false;\n// Lets a minifier replace globalThis references with a minified name\nconst global = globalThis;\nif (NODE_MODE) {\n    global.customElements ??= customElements;\n}\nconst DEV_MODE = true;\nlet issueWarning;\nconst trustedTypes = global\n    .trustedTypes;\n// Temporary workaround for https://crbug.com/993268\n// Currently, any attribute starting with \"on\" is considered to be a\n// TrustedScript source. Such boolean attributes must be set to the equivalent\n// trusted emptyScript value.\nconst emptyStringForBooleanAttribute = trustedTypes\n    ? trustedTypes.emptyScript\n    : '';\nconst polyfillSupport = DEV_MODE\n    ? global.reactiveElementPolyfillSupportDevMode\n    : global.reactiveElementPolyfillSupport;\nif (DEV_MODE) {\n    // Ensure warnings are issued only 1x, even if multiple versions of Lit\n    // are loaded.\n    const issuedWarnings = (global.litIssuedWarnings ??=\n        new Set());\n    // Issue a warning, if we haven't already.\n    issueWarning = (code, warning) => {\n        warning += ` See https://lit.dev/msg/${code} for more information.`;\n        if (!issuedWarnings.has(warning)) {\n            console.warn(warning);\n            issuedWarnings.add(warning);\n        }\n    };\n    issueWarning('dev-mode', `Lit is in dev mode. Not recommended for production!`);\n    // Issue polyfill support warning.\n    if (global.ShadyDOM?.inUse && polyfillSupport === undefined) {\n        issueWarning('polyfill-support-missing', `Shadow DOM is being polyfilled via \\`ShadyDOM\\` but ` +\n            `the \\`polyfill-support\\` module has not been loaded.`);\n    }\n}\n/**\n * Useful for visualizing and logging insights into what the Lit template system is doing.\n *\n * Compiled out of prod mode builds.\n */\nconst debugLogEvent = DEV_MODE\n    ? (event) => {\n        const shouldEmit = global\n            .emitLitDebugLogEvents;\n        if (!shouldEmit) {\n            return;\n        }\n        global.dispatchEvent(new CustomEvent('lit-debug', {\n            detail: event,\n        }));\n    }\n    : undefined;\n/*\n * When using Closure Compiler, JSCompiler_renameProperty(property, object) is\n * replaced at compile time by the munged name for object[property]. We cannot\n * alias this function, so we have to use a small shim that has the same\n * behavior when not compiling.\n */\n/*@__INLINE__*/\nconst JSCompiler_renameProperty = (prop, _obj) => prop;\nconst defaultConverter = {\n    toAttribute(value, type) {\n        switch (type) {\n            case Boolean:\n                value = value ? emptyStringForBooleanAttribute : null;\n                break;\n            case Object:\n            case Array:\n                // if the value is `null` or `undefined` pass this through\n                // to allow removing/no change behavior.\n                value = value == null ? value : JSON.stringify(value);\n                break;\n        }\n        return value;\n    },\n    fromAttribute(value, type) {\n        let fromValue = value;\n        switch (type) {\n            case Boolean:\n                fromValue = value !== null;\n                break;\n            case Number:\n                fromValue = value === null ? null : Number(value);\n                break;\n            case Object:\n            case Array:\n                // Do *not* generate exception when invalid JSON is set as elements\n                // don't normally complain on being mis-configured.\n                // TODO(sorvell): Do generate exception in *dev mode*.\n                try {\n                    // Assert to adhere to Bazel's \"must type assert JSON parse\" rule.\n                    fromValue = JSON.parse(value);\n                }\n                catch (e) {\n                    fromValue = null;\n                }\n                break;\n        }\n        return fromValue;\n    },\n};\n/**\n * Change function that returns true if `value` is different from `oldValue`.\n * This method is used as the default for a property's `hasChanged` function.\n */\nconst notEqual = (value, old) => !is(value, old);\nconst defaultPropertyDeclaration = {\n    attribute: true,\n    type: String,\n    converter: defaultConverter,\n    reflect: false,\n    hasChanged: notEqual,\n};\n// Ensure metadata is enabled. TypeScript does not polyfill\n// Symbol.metadata, so we must ensure that it exists.\nSymbol.metadata ??= Symbol('metadata');\n// Map from a class's metadata object to property options\n// Note that we must use nullish-coalescing assignment so that we only use one\n// map even if we load multiple version of this module.\nglobal.litPropertyMetadata ??= new WeakMap();\n/**\n * Base element class which manages element properties and attributes. When\n * properties change, the `update` method is asynchronously called. This method\n * should be supplied by subclasses to render updates as desired.\n * @noInheritDoc\n */\nclass ReactiveElement\n// In the Node build, this `extends` clause will be substituted with\n// `(globalThis.HTMLElement ?? HTMLElement)`.\n//\n// This way, we will first prefer any global `HTMLElement` polyfill that the\n// user has assigned, and then fall back to the `HTMLElement` shim which has\n// been imported (see note at the top of this file about how this import is\n// generated by Rollup). Note that the `HTMLElement` variable has been\n// shadowed by this import, so it no longer refers to the global.\n extends HTMLElement {\n    /**\n     * Adds an initializer function to the class that is called during instance\n     * construction.\n     *\n     * This is useful for code that runs against a `ReactiveElement`\n     * subclass, such as a decorator, that needs to do work for each\n     * instance, such as setting up a `ReactiveController`.\n     *\n     * ```ts\n     * const myDecorator = (target: typeof ReactiveElement, key: string) => {\n     *   target.addInitializer((instance: ReactiveElement) => {\n     *     // This is run during construction of the element\n     *     new MyController(instance);\n     *   });\n     * }\n     * ```\n     *\n     * Decorating a field will then cause each instance to run an initializer\n     * that adds a controller:\n     *\n     * ```ts\n     * class MyElement extends LitElement {\n     *   @myDecorator foo;\n     * }\n     * ```\n     *\n     * Initializers are stored per-constructor. Adding an initializer to a\n     * subclass does not add it to a superclass. Since initializers are run in\n     * constructors, initializers will run in order of the class hierarchy,\n     * starting with superclasses and progressing to the instance's class.\n     *\n     * @nocollapse\n     */\n    static addInitializer(initializer) {\n        this.__prepare();\n        (this._initializers ??= []).push(initializer);\n    }\n    /**\n     * Returns a list of attributes corresponding to the registered properties.\n     * @nocollapse\n     * @category attributes\n     */\n    static get observedAttributes() {\n        // Ensure we've created all properties\n        this.finalize();\n        // this.__attributeToPropertyMap is only undefined after finalize() in\n        // ReactiveElement itself. ReactiveElement.observedAttributes is only\n        // accessed with ReactiveElement as the receiver when a subclass or mixin\n        // calls super.observedAttributes\n        return (this.__attributeToPropertyMap && [...this.__attributeToPropertyMap.keys()]);\n    }\n    /**\n     * Creates a property accessor on the element prototype if one does not exist\n     * and stores a {@linkcode PropertyDeclaration} for the property with the\n     * given options. The property setter calls the property's `hasChanged`\n     * property option or uses a strict identity check to determine whether or not\n     * to request an update.\n     *\n     * This method may be overridden to customize properties; however,\n     * when doing so, it's important to call `super.createProperty` to ensure\n     * the property is setup correctly. This method calls\n     * `getPropertyDescriptor` internally to get a descriptor to install.\n     * To customize what properties do when they are get or set, override\n     * `getPropertyDescriptor`. To customize the options for a property,\n     * implement `createProperty` like this:\n     *\n     * ```ts\n     * static createProperty(name, options) {\n     *   options = Object.assign(options, {myOption: true});\n     *   super.createProperty(name, options);\n     * }\n     * ```\n     *\n     * @nocollapse\n     * @category properties\n     */\n    static createProperty(name, options = defaultPropertyDeclaration) {\n        // If this is a state property, force the attribute to false.\n        if (options.state) {\n            options.attribute = false;\n        }\n        this.__prepare();\n        this.elementProperties.set(name, options);\n        if (!options.noAccessor) {\n            const key = DEV_MODE\n                ? // Use Symbol.for in dev mode to make it easier to maintain state\n                    // when doing HMR.\n                    Symbol.for(`${String(name)} (@property() cache)`)\n                : Symbol();\n            const descriptor = this.getPropertyDescriptor(name, key, options);\n            if (descriptor !== undefined) {\n                defineProperty(this.prototype, name, descriptor);\n            }\n        }\n    }\n    /**\n     * Returns a property descriptor to be defined on the given named property.\n     * If no descriptor is returned, the property will not become an accessor.\n     * For example,\n     *\n     * ```ts\n     * class MyElement extends LitElement {\n     *   static getPropertyDescriptor(name, key, options) {\n     *     const defaultDescriptor =\n     *         super.getPropertyDescriptor(name, key, options);\n     *     const setter = defaultDescriptor.set;\n     *     return {\n     *       get: defaultDescriptor.get,\n     *       set(value) {\n     *         setter.call(this, value);\n     *         // custom action.\n     *       },\n     *       configurable: true,\n     *       enumerable: true\n     *     }\n     *   }\n     * }\n     * ```\n     *\n     * @nocollapse\n     * @category properties\n     */\n    static getPropertyDescriptor(name, key, options) {\n        const { get, set } = getOwnPropertyDescriptor(this.prototype, name) ?? {\n            get() {\n                return this[key];\n            },\n            set(v) {\n                this[key] = v;\n            },\n        };\n        if (DEV_MODE && get == null) {\n            if ('value' in (getOwnPropertyDescriptor(this.prototype, name) ?? {})) {\n                throw new Error(`Field ${JSON.stringify(String(name))} on ` +\n                    `${this.name} was declared as a reactive property ` +\n                    `but it's actually declared as a value on the prototype. ` +\n                    `Usually this is due to using @property or @state on a method.`);\n            }\n            issueWarning('reactive-property-without-getter', `Field ${JSON.stringify(String(name))} on ` +\n                `${this.name} was declared as a reactive property ` +\n                `but it does not have a getter. This will be an error in a ` +\n                `future version of Lit.`);\n        }\n        return {\n            get() {\n                return get?.call(this);\n            },\n            set(value) {\n                const oldValue = get?.call(this);\n                set.call(this, value);\n                this.requestUpdate(name, oldValue, options);\n            },\n            configurable: true,\n            enumerable: true,\n        };\n    }\n    /**\n     * Returns the property options associated with the given property.\n     * These options are defined with a `PropertyDeclaration` via the `properties`\n     * object or the `@property` decorator and are registered in\n     * `createProperty(...)`.\n     *\n     * Note, this method should be considered \"final\" and not overridden. To\n     * customize the options for a given property, override\n     * {@linkcode createProperty}.\n     *\n     * @nocollapse\n     * @final\n     * @category properties\n     */\n    static getPropertyOptions(name) {\n        return this.elementProperties.get(name) ?? defaultPropertyDeclaration;\n    }\n    /**\n     * Initializes static own properties of the class used in bookkeeping\n     * for element properties, initializers, etc.\n     *\n     * Can be called multiple times by code that needs to ensure these\n     * properties exist before using them.\n     *\n     * This method ensures the superclass is finalized so that inherited\n     * property metadata can be copied down.\n     * @nocollapse\n     */\n    static __prepare() {\n        if (this.hasOwnProperty(JSCompiler_renameProperty('elementProperties', this))) {\n            // Already prepared\n            return;\n        }\n        // Finalize any superclasses\n        const superCtor = getPrototypeOf(this);\n        superCtor.finalize();\n        // Create own set of initializers for this class if any exist on the\n        // superclass and copy them down. Note, for a small perf boost, avoid\n        // creating initializers unless needed.\n        if (superCtor._initializers !== undefined) {\n            this._initializers = [...superCtor._initializers];\n        }\n        // Initialize elementProperties from the superclass\n        this.elementProperties = new Map(superCtor.elementProperties);\n    }\n    /**\n     * Finishes setting up the class so that it's ready to be registered\n     * as a custom element and instantiated.\n     *\n     * This method is called by the ReactiveElement.observedAttributes getter.\n     * If you override the observedAttributes getter, you must either call\n     * super.observedAttributes to trigger finalization, or call finalize()\n     * yourself.\n     *\n     * @nocollapse\n     */\n    static finalize() {\n        if (this.hasOwnProperty(JSCompiler_renameProperty('finalized', this))) {\n            return;\n        }\n        this.finalized = true;\n        this.__prepare();\n        // Create properties from the static properties block:\n        if (this.hasOwnProperty(JSCompiler_renameProperty('properties', this))) {\n            const props = this.properties;\n            const propKeys = [\n                ...getOwnPropertyNames(props),\n                ...getOwnPropertySymbols(props),\n            ];\n            for (const p of propKeys) {\n                this.createProperty(p, props[p]);\n            }\n        }\n        // Create properties from standard decorator metadata:\n        const metadata = this[Symbol.metadata];\n        if (metadata !== null) {\n            const properties = litPropertyMetadata.get(metadata);\n            if (properties !== undefined) {\n                for (const [p, options] of properties) {\n                    this.elementProperties.set(p, options);\n                }\n            }\n        }\n        // Create the attribute-to-property map\n        this.__attributeToPropertyMap = new Map();\n        for (const [p, options] of this.elementProperties) {\n            const attr = this.__attributeNameForProperty(p, options);\n            if (attr !== undefined) {\n                this.__attributeToPropertyMap.set(attr, p);\n            }\n        }\n        this.elementStyles = this.finalizeStyles(this.styles);\n        if (DEV_MODE) {\n            if (this.hasOwnProperty('createProperty')) {\n                issueWarning('no-override-create-property', 'Overriding ReactiveElement.createProperty() is deprecated. ' +\n                    'The override will not be called with standard decorators');\n            }\n            if (this.hasOwnProperty('getPropertyDescriptor')) {\n                issueWarning('no-override-get-property-descriptor', 'Overriding ReactiveElement.getPropertyDescriptor() is deprecated. ' +\n                    'The override will not be called with standard decorators');\n            }\n        }\n    }\n    /**\n     * Takes the styles the user supplied via the `static styles` property and\n     * returns the array of styles to apply to the element.\n     * Override this method to integrate into a style management system.\n     *\n     * Styles are deduplicated preserving the _last_ instance in the list. This\n     * is a performance optimization to avoid duplicated styles that can occur\n     * especially when composing via subclassing. The last item is kept to try\n     * to preserve the cascade order with the assumption that it's most important\n     * that last added styles override previous styles.\n     *\n     * @nocollapse\n     * @category styles\n     */\n    static finalizeStyles(styles) {\n        const elementStyles = [];\n        if (Array.isArray(styles)) {\n            // Dedupe the flattened array in reverse order to preserve the last items.\n            // Casting to Array<unknown> works around TS error that\n            // appears to come from trying to flatten a type CSSResultArray.\n            const set = new Set(styles.flat(Infinity).reverse());\n            // Then preserve original order by adding the set items in reverse order.\n            for (const s of set) {\n                elementStyles.unshift((0,_css_tag_js__WEBPACK_IMPORTED_MODULE_0__.getCompatibleStyle)(s));\n            }\n        }\n        else if (styles !== undefined) {\n            elementStyles.push((0,_css_tag_js__WEBPACK_IMPORTED_MODULE_0__.getCompatibleStyle)(styles));\n        }\n        return elementStyles;\n    }\n    /**\n     * Returns the property name for the given attribute `name`.\n     * @nocollapse\n     */\n    static __attributeNameForProperty(name, options) {\n        const attribute = options.attribute;\n        return attribute === false\n            ? undefined\n            : typeof attribute === 'string'\n                ? attribute\n                : typeof name === 'string'\n                    ? name.toLowerCase()\n                    : undefined;\n    }\n    constructor() {\n        super();\n        this.__instanceProperties = undefined;\n        /**\n         * True if there is a pending update as a result of calling `requestUpdate()`.\n         * Should only be read.\n         * @category updates\n         */\n        this.isUpdatePending = false;\n        /**\n         * Is set to `true` after the first update. The element code cannot assume\n         * that `renderRoot` exists before the element `hasUpdated`.\n         * @category updates\n         */\n        this.hasUpdated = false;\n        /**\n         * Name of currently reflecting property\n         */\n        this.__reflectingProperty = null;\n        this.__initialize();\n    }\n    /**\n     * Internal only override point for customizing work done when elements\n     * are constructed.\n     */\n    __initialize() {\n        this.__updatePromise = new Promise((res) => (this.enableUpdating = res));\n        this._$changedProperties = new Map();\n        // This enqueues a microtask that ust run before the first update, so it\n        // must be called before requestUpdate()\n        this.__saveInstanceProperties();\n        // ensures first update will be caught by an early access of\n        // `updateComplete`\n        this.requestUpdate();\n        this.constructor._initializers?.forEach((i) => i(this));\n    }\n    /**\n     * Registers a `ReactiveController` to participate in the element's reactive\n     * update cycle. The element automatically calls into any registered\n     * controllers during its lifecycle callbacks.\n     *\n     * If the element is connected when `addController()` is called, the\n     * controller's `hostConnected()` callback will be immediately called.\n     * @category controllers\n     */\n    addController(controller) {\n        (this.__controllers ??= new Set()).add(controller);\n        // If a controller is added after the element has been connected,\n        // call hostConnected. Note, re-using existence of `renderRoot` here\n        // (which is set in connectedCallback) to avoid the need to track a\n        // first connected state.\n        if (this.renderRoot !== undefined && this.isConnected) {\n            controller.hostConnected?.();\n        }\n    }\n    /**\n     * Removes a `ReactiveController` from the element.\n     * @category controllers\n     */\n    removeController(controller) {\n        this.__controllers?.delete(controller);\n    }\n    /**\n     * Fixes any properties set on the instance before upgrade time.\n     * Otherwise these would shadow the accessor and break these properties.\n     * The properties are stored in a Map which is played back after the\n     * constructor runs. Note, on very old versions of Safari (<=9) or Chrome\n     * (<=41), properties created for native platform properties like (`id` or\n     * `name`) may not have default values set in the element constructor. On\n     * these browsers native properties appear on instances and therefore their\n     * default value will overwrite any element default (e.g. if the element sets\n     * this.id = 'id' in the constructor, the 'id' will become '' since this is\n     * the native platform default).\n     */\n    __saveInstanceProperties() {\n        const instanceProperties = new Map();\n        const elementProperties = this.constructor\n            .elementProperties;\n        for (const p of elementProperties.keys()) {\n            if (this.hasOwnProperty(p)) {\n                instanceProperties.set(p, this[p]);\n                delete this[p];\n            }\n        }\n        if (instanceProperties.size > 0) {\n            this.__instanceProperties = instanceProperties;\n        }\n    }\n    /**\n     * Returns the node into which the element should render and by default\n     * creates and returns an open shadowRoot. Implement to customize where the\n     * element's DOM is rendered. For example, to render into the element's\n     * childNodes, return `this`.\n     *\n     * @return Returns a node into which to render.\n     * @category rendering\n     */\n    createRenderRoot() {\n        const renderRoot = this.shadowRoot ??\n            this.attachShadow(this.constructor.shadowRootOptions);\n        (0,_css_tag_js__WEBPACK_IMPORTED_MODULE_0__.adoptStyles)(renderRoot, this.constructor.elementStyles);\n        return renderRoot;\n    }\n    /**\n     * On first connection, creates the element's renderRoot, sets up\n     * element styling, and enables updating.\n     * @category lifecycle\n     */\n    connectedCallback() {\n        // Create renderRoot before controllers `hostConnected`\n        this.renderRoot ??=\n            this.createRenderRoot();\n        this.enableUpdating(true);\n        this.__controllers?.forEach((c) => c.hostConnected?.());\n    }\n    /**\n     * Note, this method should be considered final and not overridden. It is\n     * overridden on the element instance with a function that triggers the first\n     * update.\n     * @category updates\n     */\n    enableUpdating(_requestedUpdate) { }\n    /**\n     * Allows for `super.disconnectedCallback()` in extensions while\n     * reserving the possibility of making non-breaking feature additions\n     * when disconnecting at some point in the future.\n     * @category lifecycle\n     */\n    disconnectedCallback() {\n        this.__controllers?.forEach((c) => c.hostDisconnected?.());\n    }\n    /**\n     * Synchronizes property values when attributes change.\n     *\n     * Specifically, when an attribute is set, the corresponding property is set.\n     * You should rarely need to implement this callback. If this method is\n     * overridden, `super.attributeChangedCallback(name, _old, value)` must be\n     * called.\n     *\n     * See [using the lifecycle callbacks](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks)\n     * on MDN for more information about the `attributeChangedCallback`.\n     * @category attributes\n     */\n    attributeChangedCallback(name, _old, value) {\n        this._$attributeToProperty(name, value);\n    }\n    __propertyToAttribute(name, value) {\n        const elemProperties = this.constructor.elementProperties;\n        const options = elemProperties.get(name);\n        const attr = this.constructor.__attributeNameForProperty(name, options);\n        if (attr !== undefined && options.reflect === true) {\n            const converter = options.converter?.toAttribute !==\n                undefined\n                ? options.converter\n                : defaultConverter;\n            const attrValue = converter.toAttribute(value, options.type);\n            if (DEV_MODE &&\n                this.constructor.enabledWarnings.includes('migration') &&\n                attrValue === undefined) {\n                issueWarning('undefined-attribute-value', `The attribute value for the ${name} property is ` +\n                    `undefined on element ${this.localName}. The attribute will be ` +\n                    `removed, but in the previous version of \\`ReactiveElement\\`, ` +\n                    `the attribute would not have changed.`);\n            }\n            // Track if the property is being reflected to avoid\n            // setting the property again via `attributeChangedCallback`. Note:\n            // 1. this takes advantage of the fact that the callback is synchronous.\n            // 2. will behave incorrectly if multiple attributes are in the reaction\n            // stack at time of calling. However, since we process attributes\n            // in `update` this should not be possible (or an extreme corner case\n            // that we'd like to discover).\n            // mark state reflecting\n            this.__reflectingProperty = name;\n            if (attrValue == null) {\n                this.removeAttribute(attr);\n            }\n            else {\n                this.setAttribute(attr, attrValue);\n            }\n            // mark state not reflecting\n            this.__reflectingProperty = null;\n        }\n    }\n    /** @internal */\n    _$attributeToProperty(name, value) {\n        const ctor = this.constructor;\n        // Note, hint this as an `AttributeMap` so closure clearly understands\n        // the type; it has issues with tracking types through statics\n        const propName = ctor.__attributeToPropertyMap.get(name);\n        // Use tracking info to avoid reflecting a property value to an attribute\n        // if it was just set because the attribute changed.\n        if (propName !== undefined && this.__reflectingProperty !== propName) {\n            const options = ctor.getPropertyOptions(propName);\n            const converter = typeof options.converter === 'function'\n                ? { fromAttribute: options.converter }\n                : options.converter?.fromAttribute !== undefined\n                    ? options.converter\n                    : defaultConverter;\n            // mark state reflecting\n            this.__reflectingProperty = propName;\n            this[propName] = converter.fromAttribute(value, options.type\n            // eslint-disable-next-line @typescript-eslint/no-explicit-any\n            );\n            // mark state not reflecting\n            this.__reflectingProperty = null;\n        }\n    }\n    /**\n     * Requests an update which is processed asynchronously. This should be called\n     * when an element should update based on some state not triggered by setting\n     * a reactive property. In this case, pass no arguments. It should also be\n     * called when manually implementing a property setter. In this case, pass the\n     * property `name` and `oldValue` to ensure that any configured property\n     * options are honored.\n     *\n     * @param name name of requesting property\n     * @param oldValue old value of requesting property\n     * @param options property options to use instead of the previously\n     *     configured options\n     * @category updates\n     */\n    requestUpdate(name, oldValue, options) {\n        // If we have a property key, perform property update steps.\n        if (name !== undefined) {\n            if (DEV_MODE && name instanceof Event) {\n                issueWarning(``, `The requestUpdate() method was called with an Event as the property name. This is probably a mistake caused by binding this.requestUpdate as an event listener. Instead bind a function that will call it with no arguments: () => this.requestUpdate()`);\n            }\n            options ??= this.constructor.getPropertyOptions(name);\n            const hasChanged = options.hasChanged ?? notEqual;\n            const newValue = this[name];\n            if (hasChanged(newValue, oldValue)) {\n                this._$changeProperty(name, oldValue, options);\n            }\n            else {\n                // Abort the request if the property should not be considered changed.\n                return;\n            }\n        }\n        if (this.isUpdatePending === false) {\n            this.__updatePromise = this.__enqueueUpdate();\n        }\n    }\n    /**\n     * @internal\n     */\n    _$changeProperty(name, oldValue, options) {\n        // TODO (justinfagnani): Create a benchmark of Map.has() + Map.set(\n        // vs just Map.set()\n        if (!this._$changedProperties.has(name)) {\n            this._$changedProperties.set(name, oldValue);\n        }\n        // Add to reflecting properties set.\n        // Note, it's important that every change has a chance to add the\n        // property to `__reflectingProperties`. This ensures setting\n        // attribute + property reflects correctly.\n        if (options.reflect === true && this.__reflectingProperty !== name) {\n            (this.__reflectingProperties ??= new Set()).add(name);\n        }\n    }\n    /**\n     * Sets up the element to asynchronously update.\n     */\n    async __enqueueUpdate() {\n        this.isUpdatePending = true;\n        try {\n            // Ensure any previous update has resolved before updating.\n            // This `await` also ensures that property changes are batched.\n            await this.__updatePromise;\n        }\n        catch (e) {\n            // Refire any previous errors async so they do not disrupt the update\n            // cycle. Errors are refired so developers have a chance to observe\n            // them, and this can be done by implementing\n            // `window.onunhandledrejection`.\n            Promise.reject(e);\n        }\n        const result = this.scheduleUpdate();\n        // If `scheduleUpdate` returns a Promise, we await it. This is done to\n        // enable coordinating updates with a scheduler. Note, the result is\n        // checked to avoid delaying an additional microtask unless we need to.\n        if (result != null) {\n            await result;\n        }\n        return !this.isUpdatePending;\n    }\n    /**\n     * Schedules an element update. You can override this method to change the\n     * timing of updates by returning a Promise. The update will await the\n     * returned Promise, and you should resolve the Promise to allow the update\n     * to proceed. If this method is overridden, `super.scheduleUpdate()`\n     * must be called.\n     *\n     * For instance, to schedule updates to occur just before the next frame:\n     *\n     * ```ts\n     * override protected async scheduleUpdate(): Promise<unknown> {\n     *   await new Promise((resolve) => requestAnimationFrame(() => resolve()));\n     *   super.scheduleUpdate();\n     * }\n     * ```\n     * @category updates\n     */\n    scheduleUpdate() {\n        const result = this.performUpdate();\n        if (DEV_MODE &&\n            this.constructor.enabledWarnings.includes('async-perform-update') &&\n            typeof result?.then ===\n                'function') {\n            issueWarning('async-perform-update', `Element ${this.localName} returned a Promise from performUpdate(). ` +\n                `This behavior is deprecated and will be removed in a future ` +\n                `version of ReactiveElement.`);\n        }\n        return result;\n    }\n    /**\n     * Performs an element update. Note, if an exception is thrown during the\n     * update, `firstUpdated` and `updated` will not be called.\n     *\n     * Call `performUpdate()` to immediately process a pending update. This should\n     * generally not be needed, but it can be done in rare cases when you need to\n     * update synchronously.\n     *\n     * @category updates\n     */\n    performUpdate() {\n        // Abort any update if one is not pending when this is called.\n        // This can happen if `performUpdate` is called early to \"flush\"\n        // the update.\n        if (!this.isUpdatePending) {\n            return;\n        }\n        debugLogEvent?.({ kind: 'update' });\n        if (!this.hasUpdated) {\n            // Create renderRoot before first update. This occurs in `connectedCallback`\n            // but is done here to support out of tree calls to `enableUpdating`/`performUpdate`.\n            this.renderRoot ??=\n                this.createRenderRoot();\n            if (DEV_MODE) {\n                // Produce warning if any reactive properties on the prototype are\n                // shadowed by class fields. Instance fields set before upgrade are\n                // deleted by this point, so any own property is caused by class field\n                // initialization in the constructor.\n                const ctor = this.constructor;\n                const shadowedProperties = [...ctor.elementProperties.keys()].filter((p) => this.hasOwnProperty(p) && p in getPrototypeOf(this));\n                if (shadowedProperties.length) {\n                    throw new Error(`The following properties on element ${this.localName} will not ` +\n                        `trigger updates as expected because they are set using class ` +\n                        `fields: ${shadowedProperties.join(', ')}. ` +\n                        `Native class fields and some compiled output will overwrite ` +\n                        `accessors used for detecting changes. See ` +\n                        `https://lit.dev/msg/class-field-shadowing ` +\n                        `for more information.`);\n                }\n            }\n            // Mixin instance properties once, if they exist.\n            if (this.__instanceProperties) {\n                // TODO (justinfagnani): should we use the stored value? Could a new value\n                // have been set since we stored the own property value?\n                for (const [p, value] of this.__instanceProperties) {\n                    this[p] = value;\n                }\n                this.__instanceProperties = undefined;\n            }\n            // Trigger initial value reflection and populate the initial\n            // changedProperties map, but only for the case of experimental\n            // decorators on accessors, which will not have already populated the\n            // changedProperties map. We can't know if these accessors had\n            // initializers, so we just set them anyway - a difference from\n            // experimental decorators on fields and standard decorators on\n            // auto-accessors.\n            // For context why experimentalDecorators with auto accessors are handled\n            // specifically also see:\n            // https://github.com/lit/lit/pull/4183#issuecomment-1711959635\n            const elementProperties = this.constructor\n                .elementProperties;\n            if (elementProperties.size > 0) {\n                for (const [p, options] of elementProperties) {\n                    if (options.wrapped === true &&\n                        !this._$changedProperties.has(p) &&\n                        this[p] !== undefined) {\n                        this._$changeProperty(p, this[p], options);\n                    }\n                }\n            }\n        }\n        let shouldUpdate = false;\n        const changedProperties = this._$changedProperties;\n        try {\n            shouldUpdate = this.shouldUpdate(changedProperties);\n            if (shouldUpdate) {\n                this.willUpdate(changedProperties);\n                this.__controllers?.forEach((c) => c.hostUpdate?.());\n                this.update(changedProperties);\n            }\n            else {\n                this.__markUpdated();\n            }\n        }\n        catch (e) {\n            // Prevent `firstUpdated` and `updated` from running when there's an\n            // update exception.\n            shouldUpdate = false;\n            // Ensure element can accept additional updates after an exception.\n            this.__markUpdated();\n            throw e;\n        }\n        // The update is no longer considered pending and further updates are now allowed.\n        if (shouldUpdate) {\n            this._$didUpdate(changedProperties);\n        }\n    }\n    /**\n     * Invoked before `update()` to compute values needed during the update.\n     *\n     * Implement `willUpdate` to compute property values that depend on other\n     * properties and are used in the rest of the update process.\n     *\n     * ```ts\n     * willUpdate(changedProperties) {\n     *   // only need to check changed properties for an expensive computation.\n     *   if (changedProperties.has('firstName') || changedProperties.has('lastName')) {\n     *     this.sha = computeSHA(`${this.firstName} ${this.lastName}`);\n     *   }\n     * }\n     *\n     * render() {\n     *   return html`SHA: ${this.sha}`;\n     * }\n     * ```\n     *\n     * @category updates\n     */\n    willUpdate(_changedProperties) { }\n    // Note, this is an override point for polyfill-support.\n    // @internal\n    _$didUpdate(changedProperties) {\n        this.__controllers?.forEach((c) => c.hostUpdated?.());\n        if (!this.hasUpdated) {\n            this.hasUpdated = true;\n            this.firstUpdated(changedProperties);\n        }\n        this.updated(changedProperties);\n        if (DEV_MODE &&\n            this.isUpdatePending &&\n            this.constructor.enabledWarnings.includes('change-in-update')) {\n            issueWarning('change-in-update', `Element ${this.localName} scheduled an update ` +\n                `(generally because a property was set) ` +\n                `after an update completed, causing a new update to be scheduled. ` +\n                `This is inefficient and should be avoided unless the next update ` +\n                `can only be scheduled as a side effect of the previous update.`);\n        }\n    }\n    __markUpdated() {\n        this._$changedProperties = new Map();\n        this.isUpdatePending = false;\n    }\n    /**\n     * Returns a Promise that resolves when the element has completed updating.\n     * The Promise value is a boolean that is `true` if the element completed the\n     * update without triggering another update. The Promise result is `false` if\n     * a property was set inside `updated()`. If the Promise is rejected, an\n     * exception was thrown during the update.\n     *\n     * To await additional asynchronous work, override the `getUpdateComplete`\n     * method. For example, it is sometimes useful to await a rendered element\n     * before fulfilling this Promise. To do this, first await\n     * `super.getUpdateComplete()`, then any subsequent state.\n     *\n     * @return A promise of a boolean that resolves to true if the update completed\n     *     without triggering another update.\n     * @category updates\n     */\n    get updateComplete() {\n        return this.getUpdateComplete();\n    }\n    /**\n     * Override point for the `updateComplete` promise.\n     *\n     * It is not safe to override the `updateComplete` getter directly due to a\n     * limitation in TypeScript which means it is not possible to call a\n     * superclass getter (e.g. `super.updateComplete.then(...)`) when the target\n     * language is ES5 (https://github.com/microsoft/TypeScript/issues/338).\n     * This method should be overridden instead. For example:\n     *\n     * ```ts\n     * class MyElement extends LitElement {\n     *   override async getUpdateComplete() {\n     *     const result = await super.getUpdateComplete();\n     *     await this._myChild.updateComplete;\n     *     return result;\n     *   }\n     * }\n     * ```\n     *\n     * @return A promise of a boolean that resolves to true if the update completed\n     *     without triggering another update.\n     * @category updates\n     */\n    getUpdateComplete() {\n        return this.__updatePromise;\n    }\n    /**\n     * Controls whether or not `update()` should be called when the element requests\n     * an update. By default, this method always returns `true`, but this can be\n     * customized to control when to update.\n     *\n     * @param _changedProperties Map of changed properties with old values\n     * @category updates\n     */\n    shouldUpdate(_changedProperties) {\n        return true;\n    }\n    /**\n     * Updates the element. This method reflects property values to attributes.\n     * It can be overridden to render and keep updated element DOM.\n     * Setting properties inside this method will *not* trigger\n     * another update.\n     *\n     * @param _changedProperties Map of changed properties with old values\n     * @category updates\n     */\n    update(_changedProperties) {\n        // The forEach() expression will only run when when __reflectingProperties is\n        // defined, and it returns undefined, setting __reflectingProperties to\n        // undefined\n        this.__reflectingProperties &&= this.__reflectingProperties.forEach((p) => this.__propertyToAttribute(p, this[p]));\n        this.__markUpdated();\n    }\n    /**\n     * Invoked whenever the element is updated. Implement to perform\n     * post-updating tasks via DOM APIs, for example, focusing an element.\n     *\n     * Setting properties inside this method will trigger the element to update\n     * again after this update cycle completes.\n     *\n     * @param _changedProperties Map of changed properties with old values\n     * @category updates\n     */\n    updated(_changedProperties) { }\n    /**\n     * Invoked when the element is first updated. Implement to perform one time\n     * work on the element after update.\n     *\n     * ```ts\n     * firstUpdated() {\n     *   this.renderRoot.getElementById('my-text-area').focus();\n     * }\n     * ```\n     *\n     * Setting properties inside this method will trigger the element to update\n     * again after this update cycle completes.\n     *\n     * @param _changedProperties Map of changed properties with old values\n     * @category updates\n     */\n    firstUpdated(_changedProperties) { }\n}\n/**\n * Memoized list of all element styles.\n * Created lazily on user subclasses when finalizing the class.\n * @nocollapse\n * @category styles\n */\nReactiveElement.elementStyles = [];\n/**\n * Options used when calling `attachShadow`. Set this property to customize\n * the options for the shadowRoot; for example, to create a closed\n * shadowRoot: `{mode: 'closed'}`.\n *\n * Note, these options are used in `createRenderRoot`. If this method\n * is customized, options should be respected if possible.\n * @nocollapse\n * @category rendering\n */\nReactiveElement.shadowRootOptions = { mode: 'open' };\n// Assigned here to work around a jscompiler bug with static fields\n// when compiling to ES5.\n// https://github.com/google/closure-compiler/issues/3177\nReactiveElement[JSCompiler_renameProperty('elementProperties', ReactiveElement)] = new Map();\nReactiveElement[JSCompiler_renameProperty('finalized', ReactiveElement)] = new Map();\n// Apply polyfills if available\npolyfillSupport?.({ ReactiveElement });\n// Dev mode warnings...\nif (DEV_MODE) {\n    // Default warning set.\n    ReactiveElement.enabledWarnings = [\n        'change-in-update',\n        'async-perform-update',\n    ];\n    const ensureOwnWarnings = function (ctor) {\n        if (!ctor.hasOwnProperty(JSCompiler_renameProperty('enabledWarnings', ctor))) {\n            ctor.enabledWarnings = ctor.enabledWarnings.slice();\n        }\n    };\n    ReactiveElement.enableWarning = function (warning) {\n        ensureOwnWarnings(this);\n        if (!this.enabledWarnings.includes(warning)) {\n            this.enabledWarnings.push(warning);\n        }\n    };\n    ReactiveElement.disableWarning = function (warning) {\n        ensureOwnWarnings(this);\n        const i = this.enabledWarnings.indexOf(warning);\n        if (i >= 0) {\n            this.enabledWarnings.splice(i, 1);\n        }\n    };\n}\n// IMPORTANT: do not change the property name or the assignment expression.\n// This line will be used in regexes to search for ReactiveElement usage.\n(global.reactiveElementVersions ??= []).push('2.0.4');\nif (DEV_MODE && global.reactiveElementVersions.length > 1) {\n    issueWarning('multiple-versions', `Multiple versions of Lit loaded. Loading multiple versions ` +\n        `is not recommended.`);\n}\n//# sourceMappingURL=reactive-element.js.map\n\n//# sourceURL=webpack://my-website/./node_modules/@lit/reactive-element/development/reactive-element.js?");
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
 
-/***/ }),
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
 
-/***/ "./node_modules/lit-element/development/lit-element.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/lit-element/development/lit-element.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   CSSResult: () => (/* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.CSSResult),\n/* harmony export */   LitElement: () => (/* binding */ LitElement),\n/* harmony export */   ReactiveElement: () => (/* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.ReactiveElement),\n/* harmony export */   _$LE: () => (/* binding */ _$LE),\n/* harmony export */   _$LH: () => (/* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__._$LH),\n/* harmony export */   adoptStyles: () => (/* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.adoptStyles),\n/* harmony export */   css: () => (/* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.css),\n/* harmony export */   defaultConverter: () => (/* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.defaultConverter),\n/* harmony export */   getCompatibleStyle: () => (/* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.getCompatibleStyle),\n/* harmony export */   html: () => (/* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.html),\n/* harmony export */   noChange: () => (/* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.noChange),\n/* harmony export */   notEqual: () => (/* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.notEqual),\n/* harmony export */   nothing: () => (/* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.nothing),\n/* harmony export */   render: () => (/* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.render),\n/* harmony export */   supportsAdoptingStyleSheets: () => (/* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.supportsAdoptingStyleSheets),\n/* harmony export */   svg: () => (/* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.svg),\n/* harmony export */   unsafeCSS: () => (/* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.unsafeCSS)\n/* harmony export */ });\n/* harmony import */ var _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @lit/reactive-element */ \"./node_modules/@lit/reactive-element/development/reactive-element.js\");\n/* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lit-html */ \"./node_modules/lit-html/development/lit-html.js\");\n/**\n * @license\n * Copyright 2017 Google LLC\n * SPDX-License-Identifier: BSD-3-Clause\n */\n/**\n * The main LitElement module, which defines the {@linkcode LitElement} base\n * class and related APIs.\n *\n *  LitElement components can define a template and a set of observed\n * properties. Changing an observed property triggers a re-render of the\n * element.\n *\n *  Import {@linkcode LitElement} and {@linkcode html} from this module to\n * create a component:\n *\n *  ```js\n * import {LitElement, html} from 'lit-element';\n *\n * class MyElement extends LitElement {\n *\n *   // Declare observed properties\n *   static get properties() {\n *     return {\n *       adjective: {}\n *     }\n *   }\n *\n *   constructor() {\n *     this.adjective = 'awesome';\n *   }\n *\n *   // Define the element's template\n *   render() {\n *     return html`<p>your ${adjective} template here</p>`;\n *   }\n * }\n *\n * customElements.define('my-element', MyElement);\n * ```\n *\n * `LitElement` extends {@linkcode ReactiveElement} and adds lit-html\n * templating. The `ReactiveElement` class is provided for users that want to\n * build their own custom element base classes that don't use lit-html.\n *\n * @packageDocumentation\n */\n\n\n\n\n/*\n * When using Closure Compiler, JSCompiler_renameProperty(property, object) is\n * replaced at compile time by the munged name for object[property]. We cannot\n * alias this function, so we have to use a small shim that has the same\n * behavior when not compiling.\n */\n/*@__INLINE__*/\nconst JSCompiler_renameProperty = (prop, _obj) => prop;\nconst DEV_MODE = true;\nlet issueWarning;\nif (DEV_MODE) {\n    // Ensure warnings are issued only 1x, even if multiple versions of Lit\n    // are loaded.\n    const issuedWarnings = (globalThis.litIssuedWarnings ??= new Set());\n    // Issue a warning, if we haven't already.\n    issueWarning = (code, warning) => {\n        warning += ` See https://lit.dev/msg/${code} for more information.`;\n        if (!issuedWarnings.has(warning)) {\n            console.warn(warning);\n            issuedWarnings.add(warning);\n        }\n    };\n}\n/**\n * Base element class that manages element properties and attributes, and\n * renders a lit-html template.\n *\n * To define a component, subclass `LitElement` and implement a\n * `render` method to provide the component's template. Define properties\n * using the {@linkcode LitElement.properties properties} property or the\n * {@linkcode property} decorator.\n */\nclass LitElement extends _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.ReactiveElement {\n    constructor() {\n        super(...arguments);\n        /**\n         * @category rendering\n         */\n        this.renderOptions = { host: this };\n        this.__childPart = undefined;\n    }\n    /**\n     * @category rendering\n     */\n    createRenderRoot() {\n        const renderRoot = super.createRenderRoot();\n        // When adoptedStyleSheets are shimmed, they are inserted into the\n        // shadowRoot by createRenderRoot. Adjust the renderBefore node so that\n        // any styles in Lit content render before adoptedStyleSheets. This is\n        // important so that adoptedStyleSheets have precedence over styles in\n        // the shadowRoot.\n        this.renderOptions.renderBefore ??= renderRoot.firstChild;\n        return renderRoot;\n    }\n    /**\n     * Updates the element. This method reflects property values to attributes\n     * and calls `render` to render DOM via lit-html. Setting properties inside\n     * this method will *not* trigger another update.\n     * @param changedProperties Map of changed properties with old values\n     * @category updates\n     */\n    update(changedProperties) {\n        // Setting properties in `render` should not trigger an update. Since\n        // updates are allowed after super.update, it's important to call `render`\n        // before that.\n        const value = this.render();\n        if (!this.hasUpdated) {\n            this.renderOptions.isConnected = this.isConnected;\n        }\n        super.update(changedProperties);\n        this.__childPart = (0,lit_html__WEBPACK_IMPORTED_MODULE_1__.render)(value, this.renderRoot, this.renderOptions);\n    }\n    /**\n     * Invoked when the component is added to the document's DOM.\n     *\n     * In `connectedCallback()` you should setup tasks that should only occur when\n     * the element is connected to the document. The most common of these is\n     * adding event listeners to nodes external to the element, like a keydown\n     * event handler added to the window.\n     *\n     * ```ts\n     * connectedCallback() {\n     *   super.connectedCallback();\n     *   addEventListener('keydown', this._handleKeydown);\n     * }\n     * ```\n     *\n     * Typically, anything done in `connectedCallback()` should be undone when the\n     * element is disconnected, in `disconnectedCallback()`.\n     *\n     * @category lifecycle\n     */\n    connectedCallback() {\n        super.connectedCallback();\n        this.__childPart?.setConnected(true);\n    }\n    /**\n     * Invoked when the component is removed from the document's DOM.\n     *\n     * This callback is the main signal to the element that it may no longer be\n     * used. `disconnectedCallback()` should ensure that nothing is holding a\n     * reference to the element (such as event listeners added to nodes external\n     * to the element), so that it is free to be garbage collected.\n     *\n     * ```ts\n     * disconnectedCallback() {\n     *   super.disconnectedCallback();\n     *   window.removeEventListener('keydown', this._handleKeydown);\n     * }\n     * ```\n     *\n     * An element may be re-connected after being disconnected.\n     *\n     * @category lifecycle\n     */\n    disconnectedCallback() {\n        super.disconnectedCallback();\n        this.__childPart?.setConnected(false);\n    }\n    /**\n     * Invoked on each update to perform rendering tasks. This method may return\n     * any value renderable by lit-html's `ChildPart` - typically a\n     * `TemplateResult`. Setting properties inside this method will *not* trigger\n     * the element to update.\n     * @category rendering\n     */\n    render() {\n        return lit_html__WEBPACK_IMPORTED_MODULE_1__.noChange;\n    }\n}\n// This property needs to remain unminified.\nLitElement['_$litElement$'] = true;\n/**\n * Ensure this class is marked as `finalized` as an optimization ensuring\n * it will not needlessly try to `finalize`.\n *\n * Note this property name is a string to prevent breaking Closure JS Compiler\n * optimizations. See @lit/reactive-element for more information.\n */\nLitElement[JSCompiler_renameProperty('finalized', LitElement)] = true;\n// Install hydration if available\nglobalThis.litElementHydrateSupport?.({ LitElement });\n// Apply polyfills if available\nconst polyfillSupport = DEV_MODE\n    ? globalThis.litElementPolyfillSupportDevMode\n    : globalThis.litElementPolyfillSupport;\npolyfillSupport?.({ LitElement });\n/**\n * END USERS SHOULD NOT RELY ON THIS OBJECT.\n *\n * Private exports for use by other Lit packages, not intended for use by\n * external users.\n *\n * We currently do not make a mangled rollup build of the lit-ssr code. In order\n * to keep a number of (otherwise private) top-level exports  mangled in the\n * client side code, we export a _$LE object containing those members (or\n * helper methods for accessing private fields of those members), and then\n * re-export them for use in lit-ssr. This keeps lit-ssr agnostic to whether the\n * client-side code is being used in `dev` mode or `prod` mode.\n *\n * This has a unique name, to disambiguate it from private exports in\n * lit-html, since this module re-exports all of lit-html.\n *\n * @private\n */\nconst _$LE = {\n    _$attributeToProperty: (el, name, value) => {\n        // eslint-disable-next-line\n        el._$attributeToProperty(name, value);\n    },\n    // eslint-disable-next-line\n    _$changedProperties: (el) => el._$changedProperties,\n};\n// IMPORTANT: do not change the property name or the assignment expression.\n// This line will be used in regexes to search for LitElement usage.\n(globalThis.litElementVersions ??= []).push('4.0.4');\nif (DEV_MODE && globalThis.litElementVersions.length > 1) {\n    issueWarning('multiple-versions', `Multiple versions of Lit loaded. Loading multiple versions ` +\n        `is not recommended.`);\n}\n//# sourceMappingURL=lit-element.js.map\n\n//# sourceURL=webpack://my-website/./node_modules/lit-element/development/lit-element.js?");
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
-/***/ }),
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to inherit in Safari.
+*/
 
-/***/ "./node_modules/lit-html/development/is-server.js":
-/*!********************************************************!*\
-  !*** ./node_modules/lit-html/development/is-server.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   isServer: () => (/* binding */ isServer)\n/* harmony export */ });\n/**\n * @license\n * Copyright 2022 Google LLC\n * SPDX-License-Identifier: BSD-3-Clause\n */\n/**\n * @fileoverview\n *\n * This file exports a boolean const whose value will depend on what environment\n * the module is being imported from.\n */\nconst NODE_MODE = false;\n/**\n * A boolean that will be `true` in server environments like Node, and `false`\n * in browser environments. Note that your server environment or toolchain must\n * support the `\"node\"` export condition for this to be `true`.\n *\n * This can be used when authoring components to change behavior based on\n * whether or not the component is executing in an SSR context.\n */\nconst isServer = NODE_MODE;\n//# sourceMappingURL=is-server.js.map\n\n//# sourceURL=webpack://my-website/./node_modules/lit-html/development/is-server.js?");
+/*
+Add the correct display in Chrome and Safari.
+*/
 
-/***/ }),
+summary {
+  display: list-item;
+}
 
-/***/ "./node_modules/lit-html/development/lit-html.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/lit-html/development/lit-html.js ***!
-  \*******************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/*
+Removes the default spacing and border for appropriate elements.
+*/
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   _$LH: () => (/* binding */ _$LH),\n/* harmony export */   html: () => (/* binding */ html),\n/* harmony export */   noChange: () => (/* binding */ noChange),\n/* harmony export */   nothing: () => (/* binding */ nothing),\n/* harmony export */   render: () => (/* binding */ render),\n/* harmony export */   svg: () => (/* binding */ svg)\n/* harmony export */ });\n/**\n * @license\n * Copyright 2017 Google LLC\n * SPDX-License-Identifier: BSD-3-Clause\n */\nconst DEV_MODE = true;\nconst ENABLE_EXTRA_SECURITY_HOOKS = true;\nconst ENABLE_SHADYDOM_NOPATCH = true;\nconst NODE_MODE = false;\n// Allows minifiers to rename references to globalThis\nconst global = globalThis;\n/**\n * Useful for visualizing and logging insights into what the Lit template system is doing.\n *\n * Compiled out of prod mode builds.\n */\nconst debugLogEvent = DEV_MODE\n    ? (event) => {\n        const shouldEmit = global\n            .emitLitDebugLogEvents;\n        if (!shouldEmit) {\n            return;\n        }\n        global.dispatchEvent(new CustomEvent('lit-debug', {\n            detail: event,\n        }));\n    }\n    : undefined;\n// Used for connecting beginRender and endRender events when there are nested\n// renders when errors are thrown preventing an endRender event from being\n// called.\nlet debugLogRenderId = 0;\nlet issueWarning;\nif (DEV_MODE) {\n    global.litIssuedWarnings ??= new Set();\n    // Issue a warning, if we haven't already.\n    issueWarning = (code, warning) => {\n        warning += code\n            ? ` See https://lit.dev/msg/${code} for more information.`\n            : '';\n        if (!global.litIssuedWarnings.has(warning)) {\n            console.warn(warning);\n            global.litIssuedWarnings.add(warning);\n        }\n    };\n    issueWarning('dev-mode', `Lit is in dev mode. Not recommended for production!`);\n}\nconst wrap = ENABLE_SHADYDOM_NOPATCH &&\n    global.ShadyDOM?.inUse &&\n    global.ShadyDOM?.noPatch === true\n    ? global.ShadyDOM.wrap\n    : (node) => node;\nconst trustedTypes = global.trustedTypes;\n/**\n * Our TrustedTypePolicy for HTML which is declared using the html template\n * tag function.\n *\n * That HTML is a developer-authored constant, and is parsed with innerHTML\n * before any untrusted expressions have been mixed in. Therefor it is\n * considered safe by construction.\n */\nconst policy = trustedTypes\n    ? trustedTypes.createPolicy('lit-html', {\n        createHTML: (s) => s,\n    })\n    : undefined;\nconst identityFunction = (value) => value;\nconst noopSanitizer = (_node, _name, _type) => identityFunction;\n/** Sets the global sanitizer factory. */\nconst setSanitizer = (newSanitizer) => {\n    if (!ENABLE_EXTRA_SECURITY_HOOKS) {\n        return;\n    }\n    if (sanitizerFactoryInternal !== noopSanitizer) {\n        throw new Error(`Attempted to overwrite existing lit-html security policy.` +\n            ` setSanitizeDOMValueFactory should be called at most once.`);\n    }\n    sanitizerFactoryInternal = newSanitizer;\n};\n/**\n * Only used in internal tests, not a part of the public API.\n */\nconst _testOnlyClearSanitizerFactoryDoNotCallOrElse = () => {\n    sanitizerFactoryInternal = noopSanitizer;\n};\nconst createSanitizer = (node, name, type) => {\n    return sanitizerFactoryInternal(node, name, type);\n};\n// Added to an attribute name to mark the attribute as bound so we can find\n// it easily.\nconst boundAttributeSuffix = '$lit$';\n// This marker is used in many syntactic positions in HTML, so it must be\n// a valid element name and attribute name. We don't support dynamic names (yet)\n// but this at least ensures that the parse tree is closer to the template\n// intention.\nconst marker = `lit$${String(Math.random()).slice(9)}$`;\n// String used to tell if a comment is a marker comment\nconst markerMatch = '?' + marker;\n// Text used to insert a comment marker node. We use processing instruction\n// syntax because it's slightly smaller, but parses as a comment node.\nconst nodeMarker = `<${markerMatch}>`;\nconst d = NODE_MODE && global.document === undefined\n    ? {\n        createTreeWalker() {\n            return {};\n        },\n    }\n    : document;\n// Creates a dynamic marker. We never have to search for these in the DOM.\nconst createMarker = () => d.createComment('');\nconst isPrimitive = (value) => value === null || (typeof value != 'object' && typeof value != 'function');\nconst isArray = Array.isArray;\nconst isIterable = (value) => isArray(value) ||\n    // eslint-disable-next-line @typescript-eslint/no-explicit-any\n    typeof value?.[Symbol.iterator] === 'function';\nconst SPACE_CHAR = `[ \\t\\n\\f\\r]`;\nconst ATTR_VALUE_CHAR = `[^ \\t\\n\\f\\r\"'\\`<>=]`;\nconst NAME_CHAR = `[^\\\\s\"'>=/]`;\n// These regexes represent the five parsing states that we care about in the\n// Template's HTML scanner. They match the *end* of the state they're named\n// after.\n// Depending on the match, we transition to a new state. If there's no match,\n// we stay in the same state.\n// Note that the regexes are stateful. We utilize lastIndex and sync it\n// across the multiple regexes used. In addition to the five regexes below\n// we also dynamically create a regex to find the matching end tags for raw\n// text elements.\n/**\n * End of text is: `<` followed by:\n *   (comment start) or (tag) or (dynamic tag binding)\n */\nconst textEndRegex = /<(?:(!--|\\/[^a-zA-Z])|(\\/?[a-zA-Z][^>\\s]*)|(\\/?$))/g;\nconst COMMENT_START = 1;\nconst TAG_NAME = 2;\nconst DYNAMIC_TAG_NAME = 3;\nconst commentEndRegex = /-->/g;\n/**\n * Comments not started with <!--, like </{, can be ended by a single `>`\n */\nconst comment2EndRegex = />/g;\n/**\n * The tagEnd regex matches the end of the \"inside an opening\" tag syntax\n * position. It either matches a `>`, an attribute-like sequence, or the end\n * of the string after a space (attribute-name position ending).\n *\n * See attributes in the HTML spec:\n * https://www.w3.org/TR/html5/syntax.html#elements-attributes\n *\n * \" \\t\\n\\f\\r\" are HTML space characters:\n * https://infra.spec.whatwg.org/#ascii-whitespace\n *\n * So an attribute is:\n *  * The name: any character except a whitespace character, (\"), ('), \">\",\n *    \"=\", or \"/\". Note: this is different from the HTML spec which also excludes control characters.\n *  * Followed by zero or more space characters\n *  * Followed by \"=\"\n *  * Followed by zero or more space characters\n *  * Followed by:\n *    * Any character except space, ('), (\"), \"<\", \">\", \"=\", (`), or\n *    * (\") then any non-(\"), or\n *    * (') then any non-(')\n */\nconst tagEndRegex = new RegExp(`>|${SPACE_CHAR}(?:(${NAME_CHAR}+)(${SPACE_CHAR}*=${SPACE_CHAR}*(?:${ATTR_VALUE_CHAR}|(\"|')|))|$)`, 'g');\nconst ENTIRE_MATCH = 0;\nconst ATTRIBUTE_NAME = 1;\nconst SPACES_AND_EQUALS = 2;\nconst QUOTE_CHAR = 3;\nconst singleQuoteAttrEndRegex = /'/g;\nconst doubleQuoteAttrEndRegex = /\"/g;\n/**\n * Matches the raw text elements.\n *\n * Comments are not parsed within raw text elements, so we need to search their\n * text content for marker strings.\n */\nconst rawTextElement = /^(?:script|style|textarea|title)$/i;\n/** TemplateResult types */\nconst HTML_RESULT = 1;\nconst SVG_RESULT = 2;\n// TemplatePart types\n// IMPORTANT: these must match the values in PartType\nconst ATTRIBUTE_PART = 1;\nconst CHILD_PART = 2;\nconst PROPERTY_PART = 3;\nconst BOOLEAN_ATTRIBUTE_PART = 4;\nconst EVENT_PART = 5;\nconst ELEMENT_PART = 6;\nconst COMMENT_PART = 7;\n/**\n * Generates a template literal tag function that returns a TemplateResult with\n * the given result type.\n */\nconst tag = (type) => (strings, ...values) => {\n    // Warn against templates octal escape sequences\n    // We do this here rather than in render so that the warning is closer to the\n    // template definition.\n    if (DEV_MODE && strings.some((s) => s === undefined)) {\n        console.warn('Some template strings are undefined.\\n' +\n            'This is probably caused by illegal octal escape sequences.');\n    }\n    if (DEV_MODE) {\n        // Import static-html.js results in a circular dependency which g3 doesn't\n        // handle. Instead we know that static values must have the field\n        // `_$litStatic$`.\n        if (values.some((val) => val?.['_$litStatic$'])) {\n            issueWarning('', `Static values 'literal' or 'unsafeStatic' cannot be used as values to non-static templates.\\n` +\n                `Please use the static 'html' tag function. See https://lit.dev/docs/templates/expressions/#static-expressions`);\n        }\n    }\n    return {\n        // This property needs to remain unminified.\n        ['_$litType$']: type,\n        strings,\n        values,\n    };\n};\n/**\n * Interprets a template literal as an HTML template that can efficiently\n * render to and update a container.\n *\n * ```ts\n * const header = (title: string) => html`<h1>${title}</h1>`;\n * ```\n *\n * The `html` tag returns a description of the DOM to render as a value. It is\n * lazy, meaning no work is done until the template is rendered. When rendering,\n * if a template comes from the same expression as a previously rendered result,\n * it's efficiently updated instead of replaced.\n */\nconst html = tag(HTML_RESULT);\n/**\n * Interprets a template literal as an SVG fragment that can efficiently\n * render to and update a container.\n *\n * ```ts\n * const rect = svg`<rect width=\"10\" height=\"10\"></rect>`;\n *\n * const myImage = html`\n *   <svg viewBox=\"0 0 10 10\" xmlns=\"http://www.w3.org/2000/svg\">\n *     ${rect}\n *   </svg>`;\n * ```\n *\n * The `svg` *tag function* should only be used for SVG fragments, or elements\n * that would be contained **inside** an `<svg>` HTML element. A common error is\n * placing an `<svg>` *element* in a template tagged with the `svg` tag\n * function. The `<svg>` element is an HTML element and should be used within a\n * template tagged with the {@linkcode html} tag function.\n *\n * In LitElement usage, it's invalid to return an SVG fragment from the\n * `render()` method, as the SVG fragment will be contained within the element's\n * shadow root and thus cannot be used within an `<svg>` HTML element.\n */\nconst svg = tag(SVG_RESULT);\n/**\n * A sentinel value that signals that a value was handled by a directive and\n * should not be written to the DOM.\n */\nconst noChange = Symbol.for('lit-noChange');\n/**\n * A sentinel value that signals a ChildPart to fully clear its content.\n *\n * ```ts\n * const button = html`${\n *  user.isAdmin\n *    ? html`<button>DELETE</button>`\n *    : nothing\n * }`;\n * ```\n *\n * Prefer using `nothing` over other falsy values as it provides a consistent\n * behavior between various expression binding contexts.\n *\n * In child expressions, `undefined`, `null`, `''`, and `nothing` all behave the\n * same and render no nodes. In attribute expressions, `nothing` _removes_ the\n * attribute, while `undefined` and `null` will render an empty string. In\n * property expressions `nothing` becomes `undefined`.\n */\nconst nothing = Symbol.for('lit-nothing');\n/**\n * The cache of prepared templates, keyed by the tagged TemplateStringsArray\n * and _not_ accounting for the specific template tag used. This means that\n * template tags cannot be dynamic - the must statically be one of html, svg,\n * or attr. This restriction simplifies the cache lookup, which is on the hot\n * path for rendering.\n */\nconst templateCache = new WeakMap();\nconst walker = d.createTreeWalker(d, 129 /* NodeFilter.SHOW_{ELEMENT|COMMENT} */);\nlet sanitizerFactoryInternal = noopSanitizer;\nfunction trustFromTemplateString(tsa, stringFromTSA) {\n    // A security check to prevent spoofing of Lit template results.\n    // In the future, we may be able to replace this with Array.isTemplateObject,\n    // though we might need to make that check inside of the html and svg\n    // functions, because precompiled templates don't come in as\n    // TemplateStringArray objects.\n    if (!Array.isArray(tsa) || !tsa.hasOwnProperty('raw')) {\n        let message = 'invalid template strings array';\n        if (DEV_MODE) {\n            message = `\n          Internal Error: expected template strings to be an array\n          with a 'raw' field. Faking a template strings array by\n          calling html or svg like an ordinary function is effectively\n          the same as calling unsafeHtml and can lead to major security\n          issues, e.g. opening your code up to XSS attacks.\n          If you're using the html or svg tagged template functions normally\n          and still seeing this error, please file a bug at\n          https://github.com/lit/lit/issues/new?template=bug_report.md\n          and include information about your build tooling, if any.\n        `\n                .trim()\n                .replace(/\\n */g, '\\n');\n        }\n        throw new Error(message);\n    }\n    return policy !== undefined\n        ? policy.createHTML(stringFromTSA)\n        : stringFromTSA;\n}\n/**\n * Returns an HTML string for the given TemplateStringsArray and result type\n * (HTML or SVG), along with the case-sensitive bound attribute names in\n * template order. The HTML contains comment markers denoting the `ChildPart`s\n * and suffixes on bound attributes denoting the `AttributeParts`.\n *\n * @param strings template strings array\n * @param type HTML or SVG\n * @return Array containing `[html, attrNames]` (array returned for terseness,\n *     to avoid object fields since this code is shared with non-minified SSR\n *     code)\n */\nconst getTemplateHtml = (strings, type) => {\n    // Insert makers into the template HTML to represent the position of\n    // bindings. The following code scans the template strings to determine the\n    // syntactic position of the bindings. They can be in text position, where\n    // we insert an HTML comment, attribute value position, where we insert a\n    // sentinel string and re-write the attribute name, or inside a tag where\n    // we insert the sentinel string.\n    const l = strings.length - 1;\n    // Stores the case-sensitive bound attribute names in the order of their\n    // parts. ElementParts are also reflected in this array as undefined\n    // rather than a string, to disambiguate from attribute bindings.\n    const attrNames = [];\n    let html = type === SVG_RESULT ? '<svg>' : '';\n    // When we're inside a raw text tag (not it's text content), the regex\n    // will still be tagRegex so we can find attributes, but will switch to\n    // this regex when the tag ends.\n    let rawTextEndRegex;\n    // The current parsing state, represented as a reference to one of the\n    // regexes\n    let regex = textEndRegex;\n    for (let i = 0; i < l; i++) {\n        const s = strings[i];\n        // The index of the end of the last attribute name. When this is\n        // positive at end of a string, it means we're in an attribute value\n        // position and need to rewrite the attribute name.\n        // We also use a special value of -2 to indicate that we encountered\n        // the end of a string in attribute name position.\n        let attrNameEndIndex = -1;\n        let attrName;\n        let lastIndex = 0;\n        let match;\n        // The conditions in this loop handle the current parse state, and the\n        // assignments to the `regex` variable are the state transitions.\n        while (lastIndex < s.length) {\n            // Make sure we start searching from where we previously left off\n            regex.lastIndex = lastIndex;\n            match = regex.exec(s);\n            if (match === null) {\n                break;\n            }\n            lastIndex = regex.lastIndex;\n            if (regex === textEndRegex) {\n                if (match[COMMENT_START] === '!--') {\n                    regex = commentEndRegex;\n                }\n                else if (match[COMMENT_START] !== undefined) {\n                    // We started a weird comment, like </{\n                    regex = comment2EndRegex;\n                }\n                else if (match[TAG_NAME] !== undefined) {\n                    if (rawTextElement.test(match[TAG_NAME])) {\n                        // Record if we encounter a raw-text element. We'll switch to\n                        // this regex at the end of the tag.\n                        rawTextEndRegex = new RegExp(`</${match[TAG_NAME]}`, 'g');\n                    }\n                    regex = tagEndRegex;\n                }\n                else if (match[DYNAMIC_TAG_NAME] !== undefined) {\n                    if (DEV_MODE) {\n                        throw new Error('Bindings in tag names are not supported. Please use static templates instead. ' +\n                            'See https://lit.dev/docs/templates/expressions/#static-expressions');\n                    }\n                    regex = tagEndRegex;\n                }\n            }\n            else if (regex === tagEndRegex) {\n                if (match[ENTIRE_MATCH] === '>') {\n                    // End of a tag. If we had started a raw-text element, use that\n                    // regex\n                    regex = rawTextEndRegex ?? textEndRegex;\n                    // We may be ending an unquoted attribute value, so make sure we\n                    // clear any pending attrNameEndIndex\n                    attrNameEndIndex = -1;\n                }\n                else if (match[ATTRIBUTE_NAME] === undefined) {\n                    // Attribute name position\n                    attrNameEndIndex = -2;\n                }\n                else {\n                    attrNameEndIndex = regex.lastIndex - match[SPACES_AND_EQUALS].length;\n                    attrName = match[ATTRIBUTE_NAME];\n                    regex =\n                        match[QUOTE_CHAR] === undefined\n                            ? tagEndRegex\n                            : match[QUOTE_CHAR] === '\"'\n                                ? doubleQuoteAttrEndRegex\n                                : singleQuoteAttrEndRegex;\n                }\n            }\n            else if (regex === doubleQuoteAttrEndRegex ||\n                regex === singleQuoteAttrEndRegex) {\n                regex = tagEndRegex;\n            }\n            else if (regex === commentEndRegex || regex === comment2EndRegex) {\n                regex = textEndRegex;\n            }\n            else {\n                // Not one of the five state regexes, so it must be the dynamically\n                // created raw text regex and we're at the close of that element.\n                regex = tagEndRegex;\n                rawTextEndRegex = undefined;\n            }\n        }\n        if (DEV_MODE) {\n            // If we have a attrNameEndIndex, which indicates that we should\n            // rewrite the attribute name, assert that we're in a valid attribute\n            // position - either in a tag, or a quoted attribute value.\n            console.assert(attrNameEndIndex === -1 ||\n                regex === tagEndRegex ||\n                regex === singleQuoteAttrEndRegex ||\n                regex === doubleQuoteAttrEndRegex, 'unexpected parse state B');\n        }\n        // We have four cases:\n        //  1. We're in text position, and not in a raw text element\n        //     (regex === textEndRegex): insert a comment marker.\n        //  2. We have a non-negative attrNameEndIndex which means we need to\n        //     rewrite the attribute name to add a bound attribute suffix.\n        //  3. We're at the non-first binding in a multi-binding attribute, use a\n        //     plain marker.\n        //  4. We're somewhere else inside the tag. If we're in attribute name\n        //     position (attrNameEndIndex === -2), add a sequential suffix to\n        //     generate a unique attribute name.\n        // Detect a binding next to self-closing tag end and insert a space to\n        // separate the marker from the tag end:\n        const end = regex === tagEndRegex && strings[i + 1].startsWith('/>') ? ' ' : '';\n        html +=\n            regex === textEndRegex\n                ? s + nodeMarker\n                : attrNameEndIndex >= 0\n                    ? (attrNames.push(attrName),\n                        s.slice(0, attrNameEndIndex) +\n                            boundAttributeSuffix +\n                            s.slice(attrNameEndIndex)) +\n                        marker +\n                        end\n                    : s + marker + (attrNameEndIndex === -2 ? i : end);\n    }\n    const htmlResult = html + (strings[l] || '<?>') + (type === SVG_RESULT ? '</svg>' : '');\n    // Returned as an array for terseness\n    return [trustFromTemplateString(strings, htmlResult), attrNames];\n};\nclass Template {\n    constructor(\n    // This property needs to remain unminified.\n    { strings, ['_$litType$']: type }, options) {\n        this.parts = [];\n        let node;\n        let nodeIndex = 0;\n        let attrNameIndex = 0;\n        const partCount = strings.length - 1;\n        const parts = this.parts;\n        // Create template element\n        const [html, attrNames] = getTemplateHtml(strings, type);\n        this.el = Template.createElement(html, options);\n        walker.currentNode = this.el.content;\n        // Re-parent SVG nodes into template root\n        if (type === SVG_RESULT) {\n            const svgElement = this.el.content.firstChild;\n            svgElement.replaceWith(...svgElement.childNodes);\n        }\n        // Walk the template to find binding markers and create TemplateParts\n        while ((node = walker.nextNode()) !== null && parts.length < partCount) {\n            if (node.nodeType === 1) {\n                if (DEV_MODE) {\n                    const tag = node.localName;\n                    // Warn if `textarea` includes an expression and throw if `template`\n                    // does since these are not supported. We do this by checking\n                    // innerHTML for anything that looks like a marker. This catches\n                    // cases like bindings in textarea there markers turn into text nodes.\n                    if (/^(?:textarea|template)$/i.test(tag) &&\n                        node.innerHTML.includes(marker)) {\n                        const m = `Expressions are not supported inside \\`${tag}\\` ` +\n                            `elements. See https://lit.dev/msg/expression-in-${tag} for more ` +\n                            `information.`;\n                        if (tag === 'template') {\n                            throw new Error(m);\n                        }\n                        else\n                            issueWarning('', m);\n                    }\n                }\n                // TODO (justinfagnani): for attempted dynamic tag names, we don't\n                // increment the bindingIndex, and it'll be off by 1 in the element\n                // and off by two after it.\n                if (node.hasAttributes()) {\n                    for (const name of node.getAttributeNames()) {\n                        if (name.endsWith(boundAttributeSuffix)) {\n                            const realName = attrNames[attrNameIndex++];\n                            const value = node.getAttribute(name);\n                            const statics = value.split(marker);\n                            const m = /([.?@])?(.*)/.exec(realName);\n                            parts.push({\n                                type: ATTRIBUTE_PART,\n                                index: nodeIndex,\n                                name: m[2],\n                                strings: statics,\n                                ctor: m[1] === '.'\n                                    ? PropertyPart\n                                    : m[1] === '?'\n                                        ? BooleanAttributePart\n                                        : m[1] === '@'\n                                            ? EventPart\n                                            : AttributePart,\n                            });\n                            node.removeAttribute(name);\n                        }\n                        else if (name.startsWith(marker)) {\n                            parts.push({\n                                type: ELEMENT_PART,\n                                index: nodeIndex,\n                            });\n                            node.removeAttribute(name);\n                        }\n                    }\n                }\n                // TODO (justinfagnani): benchmark the regex against testing for each\n                // of the 3 raw text element names.\n                if (rawTextElement.test(node.tagName)) {\n                    // For raw text elements we need to split the text content on\n                    // markers, create a Text node for each segment, and create\n                    // a TemplatePart for each marker.\n                    const strings = node.textContent.split(marker);\n                    const lastIndex = strings.length - 1;\n                    if (lastIndex > 0) {\n                        node.textContent = trustedTypes\n                            ? trustedTypes.emptyScript\n                            : '';\n                        // Generate a new text node for each literal section\n                        // These nodes are also used as the markers for node parts\n                        // We can't use empty text nodes as markers because they're\n                        // normalized when cloning in IE (could simplify when\n                        // IE is no longer supported)\n                        for (let i = 0; i < lastIndex; i++) {\n                            node.append(strings[i], createMarker());\n                            // Walk past the marker node we just added\n                            walker.nextNode();\n                            parts.push({ type: CHILD_PART, index: ++nodeIndex });\n                        }\n                        // Note because this marker is added after the walker's current\n                        // node, it will be walked to in the outer loop (and ignored), so\n                        // we don't need to adjust nodeIndex here\n                        node.append(strings[lastIndex], createMarker());\n                    }\n                }\n            }\n            else if (node.nodeType === 8) {\n                const data = node.data;\n                if (data === markerMatch) {\n                    parts.push({ type: CHILD_PART, index: nodeIndex });\n                }\n                else {\n                    let i = -1;\n                    while ((i = node.data.indexOf(marker, i + 1)) !== -1) {\n                        // Comment node has a binding marker inside, make an inactive part\n                        // The binding won't work, but subsequent bindings will\n                        parts.push({ type: COMMENT_PART, index: nodeIndex });\n                        // Move to the end of the match\n                        i += marker.length - 1;\n                    }\n                }\n            }\n            nodeIndex++;\n        }\n        if (DEV_MODE) {\n            // If there was a duplicate attribute on a tag, then when the tag is\n            // parsed into an element the attribute gets de-duplicated. We can detect\n            // this mismatch if we haven't precisely consumed every attribute name\n            // when preparing the template. This works because `attrNames` is built\n            // from the template string and `attrNameIndex` comes from processing the\n            // resulting DOM.\n            if (attrNames.length !== attrNameIndex) {\n                throw new Error(`Detected duplicate attribute bindings. This occurs if your template ` +\n                    `has duplicate attributes on an element tag. For example ` +\n                    `\"<input ?disabled=\\${true} ?disabled=\\${false}>\" contains a ` +\n                    `duplicate \"disabled\" attribute. The error was detected in ` +\n                    `the following template: \\n` +\n                    '`' +\n                    strings.join('${...}') +\n                    '`');\n            }\n        }\n        // We could set walker.currentNode to another node here to prevent a memory\n        // leak, but every time we prepare a template, we immediately render it\n        // and re-use the walker in new TemplateInstance._clone().\n        debugLogEvent &&\n            debugLogEvent({\n                kind: 'template prep',\n                template: this,\n                clonableTemplate: this.el,\n                parts: this.parts,\n                strings,\n            });\n    }\n    // Overridden via `litHtmlPolyfillSupport` to provide platform support.\n    /** @nocollapse */\n    static createElement(html, _options) {\n        const el = d.createElement('template');\n        el.innerHTML = html;\n        return el;\n    }\n}\nfunction resolveDirective(part, value, parent = part, attributeIndex) {\n    // Bail early if the value is explicitly noChange. Note, this means any\n    // nested directive is still attached and is not run.\n    if (value === noChange) {\n        return value;\n    }\n    let currentDirective = attributeIndex !== undefined\n        ? parent.__directives?.[attributeIndex]\n        : parent.__directive;\n    const nextDirectiveConstructor = isPrimitive(value)\n        ? undefined\n        : // This property needs to remain unminified.\n            value['_$litDirective$'];\n    if (currentDirective?.constructor !== nextDirectiveConstructor) {\n        // This property needs to remain unminified.\n        currentDirective?.['_$notifyDirectiveConnectionChanged']?.(false);\n        if (nextDirectiveConstructor === undefined) {\n            currentDirective = undefined;\n        }\n        else {\n            currentDirective = new nextDirectiveConstructor(part);\n            currentDirective._$initialize(part, parent, attributeIndex);\n        }\n        if (attributeIndex !== undefined) {\n            (parent.__directives ??= [])[attributeIndex] =\n                currentDirective;\n        }\n        else {\n            parent.__directive = currentDirective;\n        }\n    }\n    if (currentDirective !== undefined) {\n        value = resolveDirective(part, currentDirective._$resolve(part, value.values), currentDirective, attributeIndex);\n    }\n    return value;\n}\n/**\n * An updateable instance of a Template. Holds references to the Parts used to\n * update the template instance.\n */\nclass TemplateInstance {\n    constructor(template, parent) {\n        this._$parts = [];\n        /** @internal */\n        this._$disconnectableChildren = undefined;\n        this._$template = template;\n        this._$parent = parent;\n    }\n    // Called by ChildPart parentNode getter\n    get parentNode() {\n        return this._$parent.parentNode;\n    }\n    // See comment in Disconnectable interface for why this is a getter\n    get _$isConnected() {\n        return this._$parent._$isConnected;\n    }\n    // This method is separate from the constructor because we need to return a\n    // DocumentFragment and we don't want to hold onto it with an instance field.\n    _clone(options) {\n        const { el: { content }, parts: parts, } = this._$template;\n        const fragment = (options?.creationScope ?? d).importNode(content, true);\n        walker.currentNode = fragment;\n        let node = walker.nextNode();\n        let nodeIndex = 0;\n        let partIndex = 0;\n        let templatePart = parts[0];\n        while (templatePart !== undefined) {\n            if (nodeIndex === templatePart.index) {\n                let part;\n                if (templatePart.type === CHILD_PART) {\n                    part = new ChildPart(node, node.nextSibling, this, options);\n                }\n                else if (templatePart.type === ATTRIBUTE_PART) {\n                    part = new templatePart.ctor(node, templatePart.name, templatePart.strings, this, options);\n                }\n                else if (templatePart.type === ELEMENT_PART) {\n                    part = new ElementPart(node, this, options);\n                }\n                this._$parts.push(part);\n                templatePart = parts[++partIndex];\n            }\n            if (nodeIndex !== templatePart?.index) {\n                node = walker.nextNode();\n                nodeIndex++;\n            }\n        }\n        // We need to set the currentNode away from the cloned tree so that we\n        // don't hold onto the tree even if the tree is detached and should be\n        // freed.\n        walker.currentNode = d;\n        return fragment;\n    }\n    _update(values) {\n        let i = 0;\n        for (const part of this._$parts) {\n            if (part !== undefined) {\n                debugLogEvent &&\n                    debugLogEvent({\n                        kind: 'set part',\n                        part,\n                        value: values[i],\n                        valueIndex: i,\n                        values,\n                        templateInstance: this,\n                    });\n                if (part.strings !== undefined) {\n                    part._$setValue(values, part, i);\n                    // The number of values the part consumes is part.strings.length - 1\n                    // since values are in between template spans. We increment i by 1\n                    // later in the loop, so increment it by part.strings.length - 2 here\n                    i += part.strings.length - 2;\n                }\n                else {\n                    part._$setValue(values[i]);\n                }\n            }\n            i++;\n        }\n    }\n}\nclass ChildPart {\n    // See comment in Disconnectable interface for why this is a getter\n    get _$isConnected() {\n        // ChildParts that are not at the root should always be created with a\n        // parent; only RootChildNode's won't, so they return the local isConnected\n        // state\n        return this._$parent?._$isConnected ?? this.__isConnected;\n    }\n    constructor(startNode, endNode, parent, options) {\n        this.type = CHILD_PART;\n        this._$committedValue = nothing;\n        // The following fields will be patched onto ChildParts when required by\n        // AsyncDirective\n        /** @internal */\n        this._$disconnectableChildren = undefined;\n        this._$startNode = startNode;\n        this._$endNode = endNode;\n        this._$parent = parent;\n        this.options = options;\n        // Note __isConnected is only ever accessed on RootParts (i.e. when there is\n        // no _$parent); the value on a non-root-part is \"don't care\", but checking\n        // for parent would be more code\n        this.__isConnected = options?.isConnected ?? true;\n        if (ENABLE_EXTRA_SECURITY_HOOKS) {\n            // Explicitly initialize for consistent class shape.\n            this._textSanitizer = undefined;\n        }\n    }\n    /**\n     * The parent node into which the part renders its content.\n     *\n     * A ChildPart's content consists of a range of adjacent child nodes of\n     * `.parentNode`, possibly bordered by 'marker nodes' (`.startNode` and\n     * `.endNode`).\n     *\n     * - If both `.startNode` and `.endNode` are non-null, then the part's content\n     * consists of all siblings between `.startNode` and `.endNode`, exclusively.\n     *\n     * - If `.startNode` is non-null but `.endNode` is null, then the part's\n     * content consists of all siblings following `.startNode`, up to and\n     * including the last child of `.parentNode`. If `.endNode` is non-null, then\n     * `.startNode` will always be non-null.\n     *\n     * - If both `.endNode` and `.startNode` are null, then the part's content\n     * consists of all child nodes of `.parentNode`.\n     */\n    get parentNode() {\n        let parentNode = wrap(this._$startNode).parentNode;\n        const parent = this._$parent;\n        if (parent !== undefined &&\n            parentNode?.nodeType === 11 /* Node.DOCUMENT_FRAGMENT */) {\n            // If the parentNode is a DocumentFragment, it may be because the DOM is\n            // still in the cloned fragment during initial render; if so, get the real\n            // parentNode the part will be committed into by asking the parent.\n            parentNode = parent.parentNode;\n        }\n        return parentNode;\n    }\n    /**\n     * The part's leading marker node, if any. See `.parentNode` for more\n     * information.\n     */\n    get startNode() {\n        return this._$startNode;\n    }\n    /**\n     * The part's trailing marker node, if any. See `.parentNode` for more\n     * information.\n     */\n    get endNode() {\n        return this._$endNode;\n    }\n    _$setValue(value, directiveParent = this) {\n        if (DEV_MODE && this.parentNode === null) {\n            throw new Error(`This \\`ChildPart\\` has no \\`parentNode\\` and therefore cannot accept a value. This likely means the element containing the part was manipulated in an unsupported way outside of Lit's control such that the part's marker nodes were ejected from DOM. For example, setting the element's \\`innerHTML\\` or \\`textContent\\` can do this.`);\n        }\n        value = resolveDirective(this, value, directiveParent);\n        if (isPrimitive(value)) {\n            // Non-rendering child values. It's important that these do not render\n            // empty text nodes to avoid issues with preventing default <slot>\n            // fallback content.\n            if (value === nothing || value == null || value === '') {\n                if (this._$committedValue !== nothing) {\n                    debugLogEvent &&\n                        debugLogEvent({\n                            kind: 'commit nothing to child',\n                            start: this._$startNode,\n                            end: this._$endNode,\n                            parent: this._$parent,\n                            options: this.options,\n                        });\n                    this._$clear();\n                }\n                this._$committedValue = nothing;\n            }\n            else if (value !== this._$committedValue && value !== noChange) {\n                this._commitText(value);\n            }\n            // This property needs to remain unminified.\n        }\n        else if (value['_$litType$'] !== undefined) {\n            this._commitTemplateResult(value);\n        }\n        else if (value.nodeType !== undefined) {\n            if (DEV_MODE && this.options?.host === value) {\n                this._commitText(`[probable mistake: rendered a template's host in itself ` +\n                    `(commonly caused by writing \\${this} in a template]`);\n                console.warn(`Attempted to render the template host`, value, `inside itself. This is almost always a mistake, and in dev mode `, `we render some warning text. In production however, we'll `, `render it, which will usually result in an error, and sometimes `, `in the element disappearing from the DOM.`);\n                return;\n            }\n            this._commitNode(value);\n        }\n        else if (isIterable(value)) {\n            this._commitIterable(value);\n        }\n        else {\n            // Fallback, will render the string representation\n            this._commitText(value);\n        }\n    }\n    _insert(node) {\n        return wrap(wrap(this._$startNode).parentNode).insertBefore(node, this._$endNode);\n    }\n    _commitNode(value) {\n        if (this._$committedValue !== value) {\n            this._$clear();\n            if (ENABLE_EXTRA_SECURITY_HOOKS &&\n                sanitizerFactoryInternal !== noopSanitizer) {\n                const parentNodeName = this._$startNode.parentNode?.nodeName;\n                if (parentNodeName === 'STYLE' || parentNodeName === 'SCRIPT') {\n                    let message = 'Forbidden';\n                    if (DEV_MODE) {\n                        if (parentNodeName === 'STYLE') {\n                            message =\n                                `Lit does not support binding inside style nodes. ` +\n                                    `This is a security risk, as style injection attacks can ` +\n                                    `exfiltrate data and spoof UIs. ` +\n                                    `Consider instead using css\\`...\\` literals ` +\n                                    `to compose styles, and make do dynamic styling with ` +\n                                    `css custom properties, ::parts, <slot>s, ` +\n                                    `and by mutating the DOM rather than stylesheets.`;\n                        }\n                        else {\n                            message =\n                                `Lit does not support binding inside script nodes. ` +\n                                    `This is a security risk, as it could allow arbitrary ` +\n                                    `code execution.`;\n                        }\n                    }\n                    throw new Error(message);\n                }\n            }\n            debugLogEvent &&\n                debugLogEvent({\n                    kind: 'commit node',\n                    start: this._$startNode,\n                    parent: this._$parent,\n                    value: value,\n                    options: this.options,\n                });\n            this._$committedValue = this._insert(value);\n        }\n    }\n    _commitText(value) {\n        // If the committed value is a primitive it means we called _commitText on\n        // the previous render, and we know that this._$startNode.nextSibling is a\n        // Text node. We can now just replace the text content (.data) of the node.\n        if (this._$committedValue !== nothing &&\n            isPrimitive(this._$committedValue)) {\n            const node = wrap(this._$startNode).nextSibling;\n            if (ENABLE_EXTRA_SECURITY_HOOKS) {\n                if (this._textSanitizer === undefined) {\n                    this._textSanitizer = createSanitizer(node, 'data', 'property');\n                }\n                value = this._textSanitizer(value);\n            }\n            debugLogEvent &&\n                debugLogEvent({\n                    kind: 'commit text',\n                    node,\n                    value,\n                    options: this.options,\n                });\n            node.data = value;\n        }\n        else {\n            if (ENABLE_EXTRA_SECURITY_HOOKS) {\n                const textNode = d.createTextNode('');\n                this._commitNode(textNode);\n                // When setting text content, for security purposes it matters a lot\n                // what the parent is. For example, <style> and <script> need to be\n                // handled with care, while <span> does not. So first we need to put a\n                // text node into the document, then we can sanitize its content.\n                if (this._textSanitizer === undefined) {\n                    this._textSanitizer = createSanitizer(textNode, 'data', 'property');\n                }\n                value = this._textSanitizer(value);\n                debugLogEvent &&\n                    debugLogEvent({\n                        kind: 'commit text',\n                        node: textNode,\n                        value,\n                        options: this.options,\n                    });\n                textNode.data = value;\n            }\n            else {\n                this._commitNode(d.createTextNode(value));\n                debugLogEvent &&\n                    debugLogEvent({\n                        kind: 'commit text',\n                        node: wrap(this._$startNode).nextSibling,\n                        value,\n                        options: this.options,\n                    });\n            }\n        }\n        this._$committedValue = value;\n    }\n    _commitTemplateResult(result) {\n        // This property needs to remain unminified.\n        const { values, ['_$litType$']: type } = result;\n        // If $litType$ is a number, result is a plain TemplateResult and we get\n        // the template from the template cache. If not, result is a\n        // CompiledTemplateResult and _$litType$ is a CompiledTemplate and we need\n        // to create the <template> element the first time we see it.\n        const template = typeof type === 'number'\n            ? this._$getTemplate(result)\n            : (type.el === undefined &&\n                (type.el = Template.createElement(trustFromTemplateString(type.h, type.h[0]), this.options)),\n                type);\n        if (this._$committedValue?._$template === template) {\n            debugLogEvent &&\n                debugLogEvent({\n                    kind: 'template updating',\n                    template,\n                    instance: this._$committedValue,\n                    parts: this._$committedValue._$parts,\n                    options: this.options,\n                    values,\n                });\n            this._$committedValue._update(values);\n        }\n        else {\n            const instance = new TemplateInstance(template, this);\n            const fragment = instance._clone(this.options);\n            debugLogEvent &&\n                debugLogEvent({\n                    kind: 'template instantiated',\n                    template,\n                    instance,\n                    parts: instance._$parts,\n                    options: this.options,\n                    fragment,\n                    values,\n                });\n            instance._update(values);\n            debugLogEvent &&\n                debugLogEvent({\n                    kind: 'template instantiated and updated',\n                    template,\n                    instance,\n                    parts: instance._$parts,\n                    options: this.options,\n                    fragment,\n                    values,\n                });\n            this._commitNode(fragment);\n            this._$committedValue = instance;\n        }\n    }\n    // Overridden via `litHtmlPolyfillSupport` to provide platform support.\n    /** @internal */\n    _$getTemplate(result) {\n        let template = templateCache.get(result.strings);\n        if (template === undefined) {\n            templateCache.set(result.strings, (template = new Template(result)));\n        }\n        return template;\n    }\n    _commitIterable(value) {\n        // For an Iterable, we create a new InstancePart per item, then set its\n        // value to the item. This is a little bit of overhead for every item in\n        // an Iterable, but it lets us recurse easily and efficiently update Arrays\n        // of TemplateResults that will be commonly returned from expressions like:\n        // array.map((i) => html`${i}`), by reusing existing TemplateInstances.\n        // If value is an array, then the previous render was of an\n        // iterable and value will contain the ChildParts from the previous\n        // render. If value is not an array, clear this part and make a new\n        // array for ChildParts.\n        if (!isArray(this._$committedValue)) {\n            this._$committedValue = [];\n            this._$clear();\n        }\n        // Lets us keep track of how many items we stamped so we can clear leftover\n        // items from a previous render\n        const itemParts = this._$committedValue;\n        let partIndex = 0;\n        let itemPart;\n        for (const item of value) {\n            if (partIndex === itemParts.length) {\n                // If no existing part, create a new one\n                // TODO (justinfagnani): test perf impact of always creating two parts\n                // instead of sharing parts between nodes\n                // https://github.com/lit/lit/issues/1266\n                itemParts.push((itemPart = new ChildPart(this._insert(createMarker()), this._insert(createMarker()), this, this.options)));\n            }\n            else {\n                // Reuse an existing part\n                itemPart = itemParts[partIndex];\n            }\n            itemPart._$setValue(item);\n            partIndex++;\n        }\n        if (partIndex < itemParts.length) {\n            // itemParts always have end nodes\n            this._$clear(itemPart && wrap(itemPart._$endNode).nextSibling, partIndex);\n            // Truncate the parts array so _value reflects the current state\n            itemParts.length = partIndex;\n        }\n    }\n    /**\n     * Removes the nodes contained within this Part from the DOM.\n     *\n     * @param start Start node to clear from, for clearing a subset of the part's\n     *     DOM (used when truncating iterables)\n     * @param from  When `start` is specified, the index within the iterable from\n     *     which ChildParts are being removed, used for disconnecting directives in\n     *     those Parts.\n     *\n     * @internal\n     */\n    _$clear(start = wrap(this._$startNode).nextSibling, from) {\n        this._$notifyConnectionChanged?.(false, true, from);\n        while (start && start !== this._$endNode) {\n            const n = wrap(start).nextSibling;\n            wrap(start).remove();\n            start = n;\n        }\n    }\n    /**\n     * Implementation of RootPart's `isConnected`. Note that this metod\n     * should only be called on `RootPart`s (the `ChildPart` returned from a\n     * top-level `render()` call). It has no effect on non-root ChildParts.\n     * @param isConnected Whether to set\n     * @internal\n     */\n    setConnected(isConnected) {\n        if (this._$parent === undefined) {\n            this.__isConnected = isConnected;\n            this._$notifyConnectionChanged?.(isConnected);\n        }\n        else if (DEV_MODE) {\n            throw new Error('part.setConnected() may only be called on a ' +\n                'RootPart returned from render().');\n        }\n    }\n}\nclass AttributePart {\n    get tagName() {\n        return this.element.tagName;\n    }\n    // See comment in Disconnectable interface for why this is a getter\n    get _$isConnected() {\n        return this._$parent._$isConnected;\n    }\n    constructor(element, name, strings, parent, options) {\n        this.type = ATTRIBUTE_PART;\n        /** @internal */\n        this._$committedValue = nothing;\n        /** @internal */\n        this._$disconnectableChildren = undefined;\n        this.element = element;\n        this.name = name;\n        this._$parent = parent;\n        this.options = options;\n        if (strings.length > 2 || strings[0] !== '' || strings[1] !== '') {\n            this._$committedValue = new Array(strings.length - 1).fill(new String());\n            this.strings = strings;\n        }\n        else {\n            this._$committedValue = nothing;\n        }\n        if (ENABLE_EXTRA_SECURITY_HOOKS) {\n            this._sanitizer = undefined;\n        }\n    }\n    /**\n     * Sets the value of this part by resolving the value from possibly multiple\n     * values and static strings and committing it to the DOM.\n     * If this part is single-valued, `this._strings` will be undefined, and the\n     * method will be called with a single value argument. If this part is\n     * multi-value, `this._strings` will be defined, and the method is called\n     * with the value array of the part's owning TemplateInstance, and an offset\n     * into the value array from which the values should be read.\n     * This method is overloaded this way to eliminate short-lived array slices\n     * of the template instance values, and allow a fast-path for single-valued\n     * parts.\n     *\n     * @param value The part value, or an array of values for multi-valued parts\n     * @param valueIndex the index to start reading values from. `undefined` for\n     *   single-valued parts\n     * @param noCommit causes the part to not commit its value to the DOM. Used\n     *   in hydration to prime attribute parts with their first-rendered value,\n     *   but not set the attribute, and in SSR to no-op the DOM operation and\n     *   capture the value for serialization.\n     *\n     * @internal\n     */\n    _$setValue(value, directiveParent = this, valueIndex, noCommit) {\n        const strings = this.strings;\n        // Whether any of the values has changed, for dirty-checking\n        let change = false;\n        if (strings === undefined) {\n            // Single-value binding case\n            value = resolveDirective(this, value, directiveParent, 0);\n            change =\n                !isPrimitive(value) ||\n                    (value !== this._$committedValue && value !== noChange);\n            if (change) {\n                this._$committedValue = value;\n            }\n        }\n        else {\n            // Interpolation case\n            const values = value;\n            value = strings[0];\n            let i, v;\n            for (i = 0; i < strings.length - 1; i++) {\n                v = resolveDirective(this, values[valueIndex + i], directiveParent, i);\n                if (v === noChange) {\n                    // If the user-provided value is `noChange`, use the previous value\n                    v = this._$committedValue[i];\n                }\n                change ||=\n                    !isPrimitive(v) || v !== this._$committedValue[i];\n                if (v === nothing) {\n                    value = nothing;\n                }\n                else if (value !== nothing) {\n                    value += (v ?? '') + strings[i + 1];\n                }\n                // We always record each value, even if one is `nothing`, for future\n                // change detection.\n                this._$committedValue[i] = v;\n            }\n        }\n        if (change && !noCommit) {\n            this._commitValue(value);\n        }\n    }\n    /** @internal */\n    _commitValue(value) {\n        if (value === nothing) {\n            wrap(this.element).removeAttribute(this.name);\n        }\n        else {\n            if (ENABLE_EXTRA_SECURITY_HOOKS) {\n                if (this._sanitizer === undefined) {\n                    this._sanitizer = sanitizerFactoryInternal(this.element, this.name, 'attribute');\n                }\n                value = this._sanitizer(value ?? '');\n            }\n            debugLogEvent &&\n                debugLogEvent({\n                    kind: 'commit attribute',\n                    element: this.element,\n                    name: this.name,\n                    value,\n                    options: this.options,\n                });\n            wrap(this.element).setAttribute(this.name, (value ?? ''));\n        }\n    }\n}\nclass PropertyPart extends AttributePart {\n    constructor() {\n        super(...arguments);\n        this.type = PROPERTY_PART;\n    }\n    /** @internal */\n    _commitValue(value) {\n        if (ENABLE_EXTRA_SECURITY_HOOKS) {\n            if (this._sanitizer === undefined) {\n                this._sanitizer = sanitizerFactoryInternal(this.element, this.name, 'property');\n            }\n            value = this._sanitizer(value);\n        }\n        debugLogEvent &&\n            debugLogEvent({\n                kind: 'commit property',\n                element: this.element,\n                name: this.name,\n                value,\n                options: this.options,\n            });\n        // eslint-disable-next-line @typescript-eslint/no-explicit-any\n        this.element[this.name] = value === nothing ? undefined : value;\n    }\n}\nclass BooleanAttributePart extends AttributePart {\n    constructor() {\n        super(...arguments);\n        this.type = BOOLEAN_ATTRIBUTE_PART;\n    }\n    /** @internal */\n    _commitValue(value) {\n        debugLogEvent &&\n            debugLogEvent({\n                kind: 'commit boolean attribute',\n                element: this.element,\n                name: this.name,\n                value: !!(value && value !== nothing),\n                options: this.options,\n            });\n        wrap(this.element).toggleAttribute(this.name, !!value && value !== nothing);\n    }\n}\nclass EventPart extends AttributePart {\n    constructor(element, name, strings, parent, options) {\n        super(element, name, strings, parent, options);\n        this.type = EVENT_PART;\n        if (DEV_MODE && this.strings !== undefined) {\n            throw new Error(`A \\`<${element.localName}>\\` has a \\`@${name}=...\\` listener with ` +\n                'invalid content. Event listeners in templates must have exactly ' +\n                'one expression and no surrounding text.');\n        }\n    }\n    // EventPart does not use the base _$setValue/_resolveValue implementation\n    // since the dirty checking is more complex\n    /** @internal */\n    _$setValue(newListener, directiveParent = this) {\n        newListener =\n            resolveDirective(this, newListener, directiveParent, 0) ?? nothing;\n        if (newListener === noChange) {\n            return;\n        }\n        const oldListener = this._$committedValue;\n        // If the new value is nothing or any options change we have to remove the\n        // part as a listener.\n        const shouldRemoveListener = (newListener === nothing && oldListener !== nothing) ||\n            newListener.capture !==\n                oldListener.capture ||\n            newListener.once !==\n                oldListener.once ||\n            newListener.passive !==\n                oldListener.passive;\n        // If the new value is not nothing and we removed the listener, we have\n        // to add the part as a listener.\n        const shouldAddListener = newListener !== nothing &&\n            (oldListener === nothing || shouldRemoveListener);\n        debugLogEvent &&\n            debugLogEvent({\n                kind: 'commit event listener',\n                element: this.element,\n                name: this.name,\n                value: newListener,\n                options: this.options,\n                removeListener: shouldRemoveListener,\n                addListener: shouldAddListener,\n                oldListener,\n            });\n        if (shouldRemoveListener) {\n            this.element.removeEventListener(this.name, this, oldListener);\n        }\n        if (shouldAddListener) {\n            // Beware: IE11 and Chrome 41 don't like using the listener as the\n            // options object. Figure out how to deal w/ this in IE11 - maybe\n            // patch addEventListener?\n            this.element.addEventListener(this.name, this, newListener);\n        }\n        this._$committedValue = newListener;\n    }\n    handleEvent(event) {\n        if (typeof this._$committedValue === 'function') {\n            this._$committedValue.call(this.options?.host ?? this.element, event);\n        }\n        else {\n            this._$committedValue.handleEvent(event);\n        }\n    }\n}\nclass ElementPart {\n    constructor(element, parent, options) {\n        this.element = element;\n        this.type = ELEMENT_PART;\n        /** @internal */\n        this._$disconnectableChildren = undefined;\n        this._$parent = parent;\n        this.options = options;\n    }\n    // See comment in Disconnectable interface for why this is a getter\n    get _$isConnected() {\n        return this._$parent._$isConnected;\n    }\n    _$setValue(value) {\n        debugLogEvent &&\n            debugLogEvent({\n                kind: 'commit to element binding',\n                element: this.element,\n                value,\n                options: this.options,\n            });\n        resolveDirective(this, value);\n    }\n}\n/**\n * END USERS SHOULD NOT RELY ON THIS OBJECT.\n *\n * Private exports for use by other Lit packages, not intended for use by\n * external users.\n *\n * We currently do not make a mangled rollup build of the lit-ssr code. In order\n * to keep a number of (otherwise private) top-level exports  mangled in the\n * client side code, we export a _$LH object containing those members (or\n * helper methods for accessing private fields of those members), and then\n * re-export them for use in lit-ssr. This keeps lit-ssr agnostic to whether the\n * client-side code is being used in `dev` mode or `prod` mode.\n *\n * This has a unique name, to disambiguate it from private exports in\n * lit-element, which re-exports all of lit-html.\n *\n * @private\n */\nconst _$LH = {\n    // Used in lit-ssr\n    _boundAttributeSuffix: boundAttributeSuffix,\n    _marker: marker,\n    _markerMatch: markerMatch,\n    _HTML_RESULT: HTML_RESULT,\n    _getTemplateHtml: getTemplateHtml,\n    // Used in tests and private-ssr-support\n    _TemplateInstance: TemplateInstance,\n    _isIterable: isIterable,\n    _resolveDirective: resolveDirective,\n    _ChildPart: ChildPart,\n    _AttributePart: AttributePart,\n    _BooleanAttributePart: BooleanAttributePart,\n    _EventPart: EventPart,\n    _PropertyPart: PropertyPart,\n    _ElementPart: ElementPart,\n};\n// Apply polyfills if available\nconst polyfillSupport = DEV_MODE\n    ? global.litHtmlPolyfillSupportDevMode\n    : global.litHtmlPolyfillSupport;\npolyfillSupport?.(Template, ChildPart);\n// IMPORTANT: do not change the property name or the assignment expression.\n// This line will be used in regexes to search for lit-html usage.\n(global.litHtmlVersions ??= []).push('3.1.2');\nif (DEV_MODE && global.litHtmlVersions.length > 1) {\n    issueWarning('multiple-versions', `Multiple versions of Lit loaded. ` +\n        `Loading multiple versions is not recommended.`);\n}\n/**\n * Renders a value, usually a lit-html TemplateResult, to the container.\n *\n * This example renders the text \"Hello, Zoe!\" inside a paragraph tag, appending\n * it to the container `document.body`.\n *\n * ```js\n * import {html, render} from 'lit';\n *\n * const name = \"Zoe\";\n * render(html`<p>Hello, ${name}!</p>`, document.body);\n * ```\n *\n * @param value Any [renderable\n *   value](https://lit.dev/docs/templates/expressions/#child-expressions),\n *   typically a {@linkcode TemplateResult} created by evaluating a template tag\n *   like {@linkcode html} or {@linkcode svg}.\n * @param container A DOM container to render to. The first render will append\n *   the rendered value to the container, and subsequent renders will\n *   efficiently update the rendered value if the same result type was\n *   previously rendered there.\n * @param options See {@linkcode RenderOptions} for options documentation.\n * @see\n * {@link https://lit.dev/docs/libraries/standalone-templates/#rendering-lit-html-templates| Rendering Lit HTML Templates}\n */\nconst render = (value, container, options) => {\n    if (DEV_MODE && container == null) {\n        // Give a clearer error message than\n        //     Uncaught TypeError: Cannot read properties of null (reading\n        //     '_$litPart$')\n        // which reads like an internal Lit error.\n        throw new TypeError(`The container to render into may not be ${container}`);\n    }\n    const renderId = DEV_MODE ? debugLogRenderId++ : 0;\n    const partOwnerNode = options?.renderBefore ?? container;\n    // This property needs to remain unminified.\n    // eslint-disable-next-line @typescript-eslint/no-explicit-any\n    let part = partOwnerNode['_$litPart$'];\n    debugLogEvent &&\n        debugLogEvent({\n            kind: 'begin render',\n            id: renderId,\n            value,\n            container,\n            options,\n            part,\n        });\n    if (part === undefined) {\n        const endNode = options?.renderBefore ?? null;\n        // This property needs to remain unminified.\n        // eslint-disable-next-line @typescript-eslint/no-explicit-any\n        partOwnerNode['_$litPart$'] = part = new ChildPart(container.insertBefore(createMarker(), endNode), endNode, undefined, options ?? {});\n    }\n    part._$setValue(value);\n    debugLogEvent &&\n        debugLogEvent({\n            kind: 'end render',\n            id: renderId,\n            value,\n            container,\n            options,\n            part,\n        });\n    return part;\n};\nif (ENABLE_EXTRA_SECURITY_HOOKS) {\n    render.setSanitizer = setSanitizer;\n    render.createSanitizer = createSanitizer;\n    if (DEV_MODE) {\n        render._testOnlyClearSanitizerFactoryDoNotCallOrElse =\n            _testOnlyClearSanitizerFactoryDoNotCallOrElse;\n    }\n}\n//# sourceMappingURL=lit-html.js.map\n\n//# sourceURL=webpack://my-website/./node_modules/lit-html/development/lit-html.js?");
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
 
-/***/ }),
+fieldset {
+  margin: 0;
+  padding: 0;
+}
 
-/***/ "./node_modules/lit/index.js":
-/*!***********************************!*\
-  !*** ./node_modules/lit/index.js ***!
-  \***********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+legend {
+  padding: 0;
+}
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   CSSResult: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.CSSResult),\n/* harmony export */   LitElement: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.LitElement),\n/* harmony export */   ReactiveElement: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.ReactiveElement),\n/* harmony export */   _$LE: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__._$LE),\n/* harmony export */   _$LH: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__._$LH),\n/* harmony export */   adoptStyles: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.adoptStyles),\n/* harmony export */   css: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.css),\n/* harmony export */   defaultConverter: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.defaultConverter),\n/* harmony export */   getCompatibleStyle: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.getCompatibleStyle),\n/* harmony export */   html: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.html),\n/* harmony export */   isServer: () => (/* reexport safe */ lit_html_is_server_js__WEBPACK_IMPORTED_MODULE_3__.isServer),\n/* harmony export */   noChange: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.noChange),\n/* harmony export */   notEqual: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.notEqual),\n/* harmony export */   nothing: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.nothing),\n/* harmony export */   render: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.render),\n/* harmony export */   supportsAdoptingStyleSheets: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.supportsAdoptingStyleSheets),\n/* harmony export */   svg: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.svg),\n/* harmony export */   unsafeCSS: () => (/* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.unsafeCSS)\n/* harmony export */ });\n/* harmony import */ var _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @lit/reactive-element */ \"./node_modules/@lit/reactive-element/development/reactive-element.js\");\n/* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lit-html */ \"./node_modules/lit-html/development/lit-html.js\");\n/* harmony import */ var lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lit-element/lit-element.js */ \"./node_modules/lit-element/development/lit-element.js\");\n/* harmony import */ var lit_html_is_server_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lit-html/is-server.js */ \"./node_modules/lit-html/development/is-server.js\");\n\n//# sourceMappingURL=index.js.map\n\n\n//# sourceURL=webpack://my-website/./node_modules/lit/index.js?");
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-/***/ })
+/*
+Reset default styling for dialogs.
+*/
 
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	__webpack_require__("./src/shared/time-item.js");
-/******/ 	__webpack_require__("./src/shared/side-nav.js");
-/******/ 	__webpack_require__("./src/shared/footer.js");
-/******/ 	__webpack_require__("./src/shared/time-line.js");
-/******/ 	__webpack_require__("./src/shared/socials.js");
-/******/ 	__webpack_require__("./src/shared/skill-sections/languages.js");
-/******/ 	__webpack_require__("./src/shared/skill-sections/frontend.js");
-/******/ 	__webpack_require__("./src/shared/skill-sections/backend.js");
-/******/ 	__webpack_require__("./src/shared/skill-sections/database.js");
-/******/ 	__webpack_require__("./src/shared/skill-sections/other.js");
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/shared/mobile/mobile-side-nav.js");
-/******/ 	
-/******/ })()
-;
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements display: block by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add vertical-align: middle to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+:root,
+[data-theme] {
+  background-color: var(--fallback-b1,oklch(var(--b1)/1));
+  color: var(--fallback-bc,oklch(var(--bc)/1));
+}
+
+@supports not (color: oklch(0 0 0)) {
+  :root {
+    color-scheme: light;
+    --fallback-p: #491eff;
+    --fallback-pc: #d4dbff;
+    --fallback-s: #ff41c7;
+    --fallback-sc: #fff9fc;
+    --fallback-a: #00cfbd;
+    --fallback-ac: #00100d;
+    --fallback-n: #2b3440;
+    --fallback-nc: #d7dde4;
+    --fallback-b1: #ffffff;
+    --fallback-b2: #e5e6e6;
+    --fallback-b3: #e5e6e6;
+    --fallback-bc: #1f2937;
+    --fallback-in: #00b3f0;
+    --fallback-inc: #000000;
+    --fallback-su: #00ca92;
+    --fallback-suc: #000000;
+    --fallback-wa: #ffc22d;
+    --fallback-wac: #000000;
+    --fallback-er: #ff6f70;
+    --fallback-erc: #000000;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --fallback-p: #7582ff;
+      --fallback-pc: #050617;
+      --fallback-s: #ff71cf;
+      --fallback-sc: #190211;
+      --fallback-a: #00c7b5;
+      --fallback-ac: #000e0c;
+      --fallback-n: #2a323c;
+      --fallback-nc: #a6adbb;
+      --fallback-b1: #1d232a;
+      --fallback-b2: #191e24;
+      --fallback-b3: #15191e;
+      --fallback-bc: #a6adbb;
+      --fallback-in: #00b3f0;
+      --fallback-inc: #000000;
+      --fallback-su: #00ca92;
+      --fallback-suc: #000000;
+      --fallback-wa: #ffc22d;
+      --fallback-wac: #000000;
+      --fallback-er: #ff6f70;
+      --fallback-erc: #000000;
+    }
+  }
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  color-scheme: light;
+  --in: 0.7206 0.191 231.6;
+  --su: 64.8% 0.150 160;
+  --wa: 0.8471 0.199 83.87;
+  --er: 0.7176 0.221 22.18;
+  --pc: 0.152344 0.017892 200.026556;
+  --sc: 0.15787 0.020249 356.29965;
+  --ac: 0.158762 0.029206 78.618794;
+  --nc: 0.847148 0.013247 313.189598;
+  --inc: 0 0 0;
+  --suc: 0 0 0;
+  --wac: 0 0 0;
+  --erc: 0 0 0;
+  --rounded-box: 1rem;
+  --rounded-badge: 1.9rem;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --p: 0.76172 0.089459 200.026556;
+  --s: 0.789351 0.101246 356.29965;
+  --a: 0.793811 0.146032 78.618794;
+  --n: 0.235742 0.066235 313.189598;
+  --b1: 0.977882 0.00418 56.375637;
+  --b2: 0.939822 0.007638 61.449292;
+  --b3: 0.915861 0.006811 53.440502;
+  --bc: 0.235742 0.066235 313.189598;
+  --rounded-btn: 1.9rem;
+  --tab-border: 2px;
+  --tab-radius: 0.7rem;
+}
+
+[data-theme=cupcake] {
+  color-scheme: light;
+  --in: 0.7206 0.191 231.6;
+  --su: 64.8% 0.150 160;
+  --wa: 0.8471 0.199 83.87;
+  --er: 0.7176 0.221 22.18;
+  --pc: 0.152344 0.017892 200.026556;
+  --sc: 0.15787 0.020249 356.29965;
+  --ac: 0.158762 0.029206 78.618794;
+  --nc: 0.847148 0.013247 313.189598;
+  --inc: 0 0 0;
+  --suc: 0 0 0;
+  --wac: 0 0 0;
+  --erc: 0 0 0;
+  --rounded-box: 1rem;
+  --rounded-badge: 1.9rem;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --p: 0.76172 0.089459 200.026556;
+  --s: 0.789351 0.101246 356.29965;
+  --a: 0.793811 0.146032 78.618794;
+  --n: 0.235742 0.066235 313.189598;
+  --b1: 0.977882 0.00418 56.375637;
+  --b2: 0.939822 0.007638 61.449292;
+  --b3: 0.915861 0.006811 53.440502;
+  --bc: 0.235742 0.066235 313.189598;
+  --rounded-btn: 1.9rem;
+  --tab-border: 2px;
+  --tab-radius: 0.7rem;
+}
+
+[data-theme=dracula] {
+  color-scheme: dark;
+  --b2: 0.268053 0.020556 277.508664;
+  --b3: 0.247877 0.019009 277.508664;
+  --pc: 0.150922 0.036614 346.812432;
+  --sc: 0.148405 0.029709 301.883095;
+  --ac: 0.166785 0.024826 66.558491;
+  --nc: 0.878891 0.006515 275.524078;
+  --inc: 0.176526 0.018676 212.846491;
+  --suc: 0.174199 0.043903 148.024881;
+  --wac: 0.191068 0.026849 112.757109;
+  --erc: 0.136441 0.041266 24.430965;
+  --rounded-box: 1rem;
+  --rounded-btn: 0.5rem;
+  --rounded-badge: 1.9rem;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --tab-radius: 0.5rem;
+  --p: 0.754611 0.18307 346.812432;
+  --s: 0.742023 0.148546 301.883095;
+  --a: 0.833927 0.124132 66.558491;
+  --n: 0.394456 0.032576 275.524078;
+  --b1: 0.288229 0.022103 277.508664;
+  --bc: 0.977477 0.007913 106.545019;
+  --in: 0.88263 0.09338 212.846491;
+  --su: 0.870995 0.219516 148.024881;
+  --wa: 0.955338 0.134246 112.757109;
+  --er: 0.682204 0.206328 24.430965;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+@media (hover:hover) {
+  .menu li > *:not(ul, .menu-title, details, .btn):active,
+.menu li > *:not(ul, .menu-title, details, .btn).active,
+.menu li > details > summary:active {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+  }
+}
+
+.divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 1rem;
+  white-space: nowrap;
+}
+
+.divider:before,
+  .divider:after {
+  height: 0.125rem;
+  width: 100%;
+  flex-grow: 1;
+  --tw-content: '';
+  content: var(--tw-content);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+}
+
+@media (hover: hover) {
+  :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(.active, .btn):hover {
+    cursor: pointer;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  @supports (color: oklch(0 0 0)) {
+    :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(.active, .btn):hover {
+      background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+    }
+  }
+}
+
+.footer {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: row;
+  place-items: start;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.footer > * {
+  display: grid;
+  place-items: start;
+  gap: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+  .footer {
+    grid-auto-flow: column;
+  }
+
+  .footer-center {
+    grid-auto-flow: row dense;
+  }
+}
+
+.link {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.5rem;
+}
+
+.menu :where(li ul) {
+  position: relative;
+  white-space: nowrap;
+  margin-inline-start: 1rem;
+  padding-inline-start: 0.5rem;
+}
+
+.menu :where(li:not(.menu-title) > *:not(ul, details, .menu-title, .btn)), .menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  grid-auto-columns: minmax(auto, max-content) auto max-content;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.menu li.disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: var(--fallback-bc,oklch(var(--bc)/0.3));
+}
+
+.menu :where(li > .menu-dropdown:not(.menu-dropdown-show)) {
+  display: none;
+}
+
+:where(.menu li) {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+:where(.menu li) .badge {
+  justify-self: end;
+}
+
+@keyframes button-pop {
+  0% {
+    transform: scale(var(--btn-focus-scale, 0.98));
+  }
+
+  40% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    background-position-y: 5px;
+  }
+
+  50% {
+    background-position-y: -2px;
+  }
+
+  100% {
+    background-position-y: 0;
+  }
+}
+
+.divider:not(:empty) {
+  gap: 1rem;
+}
+
+.divider-primary:before,
+  .divider-primary:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+}
+
+.divider-secondary:before,
+  .divider-secondary:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
+}
+
+.link:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+:where(.menu li:empty) {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+  opacity: 0.1;
+  margin: 0.5rem 1rem;
+  height: 1px;
+}
+
+.menu :where(li ul):before {
+  position: absolute;
+  bottom: 0.75rem;
+  inset-inline-start: 0px;
+  top: 0.75rem;
+  width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+  opacity: 0.1;
+  content: "";
+}
+
+.menu :where(li:not(.menu-title) > *:not(ul, details, .menu-title, .btn)),
+.menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  border-radius: var(--rounded-btn, 0.5rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: start;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 200ms;
+  text-wrap: balance;
+}
+
+:where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):is(summary):not(.active, .btn):focus-visible, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):is(summary):not(.active, .btn):focus-visible {
+  cursor: pointer;
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.menu li > *:not(ul, .menu-title, details, .btn):active,
+.menu li > *:not(ul, .menu-title, details, .btn).active,
+.menu li > details > summary:active {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+}
+
+.menu :where(li > details > summary)::-webkit-details-marker {
+  display: none;
+}
+
+.menu :where(li > details > summary):after,
+.menu :where(li > .menu-dropdown-toggle):after {
+  justify-self: end;
+  display: block;
+  margin-top: -0.5rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  transform: rotate(45deg);
+  transition-property: transform, margin-top;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  content: "";
+  transform-origin: 75% 75%;
+  box-shadow: 2px 2px;
+  pointer-events: none;
+}
+
+.menu :where(li > details[open] > summary):after,
+.menu :where(li > .menu-dropdown-toggle.menu-dropdown-show):after {
+  transform: rotate(225deg);
+  margin-top: 0;
+}
+
+@keyframes modal-pop {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes progress-loading {
+  50% {
+    background-position-x: -115%;
+  }
+}
+
+@keyframes radiomark {
+  0% {
+    box-shadow: 0 0 0 12px var(--fallback-b1,oklch(var(--b1)/1)) inset,
+      0 0 0 12px var(--fallback-b1,oklch(var(--b1)/1)) inset;
+  }
+
+  50% {
+    box-shadow: 0 0 0 3px var(--fallback-b1,oklch(var(--b1)/1)) inset,
+      0 0 0 3px var(--fallback-b1,oklch(var(--b1)/1)) inset;
+  }
+
+  100% {
+    box-shadow: 0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset,
+      0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset;
+  }
+}
+
+@keyframes rating-pop {
+  0% {
+    transform: translateY(-0.125em);
+  }
+
+  40% {
+    transform: translateY(-0.125em);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes skeleton {
+  from {
+    background-position: 150%;
+  }
+
+  to {
+    background-position: -50%;
+  }
+}
+
+@keyframes toast-pop {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  --tooltip-offset: calc(100% + 1px + var(--tooltip-tail, 0px));
+}
+
+.tooltip:before {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  content: var(--tw-content);
+  --tw-content: attr(data-tip);
+}
+
+.tooltip:before, .tooltip-top:before {
+  transform: translateX(-50%);
+  top: auto;
+  left: 50%;
+  right: auto;
+  bottom: var(--tooltip-offset);
+}
+
+.avatar.online:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  display: block;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity)));
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: var(--fallback-b1,oklch(var(--b1)/1));
+  width: 15%;
+  height: 15%;
+  top: 7%;
+  right: 7%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  --tooltip-tail: 0.1875rem;
+  --tooltip-color: var(--fallback-n,oklch(var(--n)/1));
+  --tooltip-text-color: var(--fallback-nc,oklch(var(--nc)/1));
+  --tooltip-tail-offset: calc(100% + 0.0625rem - var(--tooltip-tail));
+}
+
+.tooltip:before,
+.tooltip:after {
+  opacity: 0;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-delay: 100ms;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tooltip:after {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: var(--tooltip-tail, 0);
+  width: 0;
+  height: 0;
+  display: block;
+}
+
+.tooltip:before {
+  max-width: 20rem;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  background-color: var(--tooltip-color);
+  color: var(--tooltip-text-color);
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.tooltip.tooltip-open:before {
+  opacity: 1;
+  transition-delay: 75ms;
+}
+
+.tooltip.tooltip-open:after {
+  opacity: 1;
+  transition-delay: 75ms;
+}
+
+.tooltip:hover:before {
+  opacity: 1;
+  transition-delay: 75ms;
+}
+
+.tooltip:hover:after {
+  opacity: 1;
+  transition-delay: 75ms;
+}
+
+.tooltip:has(:focus-visible):after,
+.tooltip:has(:focus-visible):before {
+  opacity: 1;
+  transition-delay: 75ms;
+}
+
+.tooltip:not([data-tip]):hover:before,
+.tooltip:not([data-tip]):hover:after {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.tooltip:after, .tooltip-top:after {
+  transform: translateX(-50%);
+  border-color: var(--tooltip-color) transparent transparent transparent;
+  top: auto;
+  left: 50%;
+  right: auto;
+  bottom: var(--tooltip-tail-offset);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.-start-1 {
+  inset-inline-start: -0.25rem;
+}
+
+.-start-1\\.5 {
+  inset-inline-start: -0.375rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.my-\\[2em\\] {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ms-2 {
+  margin-inline-start: 0.5rem;
+}
+
+.ms-4 {
+  margin-inline-start: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-1\\.5 {
+  margin-top: 0.375rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-10\\/12 {
+  width: 83.333333%;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-4\\/6 {
+  width: 66.666667%;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-\\[80\\%\\] {
+  width: 80%;
+}
+
+.w-\\[auto\\] {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-\\[60\\%\\] {
+  max-width: 60%;
+}
+
+.-translate-x-1\\/4 {
+  --tw-translate-x: -25%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-s {
+  border-inline-start-width: 1px;
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-purple-400 {
+  --tw-gradient-from: #c084fc var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(192 132 252 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-emerald-400 {
+  --tw-gradient-to: #34d399 var(--tw-gradient-to-position);
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.fill-current {
+  fill: currentColor;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.text-\\[2\\.5rem\\] {
+  font-size: 2.5rem;
+}
+
+.text-\\[3\\.5rem\\] {
+  font-size: 3.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\\:bg-gray-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.hover\\:bg-opacity-35:hover {
+  --tw-bg-opacity: 0.35;
+}
+
+.hover\\:text-blue-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.hover\\:text-orange-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
+.focus\\:z-10:focus {
+  z-index: 10;
+}
+
+.focus\\:text-blue-700:focus {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.focus\\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\\:ring-4:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\\:ring-gray-100:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(243 244 246 / var(--tw-ring-opacity));
+}
+
+.group:hover .group-hover\\:visible {
+  visibility: visible;
+}
+
+.group:hover .group-hover\\:relative {
+  position: relative;
+}
+
+.group:hover .group-hover\\:translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 640px) {
+  .sm\\:mx-\\[2em\\] {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\\:block {
+    display: block;
+  }
+
+  .md\\:hidden {
+    display: none;
+  }
+}
+
+.rtl\\:rotate-180:where([dir="rtl"], [dir="rtl"] *) {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.dark\\:border-gray-600:where(.dark, .dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.dark\\:border-gray-700:where(.dark, .dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.dark\\:border-gray-900:where(.dark, .dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+
+.dark\\:bg-blue-600:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.dark\\:bg-gray-700:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.dark\\:bg-gray-800:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.dark\\:text-gray-400:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.dark\\:text-gray-500:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.dark\\:hover\\:bg-gray-700:hover:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.dark\\:hover\\:text-white:hover:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark\\:focus\\:ring-gray-700:focus:where(.dark, .dark *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\\:dark\\:hover\\:text-white:hover:where(.dark, .dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+ `},205:(t,e,r)=>{var i=r(957),o=r(903);r(712);class a extends i.WF{static styles=[i.AH``,o.K];constructor(){super()}render(){return i.qy`<footer class="flex flex-col place-items-center py-6">
+      <social-icons svgWidth="6" svgHeight="6"></social-icons>
+      <div>© 2024 • Nathan Dinh</div>
+    </footer>`}}customElements.define("page-footer",a)},113:(t,e,r)=>{var i=r(957),o=r(903);class a extends i.WF{static properties={svgWidth:{type:String},svgHeight:{type:String}};static styles=[i.AH``,o.K];constructor(){super()}render(){return i.qy`
+      <nav
+        class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
+      >
+        <div class="flex flex-col">
+          <div class="flex justify-end">
+            <button
+              data-collapse-toggle="navbar-hamburger"
+              type="button"
+              class=" w-10 h-10 text-sm text-gray-500 rounded-lg"
+              aria-controls="navbar-hamburger"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="block w-full" id="navbar-hamburger">
+            <ul
+              class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded dark:bg-blue-600"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    `}}customElements.define("mobile-side-nav",a)},585:(t,e,r)=>{var i=r(957),o=r(903);class a extends i.WF{static styles=[i.AH`
+      :host {
+        cursor: pointer;
+      }
+      #icon {
+        width: 30px;
+        cursor: pointer;
+      }
+      .light-gloss {
+        background: rgba(53, 53, 53, 0);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(53, 53, 53, 0.45);
+      }
+    `,o.K];constructor(){super(),this.toggleTheme=this.toggleTheme.bind(this),this.src="./public/dark theme icon/sun.png",this.urlRoutes={404:{page:"/src/pages/404.html",title:"404",description:""},"/":{page:"/src/pages/index.html",title:"/",description:""},"/projects":{page:"/src/pages/projects.html",title:"/",description:""},"/skills":{page:"/src/pages/skills.html",title:"/",description:""},"/socials":{page:"/src/pages/socials.html",title:"/",description:""}}}firstUpdated(){this.urlLocationHandler(),window.onpopstate=this.urlLocationHandler.bind(this)}handleNavigationClick(t){const{target:e}=t;t.preventDefault(),this.urlRoute(e.closest("a").href)}async urlLocationHandler(){let t=window.location.pathname;0!==t.length&&"/index.html"!==t||(t="/");const e=this.urlRoutes[t]||this.urlRoutes[404],r=await fetch(e.page).then((t=>t.text()));document.getElementById("root").innerHTML=r,window.scrollTo({top:0,behavior:"smooth"})}urlRoute(t){window.history.pushState({},"",t),this.urlLocationHandler()}toggleTheme(){const t=document.getElementsByTagName("html")[0],e=this.shadowRoot.getElementById("mode");"dracula"===t.dataset.theme?(t.dataset.theme="cupcake",t.className="light",e.innerHTML="Dark",this.shadowRoot.getElementById("icon").src="./public/dark theme icon/moon.png"):(t.dataset.theme="dracula",t.className="dark",e.innerHTML="Light",this.shadowRoot.getElementById("icon").src="./public/dark theme icon/sun.png")}render(){return i.qy` <nav
+      class="flex flex-col h-full fixed justify-center light-gloss group "
+    >
+      <a
+        @click=${this.handleNavigationClick}
+        class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
+        href="/"
+      >
+        <svg
+          class="h-8 w-8 "
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+          />
+        </svg>
+        <p
+          class="ml-4 text-xl font-medium size invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+        >
+          Home
+        </p>
+      </a>
+      <a
+        class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35 "
+        @click=${this.handleNavigationClick}
+        href="/projects"
+        ><svg
+          class="h-8 w-8 "
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+          />
+        </svg>
+
+        <p
+          class=" ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+        >
+          Projects
+        </p>
+      </a>
+      <a
+        class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
+        @click=${this.handleNavigationClick}
+        href="/skills"
+      >
+        <svg
+          class="h-8 w-8 "
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" />
+          <polyline points="12 4 4 8 12 12 20 8 12 4" />
+          <polyline points="4 12 12 16 20 12" />
+          <polyline points="4 16 12 20 20 16" />
+        </svg>
+        <p
+          class="ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative  transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+        >
+          Tech Stack
+        </p></a
+      >
+      <div class="px-5 py-2 flex" @click=${this.toggleTheme}>
+        <img src=${this.src} alt="icon" id="icon" />
+        <p
+          id="mode"
+          class="ml-4 text-xl font-medium invisible group-hover:visible absolute group-hover:relative transform -translate-x-1/4 group-hover:translate-x-0 transition-transform duration-200 ease-in-out"
+        >
+          Light
+        </p>
+      </div>
+    </nav>`}}customElements.define("side-nav",a)},689:(t,e,r)=>{var i=r(957),o=r(903);class a extends i.WF{static styles=[i.AH``,o.K];constructor(){super()}firstUpdated(){}render(){return i.qy`
+      <div class="w-full">
+        <header class="divider divider-primary">Backend</header>
+        <section class="flex flex-col items-center">
+          <div class="tooltip tooltip-close" data-tip="Node JS">
+            <img
+              src="../../../public/icons/nodejs/nodejs-original.svg"
+              class="w-10 h-10"
+            />
+          </div>
+          <div class="w-10/12">
+            <header class="divider divider-secondary">Framework</header>
+            <section class="flex gap-10 justify-center">
+              <div class="tooltip tooltip-close" data-tip="Express">
+                <img
+                  src="../../../public/icons/express/express-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+            </section>
+            <div class="divider divider-secondary">Library</div>
+            <section class="flex gap-10 justify-center">
+              <div class="tooltip tooltip-close" data-tip="Mongoose">
+                <img
+                  src="../../../public/icons/mongoose/mongoose-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    `}}customElements.define("back-section",a)},532:(t,e,r)=>{var i=r(957),o=r(903);class a extends i.WF{static styles=[i.AH``,o.K];constructor(){super()}firstUpdated(){}render(){return i.qy`
+      <div>
+        <header class="divider divider-primary">Database</header>
+        <section class="flex gap-10 justify-center">
+          <div class="w-10/12">
+            <header class="divider divider-secondary">Non-Relational</header>
+            <section class="flex gap-10 justify-center">
+              <div class="tooltip tooltip-close" data-tip="Mongoose">
+                <img
+                  src="../../../public/icons/mongodb/mongodb-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+            </section>
+            <div class="divider divider-secondary">Relational</div>
+            <section class="flex gap-10 justify-center">
+              <div class="tooltip tooltip-close" data-tip="MySql">
+                <img
+                  src="../../../public/icons/mysql/mysql-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+              <div class="tooltip tooltip-close" data-tip="Azure SQL">
+                <img
+                  src="../../../public/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+              <div class="tooltip tooltip-close" data-tip="MSSql">
+                <img
+                  src="../../../public/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    `}}customElements.define("data-section",a)},965:(t,e,r)=>{var i=r(957),o=r(903);class a extends i.WF{static styles=[i.AH``,o.K];constructor(){super()}firstUpdated(){}render(){return i.qy`
+      <div class="w-full">
+        <header class="divider divider-primary">Frontend</header>
+        <section class="flex gap-10 justify-center">
+          <div class="w-10/12">
+            <header class="divider divider-secondary">Framework</header>
+            <section class="flex gap-10 justify-center">
+              <div class="tooltip tooltip-close" data-tip="React">
+                <img
+                  src="../../../public/icons/react/react-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+              <div class="tooltip tooltip-close" data-tip="Vue">
+                <img
+                  src="../../../public/icons/vuejs/vuejs-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+              <div class="tooltip tooltip-close" data-tip="Angular">
+                <img
+                  src="../../../public/icons/angular/angular-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+            </section>
+            <div class="divider divider-secondary">Library</div>
+            <section class="flex gap-10 justify-center">
+              <div class="tooltip tooltip-close" data-tip="Jquery">
+                <img
+                  src="../../../public/icons/jquery/jquery-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+              <div class="tooltip tooltip-close" data-tip="Redux">
+                <img
+                  src="../../../public/icons/redux/redux-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+              <div class="tooltip tooltip-close" data-tip="React Router">
+                <img
+                  src="../../../public/icons/reactrouter/reactrouter-original.svg"
+                  class="w-10 h-10"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    `}}customElements.define("font-section",a)},466:(t,e,r)=>{var i=r(957),o=r(903);class a extends i.WF{static styles=[i.AH``,o.K];constructor(){super()}firstUpdated(){}render(){return i.qy`
+      <div class="w-full">
+        <header class="divider divider-primary">Languages</header>
+        <section class="flex gap-10 justify-center ">
+          <div class="tooltip tooltip-close" data-tip="C Sharp">
+            <img
+              src="../../../public/icons/csharp/csharp-original.svg"
+              class="w-10 h-10"
+            />
+          </div>
+          <div class="tooltip tooltip-close" data-tip="Javascript">
+            <img
+              src="../../../public/icons/javascript/javascript-original.svg"
+              class="w-10 h-10"
+            />
+          </div>
+          <div class="tooltip tooltip-close" data-tip="Html5">
+            <img
+              src="../../../public/icons/html5/html5-original.svg"
+              class="w-10 h-10"
+            />
+          </div>
+          <div class="tooltip tooltip-close" data-tip="css3">
+            <img
+              src="../../../public/icons/css3/css3-original.svg"
+              class="w-10 h-10"
+            />
+          </div>
+        </section>
+      </div>
+    `}}customElements.define("lang-section",a)},799:(t,e,r)=>{var i=r(957),o=r(903);class a extends i.WF{static styles=[i.AH``,o.K];constructor(){super()}firstUpdated(){}render(){return i.qy`
+      <div>
+        <header class="divider divider-primary">Other</header>
+        <section class="flex gap-10 justify-center">
+          <div class="tooltip tooltip-close" data-tip="Github">
+            <img
+              src="../../../public/icons/github/github-original.svg"
+              class="fill-current w-10 h-10"
+            />
+          </div>
+          <div class="tooltip tooltip-close" data-tip="Window">
+            <img
+              src="../../../public/icons/windows11/windows11-original.svg"
+              class="fill-current w-10 h-10"
+            />
+          </div>
+          <div class="tooltip tooltip-close" data-tip="Azure Dev Ops">
+            <img
+              src="../../../public/icons/azuredevops/azuredevops-original.svg"
+              class="fill-current w-10 h-10"
+            />
+          </div>
+          <div class="tooltip tooltip-close" data-tip="Ubuntu">
+            <img
+              src="../../../public/icons/ubuntu/ubuntu-original.svg"
+              class="fill-current w-10 h-10"
+            />
+          </div>
+        </section>
+      </div>
+    `}}customElements.define("other-section",a)},712:(t,e,r)=>{var i=r(957),o=r(903);r(283);class a extends i.WF{static properties={svgWidth:{type:String},svgHeight:{type:String}};static styles=[i.AH``,o.K];constructor(){super()}render(){return i.qy`<div class="flex">
+      <a
+        class="text-sm hover:text-orange-500"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/Nathan-Dinh"
+        ><span class="sr-only">github</span
+        ><svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-current h-${this.svgHeight} w-${this.svgWidth}"
+        >
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+          ></path></svg
+      ></a>
+      <a
+        class="mx-3 text-sm hover:text-orange-500"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.linkedin.com/in/nathandinh67/"
+        ><span class="sr-only">linkedin</span
+        ><svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-current h-${this.svgHeight} w-${this.svgWidth}"
+        >
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+          ></path></svg
+      ></a>
+    </div> `}}customElements.define("social-icons",a)},283:(t,e,r)=>{var i=r(957),o=r(903);class a extends i.WF{static properties={date:{type:String},header:{type:String},content:{type:String},link:{type:String}};static styles=[i.AH``,o.K];constructor(){super()}render(){return i.qy`<li class="mb-10 ms-4">
+      <div
+        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+      ></div>
+      <time
+        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >${this.date}</time
+      >
+      <h3 class="text-lg font-semibold">${this.header}</h3>
+      <p class="mb-4 text-base font-normal ">
+        ${this.content}
+      </p>
+      <a
+        href=${this.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+        >Source Code
+        <svg
+          class="w-3 h-3 ms-2 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"
+          /></svg
+      ></a>
+    </li>`}}customElements.define("time-item",a)},434:(t,e,r)=>{var i=r(957),o=r(903);r(283);class a extends i.WF{static styles=[i.AH``,o.K];constructor(){super(),this.timeItem=[{date:"December 2022",header:"Chainsaw Man Web Page",content:"A web page that I created for practicing and introducing HTML, CSS, JAVASCRIPT",link:"https://github.com/Nathan-Dinh/chainsaw-man",img:""},{date:"October 2023",header:"Patient Tracker",content:"This form serves as a rapid and dependable tool for capturing and managing patient information efficiently. It enables users to swiftly record essential details such as patient names, birth dates, medical issues, blood pressure, and more. Notably, this form boasts scalability, leveraging full CRUD functionality to ensure comprehensive data management and accessibility.",link:"https://github.com/Nathan-Dinh/patient-tracker",img:""},{date:" January 2023",header:"Tic Tac Toe",content:"A simple Tic Tac Toe game that I created using React Vite",link:"https://github.com/Nathan-Dinh/tic-tac-toe",img:""},{date:"November 2023 - December 2023",header:"Galactic Defender",content:"This is a small game I created using monogame. It is a take on the classical 2004 game Battlestar Galactica",link:"https://github.com/Nathan-Dinh/galactic-defender",img:""},{date:"January 2024",header:"Arknight's Operator Web Scrapper",content:"This is just a basic learning project to familiarize myself with Python and web scraping.",link:"https://github.com/Nathan-Dinh/arknights-web-scrapper",img:""},{date:"January 2024",header:"Op Finder",content:"This web application represents a small-scale project designed as an introductory showcase of Vue.js framework capabilities. Utilizing an API developed specifically for this purpose, the application revolves around a well-known mobile game, Arknights. Users can efficiently explore and retrieve basic information about various game operators up to a specified threshold through the search functionality provided.",link:"https://github.com/Nathan-Dinh/op-finder",img:""}]}render(){return i.qy`
+      <ol class="relative border-s border-gray-200 dark:border-gray-700">
+        ${this.timeItem.map((t=>i.qy`<time-item
+            date=${t.date}
+            content=${t.content}
+            header=${t.header}
+            link=${t.link}
+          ></time-item>`))}
+      </ol>
+    `}}customElements.define("time-line",a)},957:(t,e,r)=>{r.d(e,{WF:()=>ct,AH:()=>l,qy:()=>V});const i=globalThis,o=i.ShadowRoot&&(void 0===i.ShadyCSS||i.ShadyCSS.nativeShadow)&&"adoptedStyleSheets"in Document.prototype&&"replace"in CSSStyleSheet.prototype,a=Symbol(),s=new WeakMap;class n{constructor(t,e,r){if(this._$cssResult$=!0,r!==a)throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=t,this.t=e}get styleSheet(){let t=this.o;const e=this.t;if(o&&void 0===t){const r=void 0!==e&&1===e.length;r&&(t=s.get(e)),void 0===t&&((this.o=t=new CSSStyleSheet).replaceSync(this.cssText),r&&s.set(e,t))}return t}toString(){return this.cssText}}const l=(t,...e)=>{const r=1===t.length?t[0]:e.reduce(((e,r,i)=>e+(t=>{if(!0===t._$cssResult$)return t.cssText;if("number"==typeof t)return t;throw Error("Value passed to 'css' function must be a 'css' function result: "+t+". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.")})(r)+t[i+1]),t[0]);return new n(r,t,a)},c=(t,e)=>{if(o)t.adoptedStyleSheets=e.map((t=>t instanceof CSSStyleSheet?t:t.styleSheet));else for(const r of e){const e=document.createElement("style"),o=i.litNonce;void 0!==o&&e.setAttribute("nonce",o),e.textContent=r.cssText,t.appendChild(e)}},d=o?t=>t:t=>t instanceof CSSStyleSheet?(t=>{let e="";for(const r of t.cssRules)e+=r.cssText;return(t=>new n("string"==typeof t?t:t+"",void 0,a))(e)})(t):t,{is:h,defineProperty:p,getOwnPropertyDescriptor:u,getOwnPropertyNames:g,getOwnPropertySymbols:m,getPrototypeOf:b}=Object,f=globalThis,v=f.trustedTypes,w=v?v.emptyScript:"",y=f.reactiveElementPolyfillSupport,k=(t,e)=>t,x={toAttribute(t,e){switch(e){case Boolean:t=t?w:null;break;case Object:case Array:t=null==t?t:JSON.stringify(t)}return t},fromAttribute(t,e){let r=t;switch(e){case Boolean:r=null!==t;break;case Number:r=null===t?null:Number(t);break;case Object:case Array:try{r=JSON.parse(t)}catch(t){r=null}}return r}},$=(t,e)=>!h(t,e),_={attribute:!0,type:String,converter:x,reflect:!1,hasChanged:$};Symbol.metadata??=Symbol("metadata"),f.litPropertyMetadata??=new WeakMap;class A extends HTMLElement{static addInitializer(t){this._$Ei(),(this.l??=[]).push(t)}static get observedAttributes(){return this.finalize(),this._$Eh&&[...this._$Eh.keys()]}static createProperty(t,e=_){if(e.state&&(e.attribute=!1),this._$Ei(),this.elementProperties.set(t,e),!e.noAccessor){const r=Symbol(),i=this.getPropertyDescriptor(t,r,e);void 0!==i&&p(this.prototype,t,i)}}static getPropertyDescriptor(t,e,r){const{get:i,set:o}=u(this.prototype,t)??{get(){return this[e]},set(t){this[e]=t}};return{get(){return i?.call(this)},set(e){const a=i?.call(this);o.call(this,e),this.requestUpdate(t,a,r)},configurable:!0,enumerable:!0}}static getPropertyOptions(t){return this.elementProperties.get(t)??_}static _$Ei(){if(this.hasOwnProperty(k("elementProperties")))return;const t=b(this);t.finalize(),void 0!==t.l&&(this.l=[...t.l]),this.elementProperties=new Map(t.elementProperties)}static finalize(){if(this.hasOwnProperty(k("finalized")))return;if(this.finalized=!0,this._$Ei(),this.hasOwnProperty(k("properties"))){const t=this.properties,e=[...g(t),...m(t)];for(const r of e)this.createProperty(r,t[r])}const t=this[Symbol.metadata];if(null!==t){const e=litPropertyMetadata.get(t);if(void 0!==e)for(const[t,r]of e)this.elementProperties.set(t,r)}this._$Eh=new Map;for(const[t,e]of this.elementProperties){const r=this._$Eu(t,e);void 0!==r&&this._$Eh.set(r,t)}this.elementStyles=this.finalizeStyles(this.styles)}static finalizeStyles(t){const e=[];if(Array.isArray(t)){const r=new Set(t.flat(1/0).reverse());for(const t of r)e.unshift(d(t))}else void 0!==t&&e.push(d(t));return e}static _$Eu(t,e){const r=e.attribute;return!1===r?void 0:"string"==typeof r?r:"string"==typeof t?t.toLowerCase():void 0}constructor(){super(),this._$Ep=void 0,this.isUpdatePending=!1,this.hasUpdated=!1,this._$Em=null,this._$Ev()}_$Ev(){this._$ES=new Promise((t=>this.enableUpdating=t)),this._$AL=new Map,this._$E_(),this.requestUpdate(),this.constructor.l?.forEach((t=>t(this)))}addController(t){(this._$EO??=new Set).add(t),void 0!==this.renderRoot&&this.isConnected&&t.hostConnected?.()}removeController(t){this._$EO?.delete(t)}_$E_(){const t=new Map,e=this.constructor.elementProperties;for(const r of e.keys())this.hasOwnProperty(r)&&(t.set(r,this[r]),delete this[r]);t.size>0&&(this._$Ep=t)}createRenderRoot(){const t=this.shadowRoot??this.attachShadow(this.constructor.shadowRootOptions);return c(t,this.constructor.elementStyles),t}connectedCallback(){this.renderRoot??=this.createRenderRoot(),this.enableUpdating(!0),this._$EO?.forEach((t=>t.hostConnected?.()))}enableUpdating(t){}disconnectedCallback(){this._$EO?.forEach((t=>t.hostDisconnected?.()))}attributeChangedCallback(t,e,r){this._$AK(t,r)}_$EC(t,e){const r=this.constructor.elementProperties.get(t),i=this.constructor._$Eu(t,r);if(void 0!==i&&!0===r.reflect){const o=(void 0!==r.converter?.toAttribute?r.converter:x).toAttribute(e,r.type);this._$Em=t,null==o?this.removeAttribute(i):this.setAttribute(i,o),this._$Em=null}}_$AK(t,e){const r=this.constructor,i=r._$Eh.get(t);if(void 0!==i&&this._$Em!==i){const t=r.getPropertyOptions(i),o="function"==typeof t.converter?{fromAttribute:t.converter}:void 0!==t.converter?.fromAttribute?t.converter:x;this._$Em=i,this[i]=o.fromAttribute(e,t.type),this._$Em=null}}requestUpdate(t,e,r){if(void 0!==t){if(r??=this.constructor.getPropertyOptions(t),!(r.hasChanged??$)(this[t],e))return;this.P(t,e,r)}!1===this.isUpdatePending&&(this._$ES=this._$ET())}P(t,e,r){this._$AL.has(t)||this._$AL.set(t,e),!0===r.reflect&&this._$Em!==t&&(this._$Ej??=new Set).add(t)}async _$ET(){this.isUpdatePending=!0;try{await this._$ES}catch(t){Promise.reject(t)}const t=this.scheduleUpdate();return null!=t&&await t,!this.isUpdatePending}scheduleUpdate(){return this.performUpdate()}performUpdate(){if(!this.isUpdatePending)return;if(!this.hasUpdated){if(this.renderRoot??=this.createRenderRoot(),this._$Ep){for(const[t,e]of this._$Ep)this[t]=e;this._$Ep=void 0}const t=this.constructor.elementProperties;if(t.size>0)for(const[e,r]of t)!0!==r.wrapped||this._$AL.has(e)||void 0===this[e]||this.P(e,this[e],r)}let t=!1;const e=this._$AL;try{t=this.shouldUpdate(e),t?(this.willUpdate(e),this._$EO?.forEach((t=>t.hostUpdate?.())),this.update(e)):this._$EU()}catch(e){throw t=!1,this._$EU(),e}t&&this._$AE(e)}willUpdate(t){}_$AE(t){this._$EO?.forEach((t=>t.hostUpdated?.())),this.hasUpdated||(this.hasUpdated=!0,this.firstUpdated(t)),this.updated(t)}_$EU(){this._$AL=new Map,this.isUpdatePending=!1}get updateComplete(){return this.getUpdateComplete()}getUpdateComplete(){return this._$ES}shouldUpdate(t){return!0}update(t){this._$Ej&&=this._$Ej.forEach((t=>this._$EC(t,this[t]))),this._$EU()}updated(t){}firstUpdated(t){}}A.elementStyles=[],A.shadowRootOptions={mode:"open"},A[k("elementProperties")]=new Map,A[k("finalized")]=new Map,y?.({ReactiveElement:A}),(f.reactiveElementVersions??=[]).push("2.0.4");const S=globalThis,E=S.trustedTypes,C=E?E.createPolicy("lit-html",{createHTML:t=>t}):void 0,z="$lit$",H=`lit$${(Math.random()+"").slice(9)}$`,U="?"+H,P=`<${U}>`,R=document,j=()=>R.createComment(""),T=t=>null===t||"object"!=typeof t&&"function"!=typeof t,M=Array.isArray,N="[ \t\n\f\r]",O=/<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,L=/-->/g,D=/>/g,I=RegExp(`>|${N}(?:([^\\s"'>=/]+)(${N}*=${N}*(?:[^ \t\n\f\r"'\`<>=]|("|')|))|$)`,"g"),q=/'/g,W=/"/g,B=/^(?:script|style|textarea|title)$/i,F=t=>(e,...r)=>({_$litType$:t,strings:e,values:r}),V=F(1),K=(F(2),Symbol.for("lit-noChange")),Y=Symbol.for("lit-nothing"),X=new WeakMap,J=R.createTreeWalker(R,129);function G(t,e){if(!Array.isArray(t)||!t.hasOwnProperty("raw"))throw Error("invalid template strings array");return void 0!==C?C.createHTML(e):e}const Z=(t,e)=>{const r=t.length-1,i=[];let o,a=2===e?"<svg>":"",s=O;for(let e=0;e<r;e++){const r=t[e];let n,l,c=-1,d=0;for(;d<r.length&&(s.lastIndex=d,l=s.exec(r),null!==l);)d=s.lastIndex,s===O?"!--"===l[1]?s=L:void 0!==l[1]?s=D:void 0!==l[2]?(B.test(l[2])&&(o=RegExp("</"+l[2],"g")),s=I):void 0!==l[3]&&(s=I):s===I?">"===l[0]?(s=o??O,c=-1):void 0===l[1]?c=-2:(c=s.lastIndex-l[2].length,n=l[1],s=void 0===l[3]?I:'"'===l[3]?W:q):s===W||s===q?s=I:s===L||s===D?s=O:(s=I,o=void 0);const h=s===I&&t[e+1].startsWith("/>")?" ":"";a+=s===O?r+P:c>=0?(i.push(n),r.slice(0,c)+z+r.slice(c)+H+h):r+H+(-2===c?e:h)}return[G(t,a+(t[r]||"<?>")+(2===e?"</svg>":"")),i]};class Q{constructor({strings:t,_$litType$:e},r){let i;this.parts=[];let o=0,a=0;const s=t.length-1,n=this.parts,[l,c]=Z(t,e);if(this.el=Q.createElement(l,r),J.currentNode=this.el.content,2===e){const t=this.el.content.firstChild;t.replaceWith(...t.childNodes)}for(;null!==(i=J.nextNode())&&n.length<s;){if(1===i.nodeType){if(i.hasAttributes())for(const t of i.getAttributeNames())if(t.endsWith(z)){const e=c[a++],r=i.getAttribute(t).split(H),s=/([.?@])?(.*)/.exec(e);n.push({type:1,index:o,name:s[2],strings:r,ctor:"."===s[1]?ot:"?"===s[1]?at:"@"===s[1]?st:it}),i.removeAttribute(t)}else t.startsWith(H)&&(n.push({type:6,index:o}),i.removeAttribute(t));if(B.test(i.tagName)){const t=i.textContent.split(H),e=t.length-1;if(e>0){i.textContent=E?E.emptyScript:"";for(let r=0;r<e;r++)i.append(t[r],j()),J.nextNode(),n.push({type:2,index:++o});i.append(t[e],j())}}}else if(8===i.nodeType)if(i.data===U)n.push({type:2,index:o});else{let t=-1;for(;-1!==(t=i.data.indexOf(H,t+1));)n.push({type:7,index:o}),t+=H.length-1}o++}}static createElement(t,e){const r=R.createElement("template");return r.innerHTML=t,r}}function tt(t,e,r=t,i){if(e===K)return e;let o=void 0!==i?r._$Co?.[i]:r._$Cl;const a=T(e)?void 0:e._$litDirective$;return o?.constructor!==a&&(o?._$AO?.(!1),void 0===a?o=void 0:(o=new a(t),o._$AT(t,r,i)),void 0!==i?(r._$Co??=[])[i]=o:r._$Cl=o),void 0!==o&&(e=tt(t,o._$AS(t,e.values),o,i)),e}class et{constructor(t,e){this._$AV=[],this._$AN=void 0,this._$AD=t,this._$AM=e}get parentNode(){return this._$AM.parentNode}get _$AU(){return this._$AM._$AU}u(t){const{el:{content:e},parts:r}=this._$AD,i=(t?.creationScope??R).importNode(e,!0);J.currentNode=i;let o=J.nextNode(),a=0,s=0,n=r[0];for(;void 0!==n;){if(a===n.index){let e;2===n.type?e=new rt(o,o.nextSibling,this,t):1===n.type?e=new n.ctor(o,n.name,n.strings,this,t):6===n.type&&(e=new nt(o,this,t)),this._$AV.push(e),n=r[++s]}a!==n?.index&&(o=J.nextNode(),a++)}return J.currentNode=R,i}p(t){let e=0;for(const r of this._$AV)void 0!==r&&(void 0!==r.strings?(r._$AI(t,r,e),e+=r.strings.length-2):r._$AI(t[e])),e++}}class rt{get _$AU(){return this._$AM?._$AU??this._$Cv}constructor(t,e,r,i){this.type=2,this._$AH=Y,this._$AN=void 0,this._$AA=t,this._$AB=e,this._$AM=r,this.options=i,this._$Cv=i?.isConnected??!0}get parentNode(){let t=this._$AA.parentNode;const e=this._$AM;return void 0!==e&&11===t?.nodeType&&(t=e.parentNode),t}get startNode(){return this._$AA}get endNode(){return this._$AB}_$AI(t,e=this){t=tt(this,t,e),T(t)?t===Y||null==t||""===t?(this._$AH!==Y&&this._$AR(),this._$AH=Y):t!==this._$AH&&t!==K&&this._(t):void 0!==t._$litType$?this.$(t):void 0!==t.nodeType?this.T(t):(t=>M(t)||"function"==typeof t?.[Symbol.iterator])(t)?this.k(t):this._(t)}S(t){return this._$AA.parentNode.insertBefore(t,this._$AB)}T(t){this._$AH!==t&&(this._$AR(),this._$AH=this.S(t))}_(t){this._$AH!==Y&&T(this._$AH)?this._$AA.nextSibling.data=t:this.T(R.createTextNode(t)),this._$AH=t}$(t){const{values:e,_$litType$:r}=t,i="number"==typeof r?this._$AC(t):(void 0===r.el&&(r.el=Q.createElement(G(r.h,r.h[0]),this.options)),r);if(this._$AH?._$AD===i)this._$AH.p(e);else{const t=new et(i,this),r=t.u(this.options);t.p(e),this.T(r),this._$AH=t}}_$AC(t){let e=X.get(t.strings);return void 0===e&&X.set(t.strings,e=new Q(t)),e}k(t){M(this._$AH)||(this._$AH=[],this._$AR());const e=this._$AH;let r,i=0;for(const o of t)i===e.length?e.push(r=new rt(this.S(j()),this.S(j()),this,this.options)):r=e[i],r._$AI(o),i++;i<e.length&&(this._$AR(r&&r._$AB.nextSibling,i),e.length=i)}_$AR(t=this._$AA.nextSibling,e){for(this._$AP?.(!1,!0,e);t&&t!==this._$AB;){const e=t.nextSibling;t.remove(),t=e}}setConnected(t){void 0===this._$AM&&(this._$Cv=t,this._$AP?.(t))}}class it{get tagName(){return this.element.tagName}get _$AU(){return this._$AM._$AU}constructor(t,e,r,i,o){this.type=1,this._$AH=Y,this._$AN=void 0,this.element=t,this.name=e,this._$AM=i,this.options=o,r.length>2||""!==r[0]||""!==r[1]?(this._$AH=Array(r.length-1).fill(new String),this.strings=r):this._$AH=Y}_$AI(t,e=this,r,i){const o=this.strings;let a=!1;if(void 0===o)t=tt(this,t,e,0),a=!T(t)||t!==this._$AH&&t!==K,a&&(this._$AH=t);else{const i=t;let s,n;for(t=o[0],s=0;s<o.length-1;s++)n=tt(this,i[r+s],e,s),n===K&&(n=this._$AH[s]),a||=!T(n)||n!==this._$AH[s],n===Y?t=Y:t!==Y&&(t+=(n??"")+o[s+1]),this._$AH[s]=n}a&&!i&&this.j(t)}j(t){t===Y?this.element.removeAttribute(this.name):this.element.setAttribute(this.name,t??"")}}class ot extends it{constructor(){super(...arguments),this.type=3}j(t){this.element[this.name]=t===Y?void 0:t}}class at extends it{constructor(){super(...arguments),this.type=4}j(t){this.element.toggleAttribute(this.name,!!t&&t!==Y)}}class st extends it{constructor(t,e,r,i,o){super(t,e,r,i,o),this.type=5}_$AI(t,e=this){if((t=tt(this,t,e,0)??Y)===K)return;const r=this._$AH,i=t===Y&&r!==Y||t.capture!==r.capture||t.once!==r.once||t.passive!==r.passive,o=t!==Y&&(r===Y||i);i&&this.element.removeEventListener(this.name,this,r),o&&this.element.addEventListener(this.name,this,t),this._$AH=t}handleEvent(t){"function"==typeof this._$AH?this._$AH.call(this.options?.host??this.element,t):this._$AH.handleEvent(t)}}class nt{constructor(t,e,r){this.element=t,this.type=6,this._$AN=void 0,this._$AM=e,this.options=r}get _$AU(){return this._$AM._$AU}_$AI(t){tt(this,t)}}const lt=S.litHtmlPolyfillSupport;lt?.(Q,rt),(S.litHtmlVersions??=[]).push("3.1.2");class ct extends A{constructor(){super(...arguments),this.renderOptions={host:this},this._$Do=void 0}createRenderRoot(){const t=super.createRenderRoot();return this.renderOptions.renderBefore??=t.firstChild,t}update(t){const e=this.render();this.hasUpdated||(this.renderOptions.isConnected=this.isConnected),super.update(t),this._$Do=((t,e,r)=>{const i=r?.renderBefore??e;let o=i._$litPart$;if(void 0===o){const t=r?.renderBefore??null;i._$litPart$=o=new rt(e.insertBefore(j(),t),t,void 0,r??{})}return o._$AI(t),o})(e,this.renderRoot,this.renderOptions)}connectedCallback(){super.connectedCallback(),this._$Do?.setConnected(!0)}disconnectedCallback(){super.disconnectedCallback(),this._$Do?.setConnected(!1)}render(){return K}}ct._$litElement$=!0,ct.finalized=!0,globalThis.litElementHydrateSupport?.({LitElement:ct});const dt=globalThis.litElementPolyfillSupport;dt?.({LitElement:ct}),(globalThis.litElementVersions??=[]).push("4.0.4")}},e={};function r(i){var o=e[i];if(void 0!==o)return o.exports;var a=e[i]={exports:{}};return t[i](a,a.exports,r),a.exports}r.d=(t,e)=>{for(var i in e)r.o(e,i)&&!r.o(t,i)&&Object.defineProperty(t,i,{enumerable:!0,get:e[i]})},r.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),r(283),r(585),r(205),r(434),r(712),r(466),r(965),r(689),r(532),r(799),r(113)})();
