@@ -56,12 +56,10 @@ export class SideNavigation extends LitElement {
 
   async urlLocationHandler() {
     let location = window.location.pathname;
-    console.log(location)
     if (location.length === 0 || location === "/my-website/index.html") {
       location = "/my-website/";
     }
     const ROUTE = this.urlRoutes[location] || this.urlRoutes[404];
-    console.log(ROUTE)
     const html = await fetch(ROUTE.page).then((response) => {
       return response.text();
     });
