@@ -32,22 +32,22 @@ export class SideNavigation extends LitElement {
       },
       "/": {
         page: "/src/pages/index.html",
-        title: "/",
+        title: "/my-website",
         description: "",
       },
       "/projects": {
         page: "/src/pages/projects.html",
-        title: "/",
+        title: "/my-website",
         description: "",
       },
       "/skills": {
         page: "/src/pages/skills.html",
-        title: "/",
+        title: "/my-website",
         description: "",
       },
       "/socials": {
         page: "/src/pages/socials.html",
-        title: "/",
+        title: "/my-website",
         description: "",
       },
     };
