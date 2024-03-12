@@ -26,28 +26,28 @@ export class SideNavigation extends LitElement {
     this.src = "./public/dark theme icon/sun.png";
     this.urlRoutes = {
       404: {
-        page: "/src/pages/404.html",
+        page: "my-website/src/pages/404.html",
         title: "404",
         description: "",
       },
       "/": {
-        page: "/src/pages/index.html",
-        title: "/my-website",
+        page: "my-website/src/pages/index.html",
+        title: "/",
         description: "",
       },
       "/projects": {
-        page: "/src/pages/projects.html",
-        title: "/my-website",
+        page: "my-website/src/pages/projects.html",
+        title: "/",
         description: "",
       },
       "/skills": {
-        page: "/src/pages/skills.html",
-        title: "/my-website",
+        page: "my-website/src/pages/skills.html",
+        title: "/",
         description: "",
       },
       "/socials": {
-        page: "/src/pages/socials.html",
-        title: "/my-website",
+        page: "my-website/src/pages/socials.html",
+        title: "/",
         description: "",
       },
     };
