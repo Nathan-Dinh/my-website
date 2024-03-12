@@ -5,7 +5,9 @@ module.exports = {
     "./src/*.{html,js}",
     "./index.html",
     "./src/shared/*.{html,js}",
-    "./src/shared/skill-sections/*.{html,js}"
+    "./src/shared/skill-sections/*.{html,js}",
+    "./src/shared/mobile/*.{html,js}"
+
   ],
   darkMode: "selector",
   daisyui: {

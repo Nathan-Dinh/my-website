@@ -11,7 +11,8 @@ module.exports = {
     "./src/shared/skill-sections/frontend.js",
     "./src/shared/skill-sections/backend.js",
     "./src/shared/skill-sections/database.js",
-    "./src/shared/skill-sections/other.js"
+    "./src/shared/skill-sections/other.js",
+    "./src/shared/mobile/mobile-side-nav.js",
   ],
   output: {
     path: path.resolve("./src", "dist"),

@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Nathan Ma Trung Dinh" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Welcome to Nathan's online portfolio, a digital showcase of my passion and proficiency in Software Engineer. Explore a collection of innovative projects that highlight my skills in full-stack development. With a commitment to excellence and a creative approach, I bring a unique perspective to every endeavor. Discover how my expertise, coupled with a proven track record of successful projects, can add value to your next venture. This portfolio reflects my dedication to pushing boundaries and delivering impactful solutions. Feel free to browse through my work and get in touch to discuss how we can collaborate on your next exciting project."
-    />
-    <meta name="keywords" content="Computer, Science, Engineer" />
+    <meta name="description" content="Welcome to Nathan's online portfolio, a digital showcase of my passion and proficiency in Software Engineer. Explore a collection of innovative projects that highlight my skills in full-stack development. With a commitment to excellence and a creative approach, I bring a unique perspective to every endeavor. Discover how my expertise, coupled with a proven track record of successful projects, can add value to your next venture. This portfolio reflects my dedication to pushing boundaries and delivering impactful solutions. Feel free to browse through my work and get in touch to discuss how we can collaborate on your next exciting project."/>
+    <meta name="keywords" content="Computer, Nathan, Dinh" />
     <meta name="robots" content="index, follow" />
     <title>Nathan Website</title>
     <!-- Style -->
@@ -19,23 +16,22 @@
     <script src="src/dist/main.js" nonce="YourNonceHere" defer></script>
     <script
       src="src/js/vanta/three.r123.min.js"
-      nonce="YourNonceHere"
       defer
     ></script>
     <script
       src="src/js/vanta/vanta.net.min.js"
-      nonce="YourNonceHere"
       defer
     ></script>
     <script src="src/js/vanta/vanta.js" nonce="YourNonceHere" defer></script>
   </head>
   <body id="fanta">
     <div>
-      <side-nav></side-nav>
-      <div>
+      <side-nav class="hidden md:block"></side-nav>
+      <div class="flex flex-col">
+        <mobile-side-nav class="block md:hidden"></mobile-side-nav>
         <div
           id="root"
-          class="min-h-screen flex justify-center mx-[15em] my-[2em]"
+          class="min-h-screen flex justify-center sm:mx-[2em] my-[2em]"
         ></div>
         <page-footer></page-footer>
       </div>
