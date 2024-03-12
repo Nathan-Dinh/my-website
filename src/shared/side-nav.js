@@ -39,7 +39,7 @@ export class SideNavigation extends LitElement {
         page: "/my-website/src/pages/skills.html",
         title: "/",
         description: "",
-      }
+      },
     };
   }
 
