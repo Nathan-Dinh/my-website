@@ -20,7 +20,7 @@ export class DatabaseSection extends LitElement {
             <section class="flex gap-10 justify-center">
               <div class="tooltip tooltip-close" data-tip="Mongoose">
                 <img
-                  src="/my-website/public/icons/mongodb/mongodb-original.svg"
+                  src="../../../../public/icons/mongodb/mongodb-original.svg"
                   class="w-10 h-10"
                 />
               </div>
@@ -29,19 +29,19 @@ export class DatabaseSection extends LitElement {
             <section class="flex gap-10 justify-center">
               <div class="tooltip tooltip-close" data-tip="MySql">
                 <img
-                  src="/my-website/public/icons/mysql/mysql-original.svg"
+                  src="../../../../public/icons/mysql/mysql-original.svg"
                   class="w-10 h-10"
                 />
               </div>
               <div class="tooltip tooltip-close" data-tip="Azure SQL">
                 <img
-                  src="/my-website/public/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                  src="../../../../public/icons/azuresqldatabase/azuresqldatabase-original.svg"
                   class="w-10 h-10"
                 />
               </div>
               <div class="tooltip tooltip-close" data-tip="MSSql">
                 <img
-                  src="/my-website/public/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+                  src="../../../../public/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
                   class="w-10 h-10"
                 />
               </div>
