@@ -17,25 +17,25 @@ export class LanguagesSection extends LitElement {
         <section class="flex gap-10 justify-center ">
           <div class="tooltip tooltip-close" data-tip="C Sharp">
             <img
-              src="../../my-website/public/icons/csharp/csharp-original.svg"
+              src="../../../../public/icons/csharp/csharp-original.svg"
               class="w-10 h-10"
             />
           </div>
           <div class="tooltip tooltip-close" data-tip="Javascript">
             <img
-              src="../../my-website/public/icons/javascript/javascript-original.svg"
+              src="../../../../my-website/public/icons/javascript/javascript-original.svg"
               class="w-10 h-10"
             />
           </div>
           <div class="tooltip tooltip-close" data-tip="Html5">
             <img
-              src="../../my-website/public/icons/html5/html5-original.svg"
+              src="../../../../public/icons/html5/html5-original.svg"
               class="w-10 h-10"
             />
           </div>
           <div class="tooltip tooltip-close" data-tip="css3">
             <img
-              src="../../my-website/public/icons/css3/css3-original.svg"
+              src="../../../../public/icons/css3/css3-original.svg"
               class="w-10 h-10"
             />
           </div>
