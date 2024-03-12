@@ -17,7 +17,7 @@ export class BackendSection extends LitElement {
         <section class="flex flex-col items-center">
           <div class="tooltip tooltip-close" data-tip="Node JS">
             <img
-              src=".../../../../my-website/public/icons/nodejs/nodejs-original.svg"
+              src="../../../public/icons/nodejs/nodejs-original.svg"
               class="w-10 h-10"
             />
           </div>
@@ -26,7 +26,7 @@ export class BackendSection extends LitElement {
             <section class="flex gap-10 justify-center">
               <div class="tooltip tooltip-close" data-tip="Express">
                 <img
-                  src="../../../../my-website/public/icons/express/express-original.svg"
+                  src="../../../public/icons/express/express-original.svg"
                   class="w-10 h-10"
                 />
               </div>
@@ -35,7 +35,7 @@ export class BackendSection extends LitElement {
             <section class="flex gap-10 justify-center">
               <div class="tooltip tooltip-close" data-tip="Mongoose">
                 <img
-                  src="../../../../my-website/public/icons/mongoose/mongoose-original.svg"
+                  src="../../../public/icons/mongoose/mongoose-original.svg"
                   class="w-10 h-10"
                 />
               </div>

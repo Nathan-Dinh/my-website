@@ -25,18 +25,28 @@ export class SideNavigation extends LitElement {
     this.toggleTheme = this.toggleTheme.bind(this);
     this.src = "./public/dark theme icon/sun.png";
     this.urlRoutes = {
-      "/my-website/": {
-        page: "/my-website/src/pages/index.html",
+      404: {
+        page: "/src/pages/404.html",
+        title: "404",
+        description: "",
+      },
+      "/": {
+        page: "/src/pages/index.html",
         title: "/",
         description: "",
       },
-      "/my-website/projects": {
-        page: "/my-website/src/pages/projects.html",
+      "/projects": {
+        page: "/src/pages/projects.html",
         title: "/",
         description: "",
       },
-      "/my-website/skills": {
-        page: "/my-website/src/pages/skills.html",
+      "/skills": {
+        page: "/src/pages/skills.html",
+        title: "/",
+        description: "",
+      },
+      "/socials": {
+        page: "/src/pages/socials.html",
         title: "/",
         description: "",
       },
@@ -56,8 +66,8 @@ export class SideNavigation extends LitElement {
 
   async urlLocationHandler() {
     let location = window.location.pathname;
-    if (location.length === 0 || location === "/my-website/index.html") {
-      location = "/my-website/";
+    if (location.length === 0 || location === "/index.html") {
+      location = "/";
     }
     const ROUTE = this.urlRoutes[location] || this.urlRoutes[404];
     const html = await fetch(ROUTE.page).then((response) => {
@@ -97,7 +107,7 @@ export class SideNavigation extends LitElement {
       <a
         @click=${this.handleNavigationClick}
         class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
-        href="/my-website/"
+        href="/"
       >
         <svg
           class="h-8 w-8 "
@@ -121,7 +131,7 @@ export class SideNavigation extends LitElement {
       <a
         class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35 "
         @click=${this.handleNavigationClick}
-        href="/my-website/projects"
+        href="/projects"
         ><svg
           class="h-8 w-8 "
           fill="none"
@@ -145,7 +155,7 @@ export class SideNavigation extends LitElement {
       <a
         class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
         @click=${this.handleNavigationClick}
-        href="/my-website/skills"
+        href="/skills"
       >
         <svg
           class="h-8 w-8 "

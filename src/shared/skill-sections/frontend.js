@@ -20,19 +20,19 @@ export class FrontendSection extends LitElement {
             <section class="flex gap-10 justify-center">
               <div class="tooltip tooltip-close" data-tip="React">
                 <img
-                  src="../../../../my-website/public/icons/react/react-original.svg"
+                  src="../../../public/icons/react/react-original.svg"
                   class="w-10 h-10"
                 />
               </div>
               <div class="tooltip tooltip-close" data-tip="Vue">
                 <img
-                  src="../../../../my-website/public/icons/vuejs/vuejs-original.svg"
+                  src="../../../public/icons/vuejs/vuejs-original.svg"
                   class="w-10 h-10"
                 />
               </div>
               <div class="tooltip tooltip-close" data-tip="Angular">
                 <img
-                  src="../../../../my-website/public/icons/angular/angular-original.svg"
+                  src="../../../public/icons/angular/angular-original.svg"
                   class="w-10 h-10"
                 />
               </div>
@@ -41,19 +41,19 @@ export class FrontendSection extends LitElement {
             <section class="flex gap-10 justify-center">
               <div class="tooltip tooltip-close" data-tip="Jquery">
                 <img
-                  src="../../../../my-website/public/icons/jquery/jquery-original.svg"
+                  src="../../../public/icons/jquery/jquery-original.svg"
                   class="w-10 h-10"
                 />
               </div>
               <div class="tooltip tooltip-close" data-tip="Redux">
                 <img
-                  src="../../../../my-website/public/icons/redux/redux-original.svg"
+                  src="../../../public/icons/redux/redux-original.svg"
                   class="w-10 h-10"
                 />
               </div>
               <div class="tooltip tooltip-close" data-tip="React Router">
                 <img
-                  src="../../../../my-website/public/icons/reactrouter/reactrouter-original.svg"
+                  src="../../../public/icons/reactrouter/reactrouter-original.svg"
                   class="w-10 h-10"
                 />
               </div>
