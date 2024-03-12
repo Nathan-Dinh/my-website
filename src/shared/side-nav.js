@@ -61,6 +61,7 @@ export class SideNavigation extends LitElement {
       location = "/my-website/";
     }
     const ROUTE = this.urlRoutes[location] || this.urlRoutes[404];
+    console.log(ROUTE)
     const html = await fetch(ROUTE.page).then((response) => {
       return response.text();
     });
@@ -98,7 +99,7 @@ export class SideNavigation extends LitElement {
       <a
         @click=${this.handleNavigationClick}
         class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
-        href="/"
+        href="/my-website/"
       >
         <svg
           class="h-8 w-8 "
@@ -122,7 +123,7 @@ export class SideNavigation extends LitElement {
       <a
         class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35 "
         @click=${this.handleNavigationClick}
-        href="/projects"
+        href="/my-website/projects"
         ><svg
           class="h-8 w-8 "
           fill="none"
@@ -146,7 +147,7 @@ export class SideNavigation extends LitElement {
       <a
         class="px-5 py-2 mb-4 flex items-center hover:bg-gray-600 hover:bg-opacity-35"
         @click=${this.handleNavigationClick}
-        href="/skills"
+        href="/my-website/skills"
       >
         <svg
           class="h-8 w-8 "
